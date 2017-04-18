@@ -4,6 +4,7 @@ define(['jquery','fun','init','aos','owlCarousel'],function($,fun,init,AOS,owlCa
      duration: 1500,
      once: true
    });
+   
    setTimeout(function() {
       $('.owl-carousel').owlCarousel({
          loop:true,

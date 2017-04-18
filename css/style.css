@@ -740,6 +740,66 @@ ul.submenu-list li:hover span{
    margin: 0;
 }
 
+.poker-deck {
+   position: relative;
+   background: #004251;
+   text-align: center;
+   padding: 65px 0 92px;
+}
+
+.poker-deck .deck-conntainer {
+   position: relative;
+   z-index: 2;
+}
+
+.poker-deck .posr {
+   display: block;
+   position: relative;
+   margin: 0 auto;
+}
+
+.poker-deck img.spade {
+   margin-top: 23px;
+}
+
+.poker-deck .pd-content {
+   max-width: 770px;
+   margin: 40px auto 0;
+}
+
+.poker-deck .pd-content p {
+   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+   font-size: 22px;
+   text-align: justify;
+   color: #fff;
+   margin: 0;
+}
+
+.poker-deck img.chip {
+   position: absolute;
+   z-index: 1;
+}
+
+.poker-deck img.chip-gray {
+   left: 0;
+   top: -154px;
+}
+
+.poker-deck img.chip-blue {
+   right: 0;
+   bottom: 0;
+}
+
+.poker-deck img.chip-yello {
+   top: -165px;
+   right: -91px;
+}
+
+.poker-deck img.chip-pink {
+   left: 22px;
+   bottom: 87px;
+}
+
 /* popup */
 body.login {
    background: none;
