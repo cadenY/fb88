@@ -23,7 +23,7 @@ requirejs.config({
       {
          name: 'owlCarousel',
          location: 'bower_components/owl-carousel/dist',
-         main: 'owl.carousel'
+         main: 'owl.carousel.min'
       }
    ],
    baseUrl: 'js',
