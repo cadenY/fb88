@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Lottery</title>
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="js/bower_components/aos/dist/aos.css" />
+   <link rel="stylesheet" href="js/bower_components/fancybox/dist/jquery.fancybox.css" />
+   <link rel="stylesheet" href="js/bower_components/owl-carousel/dist/assets/owl.carousel.css" />
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div id="header" class="compensate-for-scrollbar"></div>
+   <div id="container" class="page-poker wrap">
+      <!-- <button class="menu-btn">&#9776; Menu</button> -->
+      <div class="poker-slide owl-carousel wrap">
+          <div><img src="images/poker/slider1.jpg" alt=""></div>
+          <div><img src="images/poker/slider2.jpg" alt=""></div>
+      </div>
+   </div>
+   <div id="footer"></div>
+   <div class="site-overlay"></div>
+   <script data-main="js/config" src="js/lib/require.js"></script>
+	<script>
+		require(['config'], function(){
+			require(['main/poker']);
+		});
+	</script>
+</body>
+</html>

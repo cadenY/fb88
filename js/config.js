@@ -19,6 +19,11 @@ requirejs.config({
          name: 'fancybox',
          location: 'bower_components/fancybox/dist',
          main: 'jquery.fancybox'
+      },
+      {
+         name: 'owlCarousel',
+         location: 'bower_components/owl-carousel/dist',
+         main: 'owl.carousel'
       }
    ],
    baseUrl: 'js',
