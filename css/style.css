@@ -807,22 +807,29 @@ ul.submenu-list li:hover span{
 }
 
 .hasDivider:after {
-   background: url(../images/casino/divider.png) top center repeat-x;
-   clear: both;
-   content: '';
-   display: block;
-   width: 100%;
-   height: 39px;
-   position: absolute;
-   bottom: -13px;
-   left: 0;
+    background: url(../images/casino/divider.png) top center repeat-x;
+    clear: both;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 39px;
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    z-index: 2;
 }
 
 /* casino */
 #platform {
-   background: url(../images/casino/platform-bg.jpg) top center repeat-x;
-   font-size: 0;
-   padding: 15px 0;
+    background: url(../images/casino/platform-bg.jpg) top center repeat-x;
+    background-size: 100% 100%;
+    font-size: 0;
+    padding: 15px 0;
+}
+
+.prodlink {
+    position: relative;
+    z-index: 1;
 }
 
 .platform {
@@ -833,6 +840,84 @@ ul.submenu-list li:hover span{
 
 .platform img {
    height: 445px;
+}
+
+.platform-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    z-index: 2;
+    padding: 13px 0 0;
+    display: none;
+}
+
+.platform-content .single-content {
+    display: none;
+}
+
+.platform-content .single-content.active {
+    display: block;
+}
+
+.platform-content img {
+    float: left;
+    width: 277px;
+    margin-left: 5px;
+    position: relative;
+    top: 2px;
+}
+
+.platform-content img.custom {
+    top: 34px;
+}
+
+.platform-content .detail {
+    float: left;
+    width: 70%;
+    padding-top: 10%;
+    text-align: center;
+    margin-left: 5%;
+}
+
+.platform-content .detail p {
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+}
+
+.platform-content .detail a {
+    background: #ffcc00;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    max-width: 276px;
+    margin: 10px auto 0;
+    line-height: 68px;
+    font-size: 27px;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.platform-content .pc-close {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    border: none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    background: none;
+    outline: 0 !important;
+    font-family: Arial;
+    cursor: pointer;
 }
 
 /* casino banner detail */
