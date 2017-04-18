@@ -663,6 +663,15 @@ ul.submenu-list li:hover span{
 }
 
 /*poker*/
+.poker-page .wrap-panel {
+   width: 1000px;
+}
+
+.poker-slide-container {
+   height: 570px;
+   background: #353535;
+} 
+
 .poker-slide.owl-carousel .owl-item img {
    max-height: 570px;
 }
@@ -692,6 +701,43 @@ ul.submenu-list li:hover span{
 .poker-slide .owl-nav .owl-next {
    right: 200px;
    background: url(../images/poker/arrow-right.png) center no-repeat;
+}
+
+.poker-challenge {
+   padding: 114px 0 91px;
+   background: #efeae7;     
+}
+
+.pc-content {
+   width: 390px;
+   float: left;
+   margin-top: 89px;
+}
+   
+.pc-content h2 {
+   font-family: 'Oswald', sans-serif;
+   color: #353535;
+   margin:0 0 13px;
+   font-size: 45px;
+   font-weight: 400;
+   line-height: normal;
+}
+
+.pc-content p {
+   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+   font-size: 22px;
+   color: #353535;
+   margin: 0 0 27px;
+   text-align: justify;
+}
+
+.pc-img {
+   float: right;
+}
+
+.pc-img img {
+   display: block;
+   margin: 0;
 }
 
 /* popup */
