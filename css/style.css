@@ -66,7 +66,7 @@ input[type=number]::-webkit-outer-spin-button {
     right: 0;
 	top: 0;
 /*	width: 100%;*/
-	z-index: 2;
+	z-index: 10;
 
 /*
 	-webkit-transition: all 0.3s linear;
@@ -577,7 +577,7 @@ ul.submenu-list li:hover span{
 #container { 
 	margin-top: 208px;
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 }
 
 /* page lottery */
@@ -798,6 +798,111 @@ ul.submenu-list li:hover span{
 .poker-deck img.chip-pink {
    left: 22px;
    bottom: 87px;
+}
+
+/* divider */
+.hasDivider {
+    position: relative;
+    z-index: 6;
+}
+
+.hasDivider:after {
+   background: url(../images/casino/divider.png) top center repeat-x;
+   clear: both;
+   content: '';
+   display: block;
+   width: 100%;
+   height: 39px;
+   position: absolute;
+   bottom: -13px;
+   left: 0;
+}
+
+/* casino */
+#platform {
+   background: url(../images/casino/platform-bg.jpg) top center repeat-x;
+   font-size: 0;
+   padding: 15px 0;
+}
+
+.platform {
+   display: inline-block;
+   margin: 0 5px;
+   cursor: pointer;
+}
+
+.platform img {
+   height: 445px;
+}
+
+/* casino banner detail */
+.cbd img {
+    display: block;
+    margin: 0 auto;
+}
+
+.cbd a {
+    background: #ffcc00;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    max-width: 276px;
+    margin: 25px auto 0;
+    line-height: 68px;
+    font-size: 27px;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.cbd a:hover {
+    opacity: 0.8;
+}
+
+#banner-casino {
+    background: url(../images/casino/banner-casino.jpg) top center repeat-x;
+    background-size: 100% 538px;
+    padding: 138px 0 136px;
+    z-index: 5;
+}
+
+#banner-casino .cbd,
+#banner-live-casino .cbd{
+    float: left;
+}
+
+#banner-royal-suite {
+    background: url(../images/casino/banner-royal-suite.jpg) top center repeat-x;
+    background-size: 100% 543px;
+    padding: 82px 0 130px;
+}
+
+#banner-royal-suit .cbd {
+    float: left;
+    margin-left: 50px;
+}
+
+#banner-live-casino {
+    background: url(../images/casino/banner-live-casino.jpg) top center repeat-x;
+    background-size: 100% 543px;
+    z-index: 4;
+    padding: 147px 0 157px;
+}
+
+#banner-casino-royal {
+    background: url(../images/casino/banner-casino-royal.jpg) top center repeat-x;
+    background-size: 100% 543px;
+    z-index: 3;
+    padding: 132px 0 186px;
+}
+
+#banner-casino-royal .cbd {
+    float: left;
+    margin-left: 370px;
 }
 
 /* popup */

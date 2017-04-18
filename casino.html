@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Casino</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="js/bower_components/aos/dist/aos.css" />
+    <link rel="stylesheet" href="js/bower_components/fancybox/dist/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="header" class="compensate-for-scrollbar"></div>
+    <div id="container" class="page-casino wrap">
+        <!-- <button class="menu-btn">&#9776; Menu</button> -->
+        <div id="platform" class="hasDivider">
+            <div class="wrap-panel">
+                <div class="platform">
+                    <img src="images/casino/prod1.png" alt="">
+                </div>
+                <div class="platform">
+                    <img src="images/casino/prod2.png" alt="">
+                </div>
+                <div class="platform">
+                    <img src="images/casino/prod3.png" alt="">
+                </div>
+                <div class="platform">
+                    <img src="images/casino/prod4.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="banner-casino" class="hasDivider">
+            <div class="wrap-panel">
+                <div class="cbd">
+                    <img src="images/casino/imgtext-casino.png" alt="casino">
+                    <a href="#">play now</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="banner-royal-suite" class="hasDivider">
+            <div class="wrap-panel">
+                <div class="cbd">
+                    <img src="images/casino/imgtext-royal-suite.png" alt="royal suite">
+                    <a href="#">play now</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="banner-live-casino" class="hasDivider">
+            <div class="wrap-panel">
+                <div class="cbd">
+                    <img src="images/casino/imgtext-live-casino.png" alt="royal suite">
+                    <a href="#">play now</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="banner-casino-royal">
+            <div class="wrap-panel">
+                <div class="cbd">
+                    <img src="images/casino/imgtext-casino-royal.png" alt="royal suite">
+                    <a href="#">play now</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <div class="site-overlay"></div>
+    <script data-main="js/config" src="js/lib/require.js"></script>
+    <script>
+        require(['config'], function(){
+            require(['main/casino']);
+        });
+    </script>
+</body>
+</html>
