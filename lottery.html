@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Lottery</title>
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="js/bower_components/aos/dist/aos.css" />
+   <link rel="stylesheet" href="js/bower_components/fancybox/dist/jquery.fancybox.css" />
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div id="header" class="compensate-for-scrollbar"></div>
+   <div id="container" class="page-lottery wrap">
+      <!-- <button class="menu-btn">&#9776; Menu</button> -->
+      <div id="lotto" class="wrap">
+         <div class="wrap-panel">
+            <div class="lottery-content" data-aos="fade-left">
+               <h2>LOTTO</h2>
+               <p>At vero eos et accusamus et iusto odio 
+               dignissimos ducimus qui blanditiis praesentium</p>
+               <a href="#" class="lottery-btn">PLAY NOW</a>
+            </div>
+            <div class="clear"></div>
+         </div>
+      </div>
+      <div id="keno" class="wrap">
+         <div class="wrap-panel">
+            <div class="lottery-content" data-aos="fade-right" data-aos-offset="500">
+               <h2>Keno</h2>
+               <p>Sed ut perspiciatis unde omnis iste natus error
+               sit voluptatem accusantium doloremque laudantium</p>
+               <a href="#" class="lottery-btn">PLAY NOW</a>
+            </div>
+            <div class="clear"></div>
+         </div>
+      </div>
+      <div id="ilotto" class="wrap">
+         <div class="wrap-panel">
+            <div class="ilotto-result">
+               <div data-aos="flip-left" data-aos-offset="300" data-aos-delay="300"><span>1</span></div>
+               <div data-aos="flip-left" data-aos-offset="300" data-aos-delay="600"><span>6</span></div>
+               <div data-aos="flip-left" data-aos-offset="300" data-aos-delay="900"><span>8</span></div>
+               <div data-aos="flip-left" data-aos-offset="300" data-aos-delay="1200"><span>18</span></div>
+               <div data-aos="flip-left" data-aos-offset="300" data-aos-delay="1500"><span>28</span></div>
+            </div>
+            <div class="lottery-content" data-aos="fade-left">
+               <h2>iLOTTO</h2>
+               <p>Nam libero tempore, cum soluta nobis est eligendi 
+               optio cumque nihil impedit quo minus id quod </p>
+               <a href="#" class="lottery-btn">PLAY NOW</a>
+            </div>
+            <div class="clear"></div>
+         </div>
+      </div>
+   </div>
+   <div id="footer"></div>
+   <div class="site-overlay"></div>
+   <script data-main="js/config" src="js/lib/require.js"></script>
+	<script>
+		require(['config'], function(){
+			require(['main/lottery']);
+		});
+	</script>
+</body>
+</html>
