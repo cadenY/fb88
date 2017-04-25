@@ -1408,6 +1408,61 @@ ul.mgnt-form li .btn-submit {
     left: 80px;
 }
 
+/* private message */
+.msg-nav {
+    display: block;
+}
+
+.msg-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.msg-nav ul li {
+    float: left;
+    margin: 0 5px 0 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.msg-nav ul li:first-child {
+    margin-right: 6px;
+}
+
+.msg-nav ul li label {
+    font-family: Arial;
+    font-size: 11px;
+    color: #464646;
+    display: block;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+.msg-nav ul li label input {
+    position: relative;
+    top: 3px;
+    outline: 0 !important;
+}
+
+.msg-nav ul li i {
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+
+.msg-nav ul li i.icon-new-msg {
+    background: url(../images/icon-new-msg.png) bottom center no-repeat;
+}
+
+.msg-nav ul li i.icon-refresh-msg {
+    background: url(../images/icon-refresh-msg.png) bottom center no-repeat;
+}
+
+.msg-nav ul li i.icon-delete-msg {
+    background: url(../images/icon-delete-msg.png) bottom center no-repeat;
+}
+
 /* popup */
 body.login {
    background: none;
