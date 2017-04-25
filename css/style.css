@@ -1019,6 +1019,7 @@ h1.page-title {
 .acct-profile img {
 	display: block;
 	margin: 0;
+	cursor: pointer;
 }
 
 .acct-notification {
@@ -1058,6 +1059,7 @@ h1.page-title {
 
 .acct-balance {
 	float: left;
+	margin-left: 30px;
 }
 
 .acct-balance ul {
@@ -1075,11 +1077,12 @@ h1.page-title {
 }
 
 .acct-balance ul li i {
-	display: block;
-	widows: 15px;
-	height: 15px;
 	background: url(../images/icon-refresh.png) center no-repeat;
-	margin-bottom: 16px;
+	cursor: pointer;
+	display: block;
+	height: 15px;
+	margin: 0 auto 16px;
+	width: 15px;
 }
 
 .acct-balance ul li span {
