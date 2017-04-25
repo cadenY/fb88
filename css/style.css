@@ -1333,6 +1333,7 @@ ul.mgnt-form li .btn-submit {
     outline: 0 !important;
     margin: 28px 0 0 135px;
     display: block;
+    position: relative;
 }
 
 /* address */
@@ -1360,7 +1361,6 @@ ul.mgnt-form li .btn-submit {
 .mgnt-address-form ul.mgnt-form li .btn-submit {
     margin-left: auto;
     margin-right: auto;
-    position: relative;
     left: 40px;
 }
 
@@ -1383,8 +1383,29 @@ ul.mgnt-form li .btn-submit {
 .mgnt-cpw-form ul.mgnt-form li .btn-submit {
     margin-left: auto;
     margin-right: auto;
-    position: relative;
     left: 73px;
+}
+
+/* bank detail */
+.mgnt-bank-detail-form {
+    width: 560px;
+    margin: 0 auto;
+    position: relative;
+    left: -40px;
+}
+
+.mgnt-bank-detail-form  ul.mgnt-form li label {
+    width: 140px;
+}
+
+.mgnt-bank-detail-form  ul.mgnt-form li .txtfield {
+    width: 400px !important;
+}
+
+.mgnt-bank-detail-form  ul.mgnt-form li .btn-submit {
+    margin-left: auto;
+    margin-right: auto;
+    left: 80px;
 }
 
 /* popup */
