@@ -1339,6 +1339,8 @@ ul.mgnt-form li .btn-submit {
 .mgnt-address-form {
     width: 480px;
     margin: 0 auto;
+    position: relative;
+    left: -20px;
 }
 
 .mgnt-address-form ul.mgnt-form li label {
@@ -1360,6 +1362,29 @@ ul.mgnt-form li .btn-submit {
     margin-right: auto;
     position: relative;
     left: 40px;
+}
+
+/* change password */
+.mgnt-cpw-form {
+    width: 560px;
+    margin: 0 auto;
+    position: relative;
+    left: -30px;
+}
+
+.mgnt-cpw-form ul.mgnt-form li label {
+    width: 140px;
+}
+
+.mgnt-cpw-form ul.mgnt-form li .txtfield {
+    width: 400px;
+}
+
+.mgnt-cpw-form ul.mgnt-form li .btn-submit {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: 73px;
 }
 
 /* popup */
