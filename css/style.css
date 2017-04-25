@@ -1332,7 +1332,36 @@ ul.mgnt-form li .btn-submit {
     text-align: center;
     outline: 0 !important;
     margin: 28px 0 0 135px;
+    display: block;
 }
+
+/* address */
+.mgnt-address-form {
+    width: 480px;
+    margin: 0 auto;
+}
+
+.mgnt-address-form ul.mgnt-form li label {
+    width: 60px;
+}
+
+.mgnt-address-form ul.mgnt-form li .txtfield {
+    width: 400px;
+}
+
+.mgnt-address-form ul.mgnt-form li textarea {
+    height: 50px;
+    max-width: 400px;
+    max-height: 50px;
+}
+
+.mgnt-address-form ul.mgnt-form li .btn-submit {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: 40px;
+}
+
 /* popup */
 body.login {
    background: none;
