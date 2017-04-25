@@ -10,7 +10,74 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="no-bg">
-    <h1>Account</h1>
+    <div class="mgnt-account mgnt-wrap">
+        <div class="mgnt-acct-info">
+            <table>
+                <tbody>
+                    <tr>
+                        <td><strong>Email :</strong></td>
+                        <td><span>sample@gmail.com</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Contact :</strong></td>
+                        <td><span>+63 9181686868</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Username :</strong></td>
+                        <td><span>testaccount</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fullname :</strong></td>
+                        <td><span>my full name</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Date of birth :</strong></td>
+                        <td><span>22/11/1971</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gender :</strong></td>
+                        <td><span>Male</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Currency :</strong></td>
+                        <td><span>KRW</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="mgnt-account-form">
+            <form action="none">
+                <ul class="mgnt-form">
+                    <li>
+                        <label class="req">Language</label>
+                        <input type="text" name="language" id="language" placeholder="English" class="req txtfield">
+                    </li>
+                    <li>
+                        <label class="req">Odds</label>
+                        <input type="text" name="odds" id="odds" placeholder="Decimal" class="req txtfield">
+                    </li>
+                    <li>
+                        <label class="req">Security Question</label>
+                        <select name="question" id="question" class="req txtfield">
+                            <option value="">Please select a question</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label class="req">Security Answer</label>
+                        <input type="text" name="answer" id="answer" class="req txtfield">
+                    </li>
+                    <li>
+                        <label class="req">Password</label>
+                        <input type="password" name="password" id="password" class="req txtfield">
+                    </li>
+                    <li>
+                        <button type="submit" class="btn-submit">Submit</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="clear"></div>
+    </div>
     <script src="../js/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../js/bower_components/iframe-resizer/dist/iframeResizer.contentWindow.min.js"></script>
 </body>

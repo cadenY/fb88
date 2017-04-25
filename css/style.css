@@ -1213,6 +1213,126 @@ h1.page-title {
 	width: 100%;
 }
 
+/* manage folder content */
+.mgnt-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 27px;
+}
+
+/* account */
+.mgnt-acct-info {
+    float: left;
+    background: #d9d9d9;
+    font: 11px Arial;
+    color: #464646;
+    width: 275px;
+    height: 218px;
+    padding: 10px 20px 0;
+}
+
+.mgnt-acct-info table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.mgnt-acct-info table td {
+    padding: 8px 0;
+}
+
+.mgnt-acct-info table strong {
+    text-align: right;
+    display: block;
+    padding-right: 10px;
+}
+
+.mgnt-acct-info table span {
+    text-align: left;
+    color: #464646;
+}
+
+.mgnt-account-form {
+    float: left;
+    margin-left: 21px;
+}
+
+ul.mgnt-form {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.mgnt-form li {
+    display: block;
+    margin: 3px 0 0;
+    padding: 0;
+    position: relative;
+}
+
+ul.mgnt-form li:first-child {
+    margin-top: 0;
+}
+
+ul.mgnt-form li:after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+ul.mgnt-form li label {
+    display: block;
+    width: 120px;
+    font: 700 11px Arial;
+    color: #464646;
+    text-align: right;
+    position: relative;
+    float: left;
+    padding-right: 5px;
+    line-height: 27px;
+}
+
+ul.mgnt-form li label.req:after {
+    clear: both;
+    content: '*';
+    position: absolute;
+    font: 700 11px Arial;
+    color: #f00;
+    right: -3px;
+    top: 5px;
+}
+
+ul.mgnt-form li .txtfield {
+    float: left;
+    font: 11px Arial;
+    color: #464646;
+    border: thin solid #c0c0c0;
+    width: 234px;
+    padding: 6px 10px 7px;
+    outline: 0 !important;
+    margin-left: 15px;
+}
+
+ul.mgnt-form li select {
+    padding-left: 6px !important;
+    width: 234px !important;
+}
+
+ul.mgnt-form li .txtfield::-webkit-input-placeholder {  color: #464646; }
+ul.mgnt-form li .txtfield::-moz-placeholder {  color: #464646; }
+ul.mgnt-form li .txtfield:-ms-input-placeholder {  color: #464646; }
+ul.mgnt-form li .txtfield:-moz-placeholder {  color: #464646; }
+
+ul.mgnt-form li .btn-submit {
+    background: #007028;
+    border: none;
+    width: 92px;
+    height: 26px;
+    color: #fff;
+    font: 700 11px Tahoma;
+    text-align: center;
+    outline: 0 !important;
+    margin: 28px 0 0 135px;
+}
 /* popup */
 body.login {
    background: none;
