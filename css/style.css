@@ -13,6 +13,10 @@ body {
 	line-height: 24px;
 }
 
+body.no-bg {
+    background: transparent;
+}
+
 .wrap {
 	margin: 0;
 	min-width: 1215px;
