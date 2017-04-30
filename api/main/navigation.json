@@ -50,7 +50,7 @@
    {
       "icon": "icon-promotions",
       "text": "Promotions",
-      "url" : "#",
+      "url" : "poker.html",
       "class": ["hasUpdate"]
    }
 ]
