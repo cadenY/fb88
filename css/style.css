@@ -578,6 +578,7 @@ ul.submenu-list li:hover span{
 	margin-top: 208px;
 	position: relative;
 	z-index: 2;
+    overflow-x: hidden;
 }
 
 /* page lottery */
