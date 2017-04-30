@@ -2,35 +2,35 @@ requirejs.config({
    packages: [
       {
         name: 'moment',
-        location: 'bower_components/moment',
+        location: 'js/bower_components/moment',
         main: 'moment'
       },
       {
          name: 'moment-timezone',
-         location: 'bower_components/moment-timezone',
+         location: 'js/bower_components/moment-timezone',
          main: 'moment-timezone'
       },
       {
          name: 'aos',
-         location: 'bower_components/aos/dist',
+         location: 'js/bower_components/aos/dist',
          main: 'aos'
       },
       {
          name: 'fancybox',
-         location: 'bower_components/fancybox/dist',
+         location: 'js/bower_components/fancybox/dist',
          main: 'jquery.fancybox'
       },
       {
          name: 'owlCarousel',
-         location: 'bower_components/owl-carousel/dist',
+         location: 'js/bower_components/owl-carousel/dist',
          main: 'owl.carousel.min'
       }
    ],
-   baseUrl: 'js',
+   baseUrl: '.',
    paths: {
-      'jquery': 'lib/jquery.min',
-      'fun': 'method/functions',
-      'init': 'method/init'
+      'jquery': 'js/lib/jquery.min',
+      'fun': 'js/method/functions',
+      'init': 'js/method/init'
    },
    shim: {
       'fun': {
