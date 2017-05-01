@@ -1,4 +1,4 @@
-define(['jquery','fun','init','aos'],function($,fun,init,AOS) {
+$(function(){
 	AOS.init({
 		easing: 'ease-out-back',
 		duration: 1500,

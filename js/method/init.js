@@ -1,5 +1,4 @@
-define(['jquery','moment','moment-timezone','fancybox'],function($,moment,momentTimezone,fancybox) {
-
+$(function(){
 	// $('#header').load('header.html?' + new Date().getTime(), function() {
     //    setDateTime();
     //    initNotice();

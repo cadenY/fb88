@@ -1,4 +1,4 @@
-define(['jquery'],function($) {
+$(function(){
    var doc = document;
 
    // flag
@@ -14,7 +14,7 @@ define(['jquery'],function($) {
       //check if the clicked area is dropDown or not
       if (container.has(e.target).length === 0) {
          $('.flag-wrap').removeClass('active');
-      }  
+      }
    });
 
    //nav mouse hover
@@ -37,5 +37,5 @@ define(['jquery'],function($) {
          $('.nav ul li.hasUpdate').addClass('animate');
       }
    },3000);
-   
+
 });
