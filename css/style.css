@@ -1465,6 +1465,59 @@ ul.mgnt-form li .btn-submit {
     background: url(../images/icon-delete-msg.png) bottom center no-repeat;
 }
 
+/* rebate */
+.rebate-tbl-wrap {
+    background: #efefef;
+    padding: 15px;
+}
+
+.rebate-tbl {
+    font-size: 12px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.rebate-tbl th {
+    color: #5c5c5c;
+    background: #e0e0e0;
+    text-align: left;
+    border-left: thin solid #efefef;
+    padding: 5px 10px;
+}
+
+.rebate-tbl td {
+    padding: 5px 10px;
+    border-left: thin solid #efefef;
+}
+
+.rebate-tbl td.no-border {
+    border: none !important;
+    background: none !important;
+}
+
+.rebate-tbl th:first-child,
+.rebate-tbl td:first-child {
+    border-left: none;
+}
+
+.rebate-tbl .tr-title td {
+    color: #5d5d5d;
+}
+
+.rebate-tbl .tr-content td {
+    color :#5d5d5d;
+}
+
+.rebate-tbl .tr-content:nth-child(odd) td{
+    background: #e8e8e8;
+    border-top: thin solid #efefef;
+    border-bottom: thin solid #efefef;
+}
+
+.rebate-tbl .tr-content:nth-child(even) td{
+    background: #ececec;
+}
+
 /* popup */
 body.login {
    background: none;
