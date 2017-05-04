@@ -1211,6 +1211,8 @@ h1.page-title {
 .acct-mngr-content iframe {
 	display: block;
 	width: 100%;
+
+    transition: 0.3s linear;
 }
 
 /* manage folder content */
@@ -1469,12 +1471,22 @@ ul.mgnt-form li .btn-submit {
 .rebate-tbl-wrap {
     background: #efefef;
     padding: 15px;
+    padding-bottom: 20px;
+}
+
+.rebate-tbl-wrap .btn-green {
+    color: #fff;
+    display: block;
+    background: #007028;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 .rebate-tbl {
     font-size: 12px;
     width: 100%;
     border-collapse: collapse;
+    margin-bottom: 10px;
 }
 
 .rebate-tbl th {
@@ -1504,8 +1516,18 @@ ul.mgnt-form li .btn-submit {
     color: #5d5d5d;
 }
 
+.rebate-tbl .tr-title .btn-green {
+    float: right;
+    padding: 0 25px;
+}
+
 .rebate-tbl .tr-content td {
     color :#5d5d5d;
+    text-align: right;
+}
+
+.rebate-tbl .tr-content td:first-child {
+    text-align: left;
 }
 
 .rebate-tbl .tr-content:nth-child(odd) td{
@@ -1517,6 +1539,33 @@ ul.mgnt-form li .btn-submit {
 .rebate-tbl .tr-content:nth-child(even) td{
     background: #ececec;
 }
+
+.rebate-tbl .tr-content td .claim {
+    display: block;
+    background: #007028;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.rebate-tbl .tr-content td .claim.disabled {
+    background: #585858;
+    color: #f2c6a2;
+}
+
+.rebate-tbl-wrap > p {
+    font-size: 13px;
+    margin: 0;
+    color: #f0994c;
+    line-height: 20px;
+}
+
+.rebate-tbl-wrap .claim-rebate {
+    float: left;
+    padding: 0 30px;
+    margin-top: 10px;
+}
+
 
 /* popup */
 body.login {
