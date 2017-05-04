@@ -1315,6 +1315,8 @@ ul.mgnt-form li .txtfield {
 ul.mgnt-form li select {
     padding-left: 6px !important;
     width: 234px !important;
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 
 ul.mgnt-form li .txtfield::-webkit-input-placeholder {  color: #464646; }
