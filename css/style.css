@@ -1566,6 +1566,119 @@ ul.mgnt-form li .btn-submit {
     margin-top: 10px;
 }
 
+/* deposit */
+.mgnt-deposit-wrap {
+    width: 1162px;
+    margin: 20px auto 0;
+    background: #ebebeb;
+}
+
+.mgnt-deposit-nav  {
+    background: #808080;
+    float: left;
+    width: 180px;
+}
+
+.mgnt-deposit-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mgnt-deposit-nav li {
+    border-top: thin solid #ebebeb;
+    display: block;
+    margin: 0;
+    padding: 0;
+    transition: 0.2s linear;
+}
+
+.mgnt-deposit-nav li:first-child {
+    border-top: none;
+}
+
+.mgnt-deposit-nav li:hover,
+.mgnt-deposit-nav li.active {
+    background: #e6bd1f;
+}
+
+.mgnt-deposit-nav li a {
+    display: block;
+    font: 700 12px Arial;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.2s linear;
+}
+
+.central-wallet {
+    float: left;
+    width: 84.51%;
+    min-height: 269px;
+}
+
+ul.wallet-list {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: thin solid #b7b7b7;
+}
+
+ul.wallet-list:first-child {
+    border-top: none;
+}
+
+ul.wallet-list:after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+ul.wallet-list li {
+    padding: 26px 0;
+    float: left;
+    text-align: center;
+    border-left: thin solid #b7b7b7;
+    height: 89px;
+    max-height: 89px;
+}
+
+ul.wallet-list li:first-child {
+    border-left: none;
+}
+
+ul.wallet-list li label {
+    display: block;
+    font-size: 11px;
+    color: #626161;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
+ul.wallet-list li span {
+    display: block;
+    font-size: 18px;
+    color: #038842;
+    font-weight: 700;
+}
+
+ul.wallet-list li span img {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 4px;
+}
+
+ul.wallet-list.main-wallet li {
+    width: 50%;
+}
+
+ul.wallet-list.secondary-wallet li {
+    width: 20%;
+}
 
 /* popup */
 body.login {
