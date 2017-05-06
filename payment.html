@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Manage</title>
+    <title>Payment</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="js/bower_components/fancybox/dist/jquery.fancybox.css" />
     <link rel="stylesheet" href="css/style.css">
@@ -64,17 +64,18 @@
                     </ul>
                 </div>
                 <div class="acct-mngr-content">
-                    <iframe id="frame" src="" frameborder="0" scrolling="no"></iframe>
+                    <iframe id="frame" class="frame" src="" frameborder="0" scrolling="no"></iframe>
                 </div>
                 <div class="clear"></div>
             </div>
+            <div class="clear"></div>
 
             <div class="mgnt-deposit-wrap">
                 <div class="mgnt-deposit-nav">
                     <ul>
                         <li class="active"><a href="javascript:;" data-href="transfer">Transfer</a></li>
                         <li><a href="javascript:;" data-href="deposit">Deposit</a></li>
-                        <li><a href="javascript:;" data-href="withdraw">Withdraw</a></li>
+                        <li><a href="javascript:;" data-href="withdraw">Withdrawal</a></li>
                         <li><a href="javascript:;" data-href="freebet">Freebet</a></li>
                         <li><a href="javascript:;" data-href="history">History</a></li>
                         <li><a href="javascript:;" data-href="upload">Upload</a></li>
@@ -145,6 +146,10 @@
                     </ul>
                 </div>
                 <div class="clear"></div>
+            </div>
+
+            <div class="mgnt-deposit-content">
+                <iframe id="depoFrame" class="frame" src="" frameborder="0" scrolling="no"></iframe>
             </div>
         </div>
     </div>
