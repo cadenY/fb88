@@ -280,6 +280,8 @@ input[type=number]::-webkit-outer-spin-button {
 .header-btn a.login:hover { box-shadow: 0 0 10px #fff; }
 .header-btn a.join:hover { box-shadow: 0 0 10px #ffbf00; }
 
+
+
 .main-header {
 	border-top: 1px solid #fff;
 	position: relative;
@@ -1949,6 +1951,101 @@ table.form #imgCaptcha {
 .form-section .fee table.form tr { border: thin solid #464646; }
 .form-section .fee table.form tr td { border-left: thin solid #464646; }
 .form-section .fee table.form tr td:first-child { border-left: none; }
+
+/* promotion */
+.page-promo {
+    background: #fff;
+    padding-top: 65px;
+}
+
+.promo-nav {
+    background: #e3e3e3;
+    margin-bottom: 32px;
+}
+
+ul.p-nav {
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.p-nav li {
+    border-left: thin solid #fff;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul.p-nav li:first-child {
+    border-left: none;
+}
+
+ul.p-nav li a {
+    display: block;
+    font: 14px Arial;
+    color: #333;
+    padding: 0 30px;
+    line-height: 46px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s linear;
+}
+
+ul.p-nav li.active a,
+ul.p-nav li:hover a {
+    background: #2b9650;
+    color : #fff;
+}
+
+input.p-nav-txtfield {
+    float: right;
+    width: 205px;
+    font-size: 13px;
+    font-family: Tahoma;
+    color: #333;
+    outline: 0 !important;
+    padding: 4px 8px;
+    margin: 10px 13px 0 0;
+}
+
+.promo-grid {}
+
+.grid-item {
+    background: #0b6435;
+    padding: 10px;
+    width: 33%;
+}
+
+.grid-item .promo-thumb {
+    overflow: hidden;
+}
+
+.grid-item .promo-thumb a {
+    display: inline;
+}
+
+.grid-item .promo-thumb img {
+    display: block;
+    margin: 0;
+    max-width: 100%;
+}
+
+.grid-item .promo-desc {
+    color: #fff;
+}
+
+.grid-item .promo-desc h4 {
+    font-size: 13px;
+    margin: 15px 0;
+}
+
+.grid-item .promo-desc p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 17px;
+}
 
 /* popup */
 body.login {
