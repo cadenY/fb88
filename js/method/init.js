@@ -1,11 +1,26 @@
 $(function(){
-	// $('#header').load('header.html?' + new Date().getTime(), function() {
-    //    setDateTime();
-    //    initNotice();
-    //    initLogin();
-	// });
 
-	$('#footer').load('footer.html?' + new Date().getTime());
+    var url = location.href, urlPrefix = '', inFolder = false;
+        pageArray = ['payment','promotion'];
+
+    for(var x=0; x < pageArray.length; x++){
+        if(url.indexOf(pageArray[x]) != -1) {
+            inFolder = true;
+            break;
+        }
+    }
+    
+    if(inFolder ) {
+        urlPrefix = '../'
+    } else {
+        urlPrefix = '';
+    }
+
+	$('#footer').load(urlPrefix+'footer.html?' + new Date().getTime(), function() {
+        $('#footer img').each(function(i,e){
+            $(this).attr('src',urlPrefix+$(this).attr('src'));
+        });
+    });
 
     getHeader();
 
@@ -32,15 +47,15 @@ $(function(){
                         +'<div class="notice-wrap"> <ul></ul> </div>'
                     +'</div>'
                     +'<div class="flag-wrap">'
-                        +'<span class="active-flag"><img src="images/flag-en.png" alt=""></span>'
+                        +'<span class="active-flag"><img src="'+urlPrefix+'images/flag-en.png" alt=""></span>'
                         +'<ul>'
-                           +'<li><a href="#"><img src="images/flag-en.png" alt=""></a></li>'
-                           +'<li><a href="#"><img src="images/flag-cn.png" alt=""></a></li>'
-                           +'<li><a href="#"><img src="images/flag-vn.png" alt=""></a></li>'
+                           +'<li><a href="#"><img src="'+urlPrefix+'images/flag-en.png" alt=""></a></li>'
+                           +'<li><a href="#"><img src="'+urlPrefix+'images/flag-cn.png" alt=""></a></li>'
+                           +'<li><a href="#"><img src="'+urlPrefix+'images/flag-vn.png" alt=""></a></li>'
                         +'</ul>'
                     +'</div>'
                     +'<div class="header-btn">'
-                       +'<a href="javascript:;" data-fancybox data-src="login.html" class="login">LOGIN</a>'
+                       +'<a href="javascript:;" data-fancybox data-src="'+urlPrefix+'login.html" class="login">LOGIN</a>'
                        +'<a href="#" class="join">JOIN NOW</a>'
                     +'</div>'
                     +'<div class="clear"></div>'
@@ -49,16 +64,17 @@ $(function(){
         var mainHeader = '<div class="main-header">'
                 +'<div class="wrap-panel main-wrap">'
                     +'<div class="logo">'
-                       +'<a href="#"><img src="images/logo.png" alt="Fb88.com"></a>'
+                       +'<a href="#"><img src="'+urlPrefix+'images/logo.png" alt="Fb88.com"></a>'
                     +'</div>'
                     +'<div class="nav"></div>'
                 +'</div>'
             +'</div';
 
         $.ajax({
-            url: 'api/main/navigation.json',
+            url: urlPrefix+'api/main/navigation.json',
             dataType: 'json'
         }).done(function(r){
+
             var str = '';
             $.each(r,function(i,e){
                 var listClass = '';
@@ -67,9 +83,9 @@ $(function(){
                 }
 
                 str += '<li class="'+(listClass != '' ? listClass : '')+'">'
-                      +'<a href="'+e.url+'">'
+                      +'<a href="'+urlPrefix+''+e.url+'">'
                           +'<div class="img-wrap">'
-                             +'<img src="images/'+e.icon+'.png" alt="">'
+                             +'<img src="'+urlPrefix+'images/'+e.icon+'.png" alt="">'
                           +'</div>'
                           +'<span>'+e.text+'</span>'
                        +'</a>'
@@ -104,7 +120,7 @@ $(function(){
         var ulWidth = 0, posX = 611;
 
         $.ajax({
-            url: 'api/main/announcement.json'
+            url: urlPrefix+'api/main/announcement.json'
         }).done(function(r){
             var str = '';
             $.each(r,function(i,e){

@@ -42,10 +42,10 @@ $(function(){
     function setIframeSrc(url,ref) {
         switch(ref){
             case 0:
-                $('#frame').attr('src','manage/'+url+'.html');
+                $('#frame').attr('src','../manage/'+url+'.html');
                 break;
             default:
-                $('#depoFrame').attr('src','deposit/'+url+'.html');
+                $('#depoFrame').attr('src',url+'.html');
         }
     }
 });
