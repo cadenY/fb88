@@ -1081,6 +1081,7 @@ ul.mgnt-form li .btn-submit {
     width: 1162px;
     margin: 20px auto 0;
     background: #ebebeb;
+    border-bottom: thin solid #b7b7b7;
 }
 
 .mgnt-deposit-nav  {
@@ -1127,6 +1128,9 @@ ul.mgnt-form li .btn-submit {
     float: left;
     width: 84.51%;
     min-height: 269px;
+    border: thin solid #b7b7b7;
+    border-left: none;
+    border-bottom: none;
 }
 
 ul.wallet-list {
@@ -1148,7 +1152,7 @@ ul.wallet-list:after {
 }
 
 ul.wallet-list li {
-    padding: 0px 0;
+    padding: 5px 0;
     float: left;
     text-align: center;
     border-left: thin solid #b7b7b7;
@@ -1162,10 +1166,10 @@ ul.wallet-list li:first-child {
 
 ul.wallet-list li label {
     display: block;
-    font-size: 12px;
+    font-size: 11px;
     color: #626161;
     line-height: normal;
-    margin-bottom: 5px;
+    margin-bottom: 0;
 }
 
 ul.wallet-list li span {
@@ -1179,12 +1183,12 @@ ul.wallet-list li span img {
     display: block;
     margin: 0 auto;
     position: relative;
-    top: 4px;
+    top: 1px;
 }
 
 ul.wallet-list.main-wallet li {
     width: 100%;
-    border-left: thin solid     7b7b7;
+    border-left: thin solid #7b7b7;
     height: 88px !important;
     padding: 23px 0;
     max-height: 100% !important;
