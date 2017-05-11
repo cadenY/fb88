@@ -1382,6 +1382,7 @@ table.form #imgCaptcha {
     border-left: thin solid #ccc;
     padding-left: 30px;
     padding-right: 30px;
+    min-height: 130px;
 }
 
 .form-section h3 {
