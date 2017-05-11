@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Casino</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <!-- <div id="header" class="compensate-for-scrollbar"></div> -->
+   
+   <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+   <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+   <link rel="stylesheet" href="css/header-style.css" type="text/css" />
+   <link rel="stylesheet" href="css/animate.css" type="text/css" />
+   <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+   <link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css" />
+   <link rel="stylesheet" href="css/lightslider.css" type="text/css" />
+   <style type="text/css">
+      
+      .featuredTxtBox {
+         display: none;
+      }
+   </style>
+   
+      <!-- Header
+      ============================================= -->
+      <header id="header">
+         <div class="topNav" id="topnavID">
+      <div class="topNavFixed">
+         <div class="container clearfix">
+            <div class="nomargin">
+               
+               <span class="bell">
+                  <img src="images/casino/bell-icon.png">
+                  <span class="newImportant"><img src="images/casino/new.png"></span>
+               </span> <!-- end of bell -->
+               <div class="time-date" id="time-part"></div>
+               <div class="marquee">
+                  <marquee behavior="scroll" direction="left" scrollamount="4">Demo for text, put content here</marquee>
+
+               </div>
+               <div class="flags" id="cirlceFlags">
+            
+                       <ul>
+                        <li>
+                           <a><img src="images/casino/en.png" alt=""></a>
+                           <ul id="childFlag">
+                              <li><a href="#">简体中文 <img src="images/casino/ch.png" alt=""></a></li>
+                              <li><a href="#">Vietnam<img src="images/casino/vn.png" alt=""></a>   </li>
+                           </ul>
+                        </li>
+                       </ul>
+
+               </div> <!-- end of flags-->
+
+               <div class="flags" id="cirleColors">
+
+                  <ul >
+                        <li>
+                           <span class="colorChange black"></span>
+                           <ul id="childColor">
+                              <li><a href="index-light.html"> White <span class="circleBox white"></span></a></li>
+                           </ul>
+                        </li>
+                       </ul>  
+
+               </div> <!-- end of flags-->
+
+
+               <div class="flags">
+                  <div class="login">LOGIN <img src="images/casino/downArrow.png"></div>
+                  <div class="loginBody">
+                     <div class="col_half nomargin rightBorder "><img src="images/casino/loginBanner.jpg" alt="Login Banner" /></div>
+                     <div class="col_half col_last nomargin padLeft">
+                        
+                        <form action="" method="post">
+                           <table width="100%">
+                              <tr>
+                                 <td><input type="text" name="user" placeholder="Username"></td>
+                              </tr>
+                              <tr>
+                                 <td><input type="password" name="user" placeholder="Password"></td>
+                              </tr>
+                              <tr>
+                                 <td><input type="button" name="" value="Sign In" class="submit"></td>
+                              </tr>
+                              <tr>
+                                 <td align="center"><div class="forcheckBox"><label>Forgot Password</label></div></td>
+                              </tr>
+                           </table>
+                        </form>
+
+                     </div>
+                  </div>
+               </div>   <!-- end of flags-->
+
+
+
+               <div class="flags">
+                  <a href="#" class="joinNow" data-toggle="modal" data-target="#joinNowModal">JOIN NOW</a>
+               </div> <!-- end of flag-->
+
+               <div class="modal fade joinNowModal" id="joinNowModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                     <div class="modal-body">
+                        <div class="modal-content">
+                           <div class="modal-body clearfix">
+                              <div class="modalLogo"><img src="images/logo-fb88-b.png" width="30%"></div>
+                              <h4 class="tcenter tTitle">Create Account</h4>
+                              <div class="col_two_fifth login-banner-left nobottommargin">
+                                 <img src="images/casino/loginBanner.jpg" alt="Login Banner" />
+                                 <h5 class="nomargin modLoginBannerTxt">Member Benefits</h5>
+                                 <p class="modLeftP tjustify">
+                                    Earn freebets by simply validating your Account Safety with accurate information **<br><br>
+                                    Speedy deposit and withdrawal with multiple depositing options<br><br>
+                                    Enjoy first deposit bonus of up to USD 200
+                                    Easy promotion to VIP level with added privileges and Rewards Points<br><br>
+                                    Multiple product platforms with better odds and fuller gameplay experience<br><br>
+                                    ** Terms & Conditions applies
+                                 </p>
+                              </div>
+                              <div class="col_three_fifth col_last nobottommargin">
+                                 
+                                 <form action="" method="post">
+                                    <div class="tablesform">
+                                       <span class="modTxt">Fullname<span class="important colorRed">*</span></span>
+                                       <span class="modInput"><input type="text" name="name" ></span>
+                                    </div>
+
+                                    <div class="tablesform">
+                                       <span class="modTxt">Date of Birth<span class="important colorRed">*</span></span>
+                                       <span class="modInput"><input type="text" name="dob" ></span>
+                                    </div>
+
+                                    <div class="tablesform">
+                                       <span class="modTxt">Email<span class="important colorRed">*</span></span>
+                                       <span class="modInput"><input type="text" name="email"></span>
+                                    </div>
+                                    <div class="tablesform">
+                                       <span class="modTxt">Phone<span class="important colorRed">*</span></span>
+                                       <span class="modInput">+
+                                             <select class="">
+                                                <option value=""></option>
+                                                <option value="">63</option>  
+                                             </select> &nbsp;<input type="text" name="email" class="custInput"></span>
+                                    </div>
+
+                                    <div class="tablesform">
+                                       <span class="modTxt">Currency<span class="important colorRed">*</span></span>
+                                       <span class="modInput longselect">
+                                          <select name="currency">
+                                             <option value=""></option>
+                                             <option value="USD">USD</option>
+                                             <option value="VND">VND</option>
+                                             <option value="RNB">RNB</option>
+                                          </select>
+                                       </span>
+                                    </div>
+
+
+                                    <div class="tablesform">
+                                       <span class="modTxt">Username<span class="important colorRed">*</span></span>
+                                       <span class="modInput"><input type="text" name="user" ></span>
+                                    </div>
+                                    <div class="tablesform">
+                                       <span class="modTxt">Password<span class="important colorRed">*</span></span>
+                                       <span class="modInput"><input type="text" name="pass" ></span>
+                                    </div>
+                                    <div class="tablesform">
+                                       <span class="modTxt">Confirm Password<span class="important colorRed">*</span></span>
+                                       <span class="modInput"><input type="text" name="cpass" ></span>
+                                    </div>
+
+                                    <div class="tablesform">
+                                       <span class="modTxt">Affiliate ID</span>
+                                       <span class="modInput"><input type="text" name="affId" ></span>
+                                    </div>
+
+                                    <div class="tablesform">
+                                       <p class="nomargin smalltxt"> 
+                                         
+By clicking the JOIN NOW button, I hereby acknowledge that I am above 18 years old and have read and accepted your terms & conditions. See the Terms & Conditions here.
+" See the Terms & Conditions here" will be have hyperlink (to our erms & Conditions).
+                                       </p>
+                                       <input type="button" name="submit" value="JOIN NOW" class="btnJoinNow">
+                                    </div>
+
+                                 </form>
+
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div><!-- joinNowModal -->
+
+
+
+            </div>
+
+         </div>
+      </div>
+   </div>
+         <div id="header-wrap">
+
+            <div class="container clearfix">
+
+               <div id="primary-menu-trigger">&#x2261;</div>
+
+               <!-- Logo
+               ============================================= -->
+               <div id="logo">
+                  <a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo-fb88.png" alt="Canvas Logo"></a>
+                  <!-- <a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Canvas Logo"></a> -->
+               </div><!-- #logo end -->
+
+               <!-- Primary Navigation
+               ============================================= -->
+               <nav id="primary-menu" class="style-1">
+
+                  <ul class="norightborder norightpadding norightmargin primaryMenuHere">
+                     <li class="current">
+                        <a href="#">
+                           <div class="tcenter">
+                              <img src="images/casino/navicon/home.png"/><div class="menuLabel">Home</div>
+                           </div>
+                        </a>
+                     </li>
+
+                     <li>
+                        <a href="#">
+                           <div class="tcenter">
+                              <img src="images/casino/navicon/mobile.png"/>
+                              <div class="menuLabel">Mobile</div>
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <div class="tcenter">
+                              <div class="parentImportant">
+                                 <img src="images/casino/navicon/sports.png"/>
+                                 <div class="childImportant">!</div>
+                              </div>
+                              <div class="menuLabel">Sports</div>
+                           </div>
+                        </a>
+                     </li> 
+                     
+
+
+                     <li>
+                        <a href="#">
+                           <div class="tcenter">
+                              <img src="images/casino/navicon/e-sports.png"/>
+                              <div class="menuLabel">E-Sports</div>
+                           </div>
+                        </a>
+                     </li>
+
+
+
+                     <li class="mega-menu">
+                        <a href="casino.html">
+                           <div class="tcenter">
+                              <img src="images/casino/navicon/livecasino.png"/>
+                              <div class="menuLabel">Live Casino</div>
+                           </div>
+                        </a>
+
+                        <div class="mega-menu-content style-2 clearfix">
+                           <ul class="mega-menu-column col-md-12">
+                              <li>
+                                 <article class="col_one_fifth nobottommargin nomargin custwidth">
+                                    <div class="" style="text-align: center;">
+                                       <table class="nomargin">
+                                          <tr>
+                                             <td valign="top"><img src="images/casino/qrbig.jpg" alt="qrcode" width="99" height="99" /></td>
+                                             <td width="50%" style="font-size: 11px; color: #fff" valign="middle" align="left">
+                                                <h4 class="nomargin">Scan QR Code</h4>
+                                                <p class="nomargin">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas.
+                                                </p>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </div>
+                                    
+                                 </article>
+                                 <article class="col_one_fifth nobottommargin nomargin">
+                                    <div class="" style="text-align: center;">
+                                       <img src="images/casino/clubSA.png" >
+                                    </div>
+                                    
+                                    <div>
+                                       <a href="#" class="btnplaynow">Play Now</a>
+                                    </div>
+                                 </article>
+                                 <article class="col_one_fifth nobottommargin nomargin">
+                                    <div class="" style="text-align: center;">
+                                       <img src="images/casino/casinoclub.png" >
+                                    </div>
+                                    
+                                    <div>
+                                       <a href="#" class="btnplaynow">Play Now</a>
+                                    </div>
+                                 </article>
+                                 <article class="col_one_fifth nobottommargin nomargin">
+                                    <div class="" style="text-align: center;">
+                                       <img src="images/casino/casinoclub.png" >
+                                    </div>
+                                    
+                                    <div>
+                                       <a href="#" class="btnplaynow">Play Now</a>
+                                    </div>
+                                 </article>
+                                 <article class="col_one_fifth col_last nobottommargin nomargin">
+                                    <div class="" style="text-align: center;">
+                                       <img src="images/casino/casino-club.png" >
+                                    </div>
+                                    
+                                    <div>
+                                       <a href="#" class="btnplaynow">Play Now</a>
+                                    </div>
+                                 </article>
+
+
+                              </li>
+                           
+                           </ul>
+                        </div>
+                     </li> 
+
+
+                     
+
+
+
+                     <li>
+                        <a href="#">
+                           <div class="tcenter">
+                              <div class="parentImportant">
+                                 <img src="images/casino/navicon/slots.png"/>
+                                 <div class="childImportant">!</div>
+                              </div>
+                              <div class="menuLabel">Slots</div>
+                           </div>
+                        </a>
+                     </li>
+
+                     <li>
+                        <a href="lottery.html">
+                           <div class="tcenter">
+                              <div class="parentImportant">
+                                 <img src="images/casino/navicon/lottery.png"/>
+                              </div>
+                              <div class="menuLabel">Lottery</div>
+                           </div>
+                        </a>
+                     </li>
+
+                     <li>
+                        <a href="poker.html">
+                           <div class="tcenter">
+                              <div class="parentImportant">
+                                 <img src="images/casino/navicon/p2p.png"/>
+                              </div>   
+                              <div class="menuLabel">P2P</div>
+                           </div>
+                        </a>
+                     </li>
+
+                     <li class="mega-menucust"><a href="#"><div class="tcenter ">
+                        <div class="parentImportant">
+                           <img src="images/casino/navicon/promotions.png"/>
+                           <div class="childImportant">!</div>
+                        </div>   
+                        <div class="menuLabel">Promotions</div>
+                     </div></a>
+                        
+                     </li>
+                  </ul>
+
+               </nav><!-- #primary-menu end -->
+
+            </div>
+
+         </div>
+
+      </header><!-- #header end -->
+
+      <div class="clear"></div>
+
+      <!-- Content
+      ============================================= -->
+
+   <div id="casSlide">
+      <ul class="bxsliderTop">
+        <li>
+            <img src="images/casino/slider/playtech_slot_img1.jpg" />
+            <div class="casSlideText">
+               <div class="casSlideChildOne">
+                  Experience our
+               </div>
+               <div class="casSlideChildTwo">
+                  finest Games!
+               </div>
+               <div class="casSlideChildThree">
+                  Uniquely handpicked selection of 
+                  <strong>interactive games</strong> just for you!
+               </div>
+               <div class="casSlideChildFour">
+                  <a href="#">PLAY NOW!</a>
+               </div>
+            </div>
+        </li>
+        <li>
+            <img src="images/casino/slider/playtech_slot_img1.jpg" />
+            <div class="casSlideText">
+               <div class="casSlideChildOne">
+                  Experience our
+               </div>
+               <div class="casSlideChildTwo">
+                  finest Games!
+               </div>
+               <div class="casSlideChildThree">
+                  Uniquely handpicked selection of 
+                  <strong>interactive games</strong> just for you!
+               </div>
+               <div class="casSlideChildFour">
+                  <a href="#">PLAY NOW!</a>
+               </div>
+            </div>
+        </li>
+        <!-- <li><img src="images/casino/slider/playtech_slot_img1.jpg" /></li>
+        <li><img src="images/casino/slider/playtech_slot_img1.jpg" /></li> -->
+      </ul>
+   </div>
+
+
+
+
+
+   <div id="progressive" class="wrap-container">
+      <div class="progressive_jackpot wrap-container clearfix">
+         <div class="progleft">
+            <span class="progTextOne">Progressive</span>
+            <span class="progTextTwo">JACKPOT</span>
+         </div>
+         <div class="progright">
+            <span class="jackpots-right" id="jackpots-right" data-current="103312.99000000536">$45,888,528.23</span>
+         </div>
+
+      </div>
+   </div>
+
+   <div id="featuredGames" class="wrap-container clearfix">
+      <div class="topFeaturedTitle">TOP FEATURED GAMES</div>      
+      <div class="featuredBox">
+            <div class="item">            
+               <div class="clearfix" style="max-width:404px;">
+                  <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                     <li data-thumb="images/casino/slider/thumb/img1.jpg" class="txtparent" data-ref="1">
+                        <div class="imgimg">
+                           <img src="images/casino/slider/img1.jpg" />
+                        </div>
+                     </li>
+                     <li data-thumb="images/casino/slider/thumb/img2.jpg" data-ref="2"> 
+                        <img src="images/casino/slider/img2.jpg" />
+                     </li>
+                     <li data-thumb="images/casino/slider/thumb/img3.jpg" data-ref="3"> 
+                        <img src="images/casino/slider/img3.jpg" />
+                     </li>
+                  </ul>
+               </div>
+            </div>
+
+
+
+
+         <div class="featuredTxtBox2-container">
+            <div class="featuredTxtBox" id="ftbx1">
+               <h2>Dragon Dance</h2>
+               <div class="">
+                  Dragon Dance is a slot with 243 different ways to win. Scattering 3 or more of the scatter symbol on the reels will also lead to 15 free spins. During these any wins will be tripled! What’s more they can be retriggered while the feature is active potentially leading to even more free spins!
+               </div>
+
+            </div>
+            <div class="featuredTxtBox" id="ftbx2">
+               <h2>Ninja Magic</h2>
+               <div class="">
+                  Dragon Dance is a slot with 243 different ways to win. Scattering 3 or more of the scatter symbol on the reels will also lead to 15 free spins. During these any wins will be tripled! What’s more they can be retriggered while the feature is active potentially leading to even more free spins!
+               </div>
+            </div>
+            <div class="featuredTxtBox" id="ftbx3">
+               <h2>Chinese Kitchen</h2>
+               <div class="">
+                  Dragon Dance is a slot with 243 different ways to win. Scattering 3 or more of the scatter symbol on the reels will also lead to 15 free spins. During these any wins will be tripled! What’s more they can be retriggered while the feature is active potentially leading to even more free spins!
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div id="tabGames" class="wrap-container clears">
+      <ul class="tabs clears">
+         <li class="tab-link current" data-tab="allGames" >ALL GAMES</li>
+         <li class="tab-link" data-tab="addTo">ADD TO FAVOURITES</li>
+         <li class="tab-link" data-tab="jackpot">JACKPOT</li>
+         <li class="tab-link" data-tab="3dSlots">3D SLOTS</li>
+         <li class="tab-link" data-tab="tableGames">TABLEGAMES</li>
+         <li class="tab-link" data-tab="social">SOCIAL</li>
+         <li class="tab-link" data-tab="other">OTHER</li>
+         <li class="tab-link srch" data-tab="">
+            <div class="">
+               <form action="" method="">
+                  <input type="search" name="" placeholder="search" class="searchTab" />
+               </form>   
+            </div>
+         </li>
+      </ul>
+
+      <div id="allGames" class="tab-content current clears">
+         
+         
+
+
+
+      </div>
+      <div id="addTo" class="tab-content">
+         2
+      </div>
+      <div id="jackpot" class="tab-content">
+         3
+      </div>
+      <div id="3dSlots" class="tab-content">
+         4
+      </div>
+      <div id="tableGames" class="tab-content">
+         5
+      </div>
+      <div id="social" class="tab-content">
+         6
+      </div>
+      <div id="other" class="tab-content">
+        7
+      </div>
+
+
+
+   </div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+   <!-- TOP FEAUTED GAMES  -->
+
+   <!-- External JavaScripts
+   ============================================= -->
+   <script type="text/javascript" src="js/jquery.js"></script>
+   <script type="text/javascript" src="js/plugins.js"></script>
+   <!-- Footer Scripts
+   ============================================= -->
+   
+   
+   <script type="text/javascript" src="js/functions-header.js"></script>
+
+   <script type="text/javascript" src="js/custom-header.js"></script>
+   <script type="text/javascript" src="js/lightslider.js"></script>
+   <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+	<script>
+
+      function format2(n, currency) {
+         return currency + " " + n.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,");
+      }
+      function countUp(start,end,increment,index) {
+         var counter = jQuery("#"+index);
+         counter.attr("data-current",start);
+         counter.html(format2( start, "$" ));   
+         var interval = setInterval( function() {
+            var current = parseFloat(counter.attr("data-current"));
+              
+              if ( (current+increment) > end ) {
+                  clearInterval(interval);
+                  return;
+              }
+              var newValue = current + increment;
+              counter.attr("data-current",newValue);
+              counter.html( format2( newValue, "$" ) );
+              
+          },1000);    
+      }
+
+      
+      var jq = jQuery.noConflict();
+      jq(document).ready(function(e){
+         //progress
+         countUp(99897985,644625528.52,1.06,'jackpots-right');
+         
+         jq('.bxsliderTop').bxSlider({
+            mode: 'horizontal',
+            moveSlides: 1,
+            slideMargin: 0,
+            infiniteLoop: true,
+            slideWidth: 5000,
+            minSlides: 1,
+            maxSlides: 1,
+            speed: 1000,
+            pause: 10000,
+            auto: true,
+            touchEnabled: true,
+            pager: false,
+            responsive: true
+         });
+
+         jq('#image-gallery').lightSlider({
+              gallery:true,
+              item:1,
+              thumbItem:3,
+              slideMargin: 0,
+              autoWidth: true,
+              verticalHeight:82,
+              currentPagerPosition: 'middle',
+              speed:1000,
+              pause: 5000,
+              auto:true,
+              loop:true,
+              mode: 'fade',
+
+              onSliderLoad: function() {
+                  jq('#image-gallery').removeClass('cS-hidden');  
+              },
+              onAfterSlide: function(e) {
+                  var ref = jq(e).find('.active').attr('data-ref');
+                  jq('.featuredTxtBox').hide();
+                  jq('#ftbx'+ref).fadeIn();
+              },
+              onBeforeStart: function(e) {
+                  //var ref = jq(e).find('.active').attr('data-ref');
+                  //jq('.featuredTxtBox').hide();
+                  jq('#ftbx1').show();
+              }
+          }); 
+
+         
+
+      });
+	</script>
+</body>
+</html>

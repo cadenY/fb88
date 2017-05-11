@@ -7,10 +7,13 @@ $(function() {
         $('.platform-content').delay(100).fadeIn(300);
     });
 
-    $('.pc-close').click(function() {
-        $('.platform-content').fadeOut(300,function() {
-            $('.single-content').removeClass('active');
-        });
+    $('.platform-content').click(function(e){
+        console.log(typeof $(e.target).attr('class'))
+        if(typeof $(e.target).attr('class') != 'undefined') {
+            $('.platform-content').fadeOut(300,function() {
+                $('.single-content').removeClass('active');
+            });
+        }
     });
 
 });

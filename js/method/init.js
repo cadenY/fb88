@@ -16,13 +16,13 @@ $(function(){
         urlPrefix = '';
     }
 
-	$('#footer').load(urlPrefix+'footer.html?' + new Date().getTime(), function() {
+	 $('#footer').load(urlPrefix+'footer.html?' + new Date().getTime(), function() {
         $('#footer img').each(function(i,e){
             $(this).attr('src',urlPrefix+$(this).attr('src'));
         });
     });
 
-    getHeader();
+    // getHeader();
 
 	// on scroll
 	setFixedheader();
