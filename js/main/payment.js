@@ -1,11 +1,15 @@
 $(function(){
     // on page load
-    $('iframe').iFrameResize({
+    $('#frame').iFrameResize({
         minHeight : 0
     });
 
+    $('#depoFrame').iFrameResize({
+        minHeight : 250
+    });
+
     setIframeSrc('account',0);
-    setIframeSrc('transfer',1);
+    setIframeSrc('deposit',1);
 
     // show hide account setting panel
     $('.acct-profile img').click(function(e){

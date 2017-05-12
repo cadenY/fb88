@@ -7,6 +7,7 @@
     <title>Fast Deposit</title>
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../js/bower_components/fancybox/dist/jquery.fancybox.css" />
+    <link rel="stylesheet" href="../css/jquery.datetimepicker.css"/>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="no-bg">
@@ -72,7 +73,7 @@
                             <td>Deposit Amount</td>
                             <td class="red">*</td>
                             <td>
-                                <input type="text" name="amount" id="" class="txtfield">
+                                <input type="text" name="amount" id="amount" class="txtfield">
                             </td>
                         </tr>
                         <tr>
@@ -96,7 +97,7 @@
                             <td>Deposit Time and Date</td>
                             <td class="red">*</td>
                             <td>
-                                <input type="text" name="" id="fd-date" class="txtfield" readonly="readonly" value="05/17/2017">
+                                <input type="text" name="" id="fd-date" class="txtfield">
                                 <select class="txtfield" name="hr" id="hr">
                                     <option value="">Hour</option>
                                 </select>
@@ -116,7 +117,6 @@
                                     <option value="">Chuyển Khoản Bằng ATM</option>
                                     <option value="">Mobile Banking</option>
                                     <option value="">Gửi Tiền Mặt Bằng ATM</option>
-
                                 </select>
                             </td>
                         </tr>
@@ -124,22 +124,28 @@
                             <td>Your Bank</td>
                             <td class="red">*</td>
                             <td>
-                                <select class="txtfield" name="bank">
+                                <select class="txtfield" name="bank" id="bank">
                                     <option value="">-- Select --</option>
-                                    <option value="">--select--</option>
-                            <option value="">VCB</option>
-                            <option value="">ACB</option>
-                            <option value="">Đông Á</option>
-                            <option value="">Sacombank</option>
-                            <option value="">Agribank</option>
-                            <option value="">BIDV</option>
-                            <option value="">Techcombank</option>
-                            <option value="">Vietinbank</option>
-                            <option value="">Eximbank</option>
-                            <option value="">VIB</option>
-                            <option value="">Maritimebank</option>
-                            <option value="">Other</option>
+                                    <option value="vcb">VCB</option>
+                                    <option value="acb">ACB</option>
+                                    <option value="dongA">Đông Á</option>
+                                    <option value="sacombank">Sacombank</option>
+                                    <option value="agribank">Agribank</option>
+                                    <option value="bidv">BIDV</option>
+                                    <option value="techcombank">Techcombank</option>
+                                    <option value="vietnibank">Vietinbank</option>
+                                    <option value="eximbank">Eximbank</option>
+                                    <option value="vib">VIB</option>
+                                    <option value="maritimebank">Maritimebank</option>
+                                    <option value="other" class="other">Other</option>
                                 </select>
+                            </td>
+                        </tr>
+                        <tr id="bankNameRow" class="otherBank">
+                            <td>Your Bank Name</td>
+                            <td class="red">*</td>
+                            <td>
+                                <input type="text" name="bankName" id="" class="txtfield">
                             </td>
                         </tr>
                         <tr>
@@ -181,5 +187,37 @@
     </div>
     <script src="../js/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../js/bower_components/iframe-resizer/dist/iframeResizer.contentWindow.min.js"></script>
+    <script src="../js/jquery.datetimepicker.full.js"></script>
+    <script src="../js/method/functions.js"></script>
+    <script>
+        $(function(){
+            $('#amount').keyup(function(){
+                if (event.which >= 37 && event.which <= 40) return;
+                $(this).formatAmount();
+            });
+
+            // datetime
+            $('#fd-date').datetimepicker({
+                value: {
+                    format: 'd/m/Y'
+                },
+                timepicker:false,
+                format:'d/m/Y',
+                maxDate: new Date(),
+                defaultDate: new Date()
+            });
+
+            $('#hr').generateTime('hh');
+            $('#min').generateTime('mm');
+
+            $('#bank').change(function(){
+                if($(this).val() == 'other'){
+                    $('#bankNameRow').show();
+                }else {
+                    $('#bankNameRow').hide();
+                }
+            })
+        });
+    </script>
 </body>
 </html>

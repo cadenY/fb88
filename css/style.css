@@ -724,6 +724,10 @@ h1.page-title {
     transition: 0.3s linear;
 }
 
+#depoFrame {
+    min-height: 250px;
+}
+
 /* manage folder content */
 .mgnt-wrap {
     max-width: 900px;
@@ -1081,6 +1085,7 @@ ul.mgnt-form li .btn-submit {
     width: 1162px;
     margin: 20px auto 0;
     background: #ebebeb;
+    border-bottom: thin solid #b7b7b7;
 }
 
 .mgnt-deposit-nav  {
@@ -1127,6 +1132,9 @@ ul.mgnt-form li .btn-submit {
     float: left;
     width: 84.51%;
     min-height: 269px;
+    border: thin solid #b7b7b7;
+    border-left: none;
+    border-bottom: none;
 }
 
 ul.wallet-list {
@@ -1148,12 +1156,12 @@ ul.wallet-list:after {
 }
 
 ul.wallet-list li {
-    padding: 26px 0;
+    padding: 5px 0;
     float: left;
     text-align: center;
     border-left: thin solid #b7b7b7;
     height: 89px;
-    max-height: 89px;
+    max-height: 44px;
 }
 
 ul.wallet-list li:first-child {
@@ -1165,12 +1173,12 @@ ul.wallet-list li label {
     font-size: 11px;
     color: #626161;
     line-height: normal;
-    margin-bottom: 5px;
+    margin-bottom: 0;
 }
 
 ul.wallet-list li span {
     display: block;
-    font-size: 18px;
+    font-size: 14px;
     color: #038842;
     font-weight: 700;
 }
@@ -1179,15 +1187,19 @@ ul.wallet-list li span img {
     display: block;
     margin: 0 auto;
     position: relative;
-    top: 4px;
+    top: 1px;
 }
 
 ul.wallet-list.main-wallet li {
-    width: 50%;
+    width: 100%;
+    border-left: thin solid #7b7b7;
+    height: 88px !important;
+    padding: 23px 0;
+    max-height: 100% !important;
 }
 
 ul.wallet-list.secondary-wallet li {
-    width: 20%;
+    width: 16.66%;
 }
 
 /* mgnt-deposit-content */
@@ -1283,6 +1295,10 @@ table.form select {
     border-radius: 0;
 }
 
+table.form select option.other {
+    font-weight: 700;
+}
+
 table.form .btn-submit {
     background: #03a33c;
     color: #fff;
@@ -1302,6 +1318,10 @@ table.form .btn-submit:hover {
 
 table.form .right { text-align: right; }
 table.form .red { color: red; }
+
+table.form tr.otherBank {
+    display: none;
+}
 
 /* upload */
 table.form #message {
@@ -1374,6 +1394,7 @@ table.form #imgCaptcha {
     border-left: thin solid #ccc;
     padding-left: 30px;
     padding-right: 30px;
+    min-height: 130px;
 }
 
 .form-section h3 {
@@ -1421,6 +1442,8 @@ table.form #imgCaptcha {
 .form-section ul.bankList li input {
     display: inline-block;
     margin-right: 7px;
+    position: relative;
+    top: 3px;
 }
 
 .form-section #fd-date {
@@ -1490,7 +1513,7 @@ ul.p-nav li:first-child {
 
 ul.p-nav li a {
     display: block;
-    font: 12px Arial;
+    font: 14px Arial;
     color: #333;
     padding: 0 30px;
     line-height: 46px;
@@ -1842,7 +1865,7 @@ table.tnc tbody tr:first-child {
 
 
 /*******************************
-  TOP FEATURED GAMES 
+  TOP FEATURED GAMES
 ********************************/
 #featuredGames {
   margin-bottom: 15px;
@@ -1865,7 +1888,7 @@ table.tnc tbody tr:first-child {
 
 
 /*******************************
-  TAB GAMES 
+  TAB GAMES
 ********************************/
 @-webkit-keyframes fadeEffect {
     from {opacity: 0;}
@@ -2074,7 +2097,7 @@ table.tnc tbody tr:first-child {
     position: absolute;
     top: 30px;
     width: 100%;
-    padding: 20px; 
+    padding: 20px;
     text-align: center;
 }
 .featuredTxtBox h2 {

@@ -55,7 +55,7 @@
                             <td>Deposit Amount</td>
                             <td class="red">*</td>
                             <td>
-                                <input type="text" name="amount" id="" class="txtfield">
+                                <input type="text" name="amount" id="amount" class="txtfield">
                             </td>
                         </tr>
 
@@ -76,5 +76,14 @@
     </div>
     <script src="../js/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../js/bower_components/iframe-resizer/dist/iframeResizer.contentWindow.min.js"></script>
+    <script src="../js/method/functions.js"></script>
+    <script>
+        $(function(){
+            $('#amount').keyup(function(){
+                if (event.which >= 37 && event.which <= 40) return;
+                $(this).formatAmount();
+            });
+        });
+    </script>
 </body>
 </html>

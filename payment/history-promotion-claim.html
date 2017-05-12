@@ -7,6 +7,7 @@
     <title>History Promotion Claim</title>
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../js/bower_components/fancybox/dist/jquery.fancybox.css" />
+    <link rel="stylesheet" href="../css/jquery.datetimepicker.css"/>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="no-bg">
@@ -36,13 +37,13 @@
         				<td>Start Date</td>
         				<td>:</td>
         				<td>
-        					<input id="startDate" type="text" class="datepicker txtfield" readonly="true" value="01/05/2017">
+        					<input id="startDate" type="text" class="datepicker txtfield">
                         </td>
         				<td></td>
         				<td>End Date</td>
         				<td>:</td>
         				<td>
-        					<input id="endDate" type="text" class="datepicker txtfield" readonly="true" value="07/05/2017">
+        					<input id="endDate" type="text" class="datepicker txtfield">
                         </td>
         				<td></td>
     			    </tr>
@@ -63,5 +64,21 @@
     </div>
     <script src="../js/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../js/bower_components/iframe-resizer/dist/iframeResizer.contentWindow.min.js"></script>
+    <script src="../js/jquery.datetimepicker.full.js"></script>
+    <script src="../js/method/functions.js"></script>
+    <script>
+        $(function(){
+            // datetime
+            $('.datepicker').datetimepicker({
+                value: {
+                    format: 'd/m/Y'
+                },
+                timepicker:false,
+                format:'d/m/Y',
+                maxDate: new Date(),
+                defaultDate: new Date()
+            });
+        });
+    </script>
 </body>
 </html>
