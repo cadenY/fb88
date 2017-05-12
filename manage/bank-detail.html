@@ -16,22 +16,25 @@
                 <ul class="mgnt-form">
                     <li>
                         <label class="req">Bank</label>
-                        <select name="bank" class="txtfield req">
-                            <option value="">--select--</option>
-                            <option value="">VCB</option>
-                            <option value="">ACB</option>
-                            <option value="">Đông Á</option>
-                            <option value="">Sacombank</option>
-                            <option value="">Agribank</option>
-                            <option value="">BIDV</option>
-                            <option value="">Techcombank</option>
-                            <option value="">Vietinbank</option>
-                            <option value="">Eximbank</option>
-                            <option value="">VIB</option>
-                            <option value="">Maritimebank</option>
-                            <option value="">Other</option>
-
+                        <select name="bank" class="txtfield req" id="bank">
+                            <option value="">-- Select --</option>
+                            <option value="vcb">VCB</option>
+                            <option value="acb">ACB</option>
+                            <option value="dongA">Đông Á</option>
+                            <option value="sacombank">Sacombank</option>
+                            <option value="agribank">Agribank</option>
+                            <option value="bidv">BIDV</option>
+                            <option value="techcombank">Techcombank</option>
+                            <option value="vietnibank">Vietinbank</option>
+                            <option value="eximbank">Eximbank</option>
+                            <option value="vib">VIB</option>
+                            <option value="maritimebank">Maritimebank</option>
+                            <option value="other" class="other">Other</option>
                         </select>
+                    </li>
+                    <li id="bankNameRow" class="otherBank">
+                        <label class="req">Bank Name</label>
+                        <input type="text" name="bankName" id="" class="txtfield req">
                     </li>
                     <li>
                         <label class="req">Account Name</label>
@@ -54,5 +57,16 @@
     </div>
     <script src="../js/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../js/bower_components/iframe-resizer/dist/iframeResizer.contentWindow.min.js"></script>
+    <script>
+        $(function(){
+            $('#bank').change(function(){
+                if($(this).val() == 'other'){
+                    $('#bankNameRow').show();
+                }else {
+                    $('#bankNameRow').hide();
+                }
+            })
+        });
+    </script>
 </body>
 </html>

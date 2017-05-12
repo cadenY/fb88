@@ -1295,7 +1295,8 @@ table.form select {
     border-radius: 0;
 }
 
-table.form select option.other {
+table.form select option.other,
+ul.mgnt-form li select option.other {
     font-weight: 700;
 }
 
@@ -1319,7 +1320,7 @@ table.form .btn-submit:hover {
 table.form .right { text-align: right; }
 table.form .red { color: red; }
 
-table.form tr.otherBank {
+#bankNameRow.otherBank {
     display: none;
 }
 
@@ -1459,27 +1460,27 @@ table.form #imgCaptcha {
 }
 
 /* scratch card */
-.form-section .fee {
+.info-section .fee {
     width: 252px;
     text-align: center;
-    margin-left: 40px;
+    margin-top: 20px;
 }
 
-.form-section .fee h5 {
+.info-section .fee h5 {
     margin: 0 0 2px;
     font-size: 11px;
     line-height: normal;
 }
 
-.form-section .fee table.form {
+.info-section .fee table.form {
     text-align: center;
     width: 100%;
     border-collapse: collapse;
 }
 
-.form-section .fee table.form tr { border: thin solid #464646; }
-.form-section .fee table.form tr td { border-left: thin solid #464646; }
-.form-section .fee table.form tr td:first-child { border-left: none; }
+.info-section .fee table.form tr { border: thin solid #464646; }
+.info-section .fee table.form tr td { border-left: thin solid #464646; }
+.info-section .fee table.form tr td:first-child { border-left: none; }
 
 /* promotion */
 .page-promo {
