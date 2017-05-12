@@ -5,7 +5,7 @@ $(function(){
     });
 
     setIframeSrc('account',0);
-    setIframeSrc('deposit',1);
+    setIframeSrc('transfer',1);
 
     // show hide account setting panel
     $('.acct-profile img').click(function(e){

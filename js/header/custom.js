@@ -63,6 +63,7 @@ ja(document).ready(function(){
 
 	 });
 
+	//alert(ja('#dob').val())
 	
 
 

@@ -55,18 +55,18 @@ dl, dt, dd, ol, ul, li {
 
 body {
 	line-height: 1.5;
-	font-family: Tahoma, sans-serif;
+	font-family: Arial;
 	position: relative;	
 }
 body.blackBody #content {
 	background: #2d2d2d !important;
 	color: #fff;
-	font-family: Tahoma, sans-serif;
+	font-family: Arial;
 }
 body.whiteBody #content {
 	background: #fff !important;
 	color: #666;
-	font-family: Tahoma, sans-serif;
+	font-family: Arial;
 }
 a {
 	text-decoration: none !important;
@@ -97,7 +97,7 @@ h6 {
 	font-weight: 600;
 	line-height: 1.5;
 	margin: 0 0 30px 0;
-	font-family: Tahoma, sans-serif;
+	font-family: Arial;
 }
 
 h5,
@@ -319,11 +319,11 @@ span.middot {
 
 .nolineheight { line-height: 0 !important; }
 
-.font-body { font-family: 'Lato', sans-serif; }
+.font-body { font-family: Arial; }
 
-.font-primary { font-family: 'Raleway', sans-serif; }
+.font-primary { font-family: Arial; }
 
-.font-secondary { font-family: 'Crete Round', serif; }
+.font-secondary { font-family: Arial; }
 
 .bgicon {
 	display: block;
@@ -566,7 +566,7 @@ html[xmlns] .slider-wrap {display: block;}
 #logo {
 	position: relative;
 	float: left;
-	font-family: Tahoma, sans-serif;	
+	font-family: Arial;	
 	font-size: 36px;
 	line-height: 100%;
 	margin-top: 15px;
@@ -625,20 +625,19 @@ html[xmlns] .slider-wrap {display: block;}
 #primary-menu ul > li {
 	float: left;
 	margin-left: 2px;
-	margin-top: 5px;
+	//margin-top: 5px;
 }
 #primary-menu > ul > li:first-child { margin-left: 0; }
 #primary-menu ul li > a {
 	display: block;
-	//line-height: 22px;
 	line-height: 0px;
 	padding: 20px 10px;
 	color: #fff;
 	font-weight: bold;
-	font-size: 13px;
-	letter-spacing: 1px;
+	font-size: 12px;
+	letter-spacing: 0px;
 	text-transform: uppercase;
-	font-family: Tahoma;
+	font-family: Arial;
 	-webkit-transition: margin .4s ease, padding .4s ease;
 	-o-transition: margin .4s ease, padding .4s ease;
 	transition: margin .4s ease, padding .4s ease;
@@ -650,10 +649,9 @@ Customize Added
 	max-width: 100px;
 }
 #header.sticky-header #logo img{
-	margin-top: 10px;
+//	margin-top: 10px;
 }
 #header.sticky-header #primary-menu ul li > a {
-	//border:1px solid red;
 	padding: 8px;
 }
 #primary-menu ul li:hover {
@@ -699,7 +697,7 @@ Customize Added
 	padding-bottom: 10px;
 	border: 0;
 	letter-spacing: 0;
-	font-family: 'Lato', sans-serif;
+	font-family: Arial;
 	-webkit-transition: all .2s ease-in-out;
 	-o-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
@@ -766,7 +764,7 @@ body.stretched #header.full-header #primary-menu ul li.mega-menu .mega-menu-cont
 #primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title > a {
 	font-size: 13px;
 	font-weight: bold;
-	font-family: 'Raleway', sans-serif;
+	font-family: Arial;
 	letter-spacing: 1px;
 	text-transform: uppercase !important;
 	margin-bottom: 15px;
@@ -801,11 +799,25 @@ body.stretched #header.full-header #primary-menu ul li.mega-menu .mega-menu-cont
 	margin-left: 5px;
 	line-height: 35px;
 }
-#header.sticky-header #primary-menu.style-1 ul li div.tcenter img {
+#header.sticky-header #primary-menu.style-1 ul li div.parentImportant img {
 	max-height: 20px;
 }
 #header.sticky-header #primary-menu.style-1 ul li a {
 	font-size: 12px;
+}
+/*additional for promotion list menu*/
+
+#primary-menu ul li .mega-menu-content.style-2 li ul.listv li {
+	padding: 10px;
+	color: #fff;
+}
+#primary-menu ul li .mega-menu-content.style-2 li ul.listv li > a{
+	padding: 10px;
+	color: #fff;
+	display: block;
+}
+#primary-menu ul li .mega-menu-content.style-2 li ul.listv li:hover {
+	background: #f9bc04;
 }
 /* ----------------------------------------------------------------
 	Sticky Header
@@ -847,11 +859,11 @@ body.stretched #header.full-header #primary-menu ul li.mega-menu .mega-menu-cont
 	line-height: normal;
 	padding: 3px 45px ;
 	font-size: 12px;
-	font-family: Arial, Tahoma, Helvetica;
+	font-family: Arial;
 }
 #header.sticky-header #header-wrap {
 	position: fixed;
-	top: 32px;
+	top: 42px;
 	left: 0;
 	width: 100%;
 	background-color: #028843;
@@ -874,7 +886,7 @@ body.stretched #header.full-header #primary-menu ul li.mega-menu .mega-menu-cont
 #header.sticky-header.sticky-style-2 #primary-menu { border-top: 0; }
 /*added*/
 #header.sticky-header:not(.static-sticky) #logo {
-	margin-top: 7px;
+	//margin-top: 7px;
 }
 /* ----------------------------------------------------------------
 	Slider
@@ -955,10 +967,9 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
     width: 100%;
 }
 .contBlog h5 {
-	font-family: Arial, Tahoma, Helvetica;
-	font-size: 14px;
+	font-family: Arial;
+	font-size: 12px;
 	font-weight: bold;
-	//color: #fff;
 	margin-top: 10px;
 	color: #ffc519;
 }
@@ -968,7 +979,7 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
 	font-size: 12px;
 }
 .contBlog .btnMoreNews  {
-	font-family: Arial, Tahoma, Helvetica;
+	font-family: Arial;
 	font-size: 12px;
 	font-weight: bold;
 	color: #fff;
@@ -1225,9 +1236,8 @@ ul.tab-nav li a i {
 	margin-bottom: 60px;
 }
 .skills.progressCustom li span {
-	//color: #fff;
 	font-size: 20px;
-	font-family: Arial, Tahoma, Helvetica;
+	font-family: Arial;
 	font-weight: normal;
 	text-transform: none;
 }
@@ -1274,9 +1284,22 @@ ul.tab-nav li a i {
 	border-radius: 2px;
 }
 
+.whiteBody .skills li .progress-percent {
+	position: absolute;
+	top: -28px;
+	right: 0;
+	background-color: #ccc;
+	color: #333;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	height: 22px;
+	line-height: 22px;
+	padding: 0px 5px;
+	font-size: 11px;
+	border-radius: 2px;
+}
 .skills li .progress-percent .counter {
 	font-weight: 400;
-	font-family: 'Lato', sans-serif;
+	font-family: Arial;
 }
 
 .progress-percent:after, .progress-percent:before {
@@ -1389,14 +1412,14 @@ ul.tab-nav li a i {
 	color: #2d2d2d;
 }
 #footer .info .title {
-	font-family: Arial, Tahoma, Helvetica;
+	font-family: Arial;
 	font-weight: bold;
 	font-size: 12px;
 	margin-bottom: 30px;
 }
 #footer .info p {
 	margin-bottom: 10px;
-	font-family: Arial, Tahoma, Helvetica;
+	font-family: Arial;
 	font-size: 11px;
 }
 
@@ -1405,7 +1428,7 @@ ul.tab-nav li a i {
 	background-color: #028843;
 	font-size: 11px;
 	line-height: 1.8;
-	font-family: Arial, Tahoma, Helvetica;
+	font-family: Arial;
 	font-weight: normal;
 	color: #fff;
 }
@@ -1532,7 +1555,7 @@ body:not(.no-transition) #wrapper,
 	text-decoration:none;
 	text-align: center;
 	font-size: 12px;
-	font-family: Arial, Tahoma, Helvetica;
+	font-family: Arial;
 	display: inline-block;
 	font-weight: bold;
 }
@@ -1552,10 +1575,10 @@ body:not(.no-transition) #wrapper,
 }
 .footnav a {
 	color: #fff;
-	margin-right: 20px;
+	margin-right: 10px;
 }
 .footnavSpaceLeft {
-	margin-left: 20px;
+	margin-left: 10px;
 }
 .footnav a:hover {
 	color: #eab61b !important;
@@ -1630,7 +1653,7 @@ body:not(.no-transition) #wrapper,
 }
 .slidingDiv span{
 	font-size: 12px;
-	font-family: Arial, Tahoma, Helvetica;
+	font-family: Arial;
 	font-weight: normal;
 	text-align: center;
 	display: block;
@@ -1653,7 +1676,7 @@ body:not(.no-transition) #wrapper,
 	transition: all 0.3s ease;
 }
 .slidingDiv {
-	font-family: Tahoma, sans-serif;
+	font-family: Arial;
 	font-size: 12px;
 	position: relative;
 }
@@ -1730,7 +1753,7 @@ body:not(.no-transition) #wrapper,
 	right: 0px;
 	z-index: 999;
 	color: #fff;
-	font-family: Arial, Tahoma, Helvetica;
+	font-family: Arial;
 	font-weight: bold;
 	font-size: 13px;
 	text-align: center;
@@ -1746,7 +1769,7 @@ body:not(.no-transition) #wrapper,
 	right: 0px;
 	z-index: 999;
 	color: #fff;
-	font-family: Arial, Tahoma, Helvetica;
+	font-family: Arial;
 	font-weight: bold;
 	font-size: 9px;
 	text-align: center;
@@ -1768,15 +1791,15 @@ body:not(.no-transition) #wrapper,
 	z-index: 111;
 	font-size: 12px;
 	font-weight: bold;
-	font-family: Arial, Tahoma, Helvetica;
+	font-family: Arial;
 }
 .marquee{
 	display: inline-block;
 	color: #fff;
-	z-index: 11111;
+	z-index: 1;
 	background: #04712a;
 	font-size: 11px;
-	font-family: Arial, Tahoma, Helvetica;
+	font-family: Arial;
 	margin-left: 10px;
 	width: 46%;
 	position: relative;
@@ -1819,7 +1842,7 @@ body:not(.no-transition) #wrapper,
 	display:none; 
 	margin:0; 
 	background:#007028;
-	font-family:tahoma;
+	font-family: Arial;
 	font-size:11px;
 	border:1px solid ýellow;
 	padding:5px 10px;
@@ -1909,7 +1932,7 @@ body:not(.no-transition) #wrapper,
 	display:none; 
 	margin:0; 
 	background:#007028;
-	font-family:tahoma;
+	font-family: Arial;
 	font-size:11px;
 	border:1px solid ýellow;
 	width: 70px;
@@ -1968,11 +1991,11 @@ login part
 	display:none; 
 	margin:0; 
 	background: url(../images/casino/loginBg.png) repeat;
-	font-family:tahoma;
+	font-family: Arial;
 	font-size:11px;
 	border:1px solid #fff;
 	padding: 10px 0px 10px 10px;
-	width: 500px;
+	width: 550px;
 }
 .loginBody input::placeholder {
   color: #333;
@@ -2002,7 +2025,7 @@ login part
 	border: none;
 	margin-top: 10px;
 	font-weight: bold;
-	font-family: Arial, Tahoma, Helvetica;
+	font-family: Arial;
 }
 .rightBorder {
 	border-right: 1px solid #000;
@@ -2012,7 +2035,7 @@ login part
 	padding-left: 30px;
 }
 .loginBody label {
-	font-family: Arial, Tahoma, Helvetica;
+	font-family: Arial;
 	font-size: 12px;
 	font-weight: bold;
 	text-transform: none;
@@ -2033,7 +2056,7 @@ login part
 	text-align: center;
 }
 .mobVer {
-	font-family: Arial, Tahoma, Helvetica;
+	font-family: Arial;
 	font-weight: bold;
 	font-size: 16px;
 	color: #fff;
@@ -2048,7 +2071,7 @@ login part
 	text-align: center;
 	line-height: 25px;
 	height: 25px;
-	width: 132px;
+	width: 120px;
 	font-weight: bold;
 	border: 1px solid #8a8a8a;
 	
@@ -2069,15 +2092,23 @@ login part
 	text-align: center;
 	margin-bottom: 15px;
 }
+.fomrreg {
+	//border:1px solid red;
+	width: 95%;
+}
 .tablesform {
 	margin-bottom: 10px;
 }
 .tablesform select {
 	border: 1px solid #ccc;
 	color: #333;
+	height: 28px;
+}
+.tablesform input, .tablesform select {
+	position: relative;
 }
 .tablesform input[type=text] {
-	height: 25px;
+	height: 28px;
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	width: 63%;
@@ -2105,7 +2136,7 @@ login part
 	color: #028642;
 }
 .modLeftP {
-	font-family: Arial, Tahoma, Helvetica;
+	font-family: Arial;
 	font-size: 12px;
 }
 .btnJoinNow {
@@ -2119,6 +2150,45 @@ login part
 .btnJoinNow:hover {
 	background: #deab12;
 }
+
+/**********************************
+	Tooltips
+**********************************/
+.input:focus + .tooltips {
+	display:inline-block;
+}
+.tooltips {
+	font-family: Arial;
+	display:none;
+	position:absolute;
+	margin-left: 10px;
+	padding-left:10px;
+	background:url(../images/casino/triangle.png) no-repeat top left;
+	background-position:0px 10px;
+	z-index: 9999;
+
+}
+.tooltips p {
+	background:#028843;
+	font-size:12px;
+	width: 200px;
+	height:auto;
+	margin:0;
+	color:#fff;
+	text-align:left;
+	padding:8px 15px 8px 15px;
+	border:1px solid #ffbf00;
+	border-left: none;
+}
+.tooltips p span {
+	display:block;
+	padding:5px 0px;
+	text-align:left;
+	color:#384f71;
+	font-weight:bold;
+}
+
+
 
 /**********************************
 	FOOTER	SOCIAL MEDIA
@@ -2201,7 +2271,7 @@ login part
 	border-radius: 5px;
 	color: #402100;
 	font-size: 11px;
-	font-family: Arial, Tahoma, Helvetica;
+	font-family: Arial;
 	font-weight: bold;
 }
 .custService a:first-child {
@@ -2209,7 +2279,7 @@ login part
 }
 .secondtext {
 	font-size: 8.5px;
-	font-family: Arial, Tahoma, Helvetica;
+	font-family: Arial;
 	font-weight: normal;
 }
 .custIcon {
@@ -2269,12 +2339,28 @@ article custom width in mega menu
 .custwidth {
 	width: 300px;
 }
+.custwidth table p {
+    line-height: 20px;
+}
 /****************************
 member-service
 ****************************/
 .member-service img {
 	margin: 0 10px;
 }
+.login-banner-left {
+	padding: 10px;
+	
+}
+.blackBody .login-banner-left {
+	border:1px solid #028642;
+	background: #0b080a;
+}
+.whiteBody .login-banner-left {
+	border:1px solid #666;
+	background: #dadada;
+}
+
 
 .login-banner-left img {
 	width: 100%;
@@ -2289,7 +2375,7 @@ member-service
 	display: inline-block;
 }
 .feature-box h4 {
-    font-family: Arial, Tahoma, Helvetica;
+    font-family: Arial;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 0;
@@ -2383,6 +2469,13 @@ member-service
 	border-color: #ffbf00;
 }
 
+.deposit.afterLogin2 {
+	color: #545454;
+	background: #eaeaea;
+	border-color: #d9d9d9;
+}
+
+
 .joinNow.afterLogin {
 	color: #fff;
 	background: #b3b3b3;
@@ -2442,7 +2535,7 @@ ul.top-link li.active a {
 }
 
 .marquee-afterLogin {
-	width: 42%;
+	width: 32%;
 }
 
 /*******************************************

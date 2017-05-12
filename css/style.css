@@ -1081,7 +1081,6 @@ ul.mgnt-form li .btn-submit {
     width: 1162px;
     margin: 20px auto 0;
     background: #ebebeb;
-    border-bottom: thin solid #b7b7b7;
 }
 
 .mgnt-deposit-nav  {
@@ -1128,9 +1127,6 @@ ul.mgnt-form li .btn-submit {
     float: left;
     width: 84.51%;
     min-height: 269px;
-    border: thin solid #b7b7b7;
-    border-left: none;
-    border-bottom: none;
 }
 
 ul.wallet-list {
@@ -1152,12 +1148,12 @@ ul.wallet-list:after {
 }
 
 ul.wallet-list li {
-    padding: 5px 0;
+    padding: 26px 0;
     float: left;
     text-align: center;
     border-left: thin solid #b7b7b7;
     height: 89px;
-    max-height: 44px;
+    max-height: 89px;
 }
 
 ul.wallet-list li:first-child {
@@ -1169,12 +1165,12 @@ ul.wallet-list li label {
     font-size: 11px;
     color: #626161;
     line-height: normal;
-    margin-bottom: 0;
+    margin-bottom: 5px;
 }
 
 ul.wallet-list li span {
     display: block;
-    font-size: 14px;
+    font-size: 18px;
     color: #038842;
     font-weight: 700;
 }
@@ -1183,19 +1179,15 @@ ul.wallet-list li span img {
     display: block;
     margin: 0 auto;
     position: relative;
-    top: 1px;
+    top: 4px;
 }
 
 ul.wallet-list.main-wallet li {
-    width: 100%;
-    border-left: thin solid #7b7b7;
-    height: 88px !important;
-    padding: 23px 0;
-    max-height: 100% !important;
+    width: 50%;
 }
 
 ul.wallet-list.secondary-wallet li {
-    width: 16.66%;
+    width: 20%;
 }
 
 /* mgnt-deposit-content */
@@ -1382,7 +1374,6 @@ table.form #imgCaptcha {
     border-left: thin solid #ccc;
     padding-left: 30px;
     padding-right: 30px;
-    min-height: 130px;
 }
 
 .form-section h3 {
@@ -1499,7 +1490,7 @@ ul.p-nav li:first-child {
 
 ul.p-nav li a {
     display: block;
-    font: 14px Arial;
+    font: 12px Arial;
     color: #333;
     padding: 0 30px;
     line-height: 46px;
@@ -1851,7 +1842,7 @@ table.tnc tbody tr:first-child {
 
 
 /*******************************
-  TOP FEATURED GAMES
+  TOP FEATURED GAMES 
 ********************************/
 #featuredGames {
   margin-bottom: 15px;
@@ -1874,7 +1865,7 @@ table.tnc tbody tr:first-child {
 
 
 /*******************************
-  TAB GAMES
+  TAB GAMES 
 ********************************/
 @-webkit-keyframes fadeEffect {
     from {opacity: 0;}
@@ -2083,7 +2074,7 @@ table.tnc tbody tr:first-child {
     position: absolute;
     top: 30px;
     width: 100%;
-    padding: 20px;
+    padding: 20px; 
     text-align: center;
 }
 .featuredTxtBox h2 {
