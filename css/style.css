@@ -1444,7 +1444,7 @@ table.form #imgCaptcha {
     display: inline-block;
     margin-right: 7px;
     position: relative;
-    top: 3px;
+    top: 1px;
 }
 
 .form-section #fd-date {

@@ -21,4 +21,10 @@ $(function(){
            $(this).append("<option value="+((i+1) <= 10 ? '0'+i : i)+" "+(i == fn ? 'selected=selected' : '')+">"+((i+1) < 10 ? '0'+(i+1) : (i+1))+"</option>");
        }
     }
+
 });
+
+// default alert on deposit submit
+var fnDisplayMsg = function(){
+    alert('Please submit your bank details on next page to complete the deposit.\nYou may check the deposit status in History page.');
+}

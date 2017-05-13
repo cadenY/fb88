@@ -119,7 +119,14 @@
                 }else {
                     $('#bankNameRow').hide();
                 }
-            })
+            });
+
+            //submit
+            $('.btn-submit').click(function(e){
+                e.preventDefault();
+                // if sucess
+                fnDisplayMsg();
+            });
         });
     </script>
 </body>

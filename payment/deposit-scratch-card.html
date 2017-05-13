@@ -139,5 +139,16 @@
     </div>
     <script src="../js/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../js/bower_components/iframe-resizer/dist/iframeResizer.contentWindow.min.js"></script>
+    <script src="../js/method/functions.js"></script>
+    <script>
+        $(function(){
+            //submit
+            $('.btn-submit').click(function(e){
+                e.preventDefault();
+                // if sucess
+                fnDisplayMsg();
+            });
+        });
+    </script>
 </body>
 </html>
