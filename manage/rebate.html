@@ -12,6 +12,25 @@
 <body class="no-bg">
     <div class="mgnt-rebate mgnt-wrap">
         <div class="rebate-tbl-wrap">
+            <table class="rebate-period">
+				<tbody>
+                    <tr>
+    					<td>Period:</td>
+    					<td style="width: 20px;"></td>
+					    <td>
+    						<select class="selectbox">
+    							<option value="2017/05/15|2017/05/21">2017 Week 20 (Current Week)</option>
+    							<option value="2017/05/08|2017/05/14">2017 Week 19</option>
+    							<option value="2017/05/01|2017/05/07">2017 Week 18</option>
+    							<option value="2017/04/24|2017/04/30">2017 Week 17</option>
+    							<option value="2017/04/17|2017/04/23">2017 Week 16</option>
+    						</select>
+					    </td>
+					    <td style="width: 10px;"></td>
+					    <td>Monday(<span id="start_date">2017/05/15</span>)&nbsp;-&nbsp;Sunday(<span id="end_date">2017/05/21</span>)</td>
+				    </tr>
+		    	</tbody>
+            </table>
             <table class="rebate-tbl">
                 <thead>
                     <tr>
@@ -72,7 +91,7 @@
                     </tr>
                     <tr class="tr-title">
                         <td colspan="2"><strong>Slots</strong></td>
-                        
+
                     </tr>
                     <tr class="tr-content">
                         <td>Playtech</td>

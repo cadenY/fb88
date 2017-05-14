@@ -996,11 +996,26 @@ ul.mgnt-form li .btn-submit {
     text-decoration: none;
 }
 
-.rebate-tbl {
+.rebate-tbl,
+.rebate-period {
     font-size: 12px;
-    width: 100%;
     border-collapse: collapse;
     margin-bottom: 10px;
+}
+
+.rebate-period td {
+    color: ##5d5d5d;
+}
+
+.rebate-period td select {
+    border: thin solid #000;;
+    display: block;
+    padding: 1px 5px;
+    outline: 0;
+}
+
+.rebate-tbl {
+    width: 100%;
 }
 
 .rebate-tbl th {
