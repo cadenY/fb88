@@ -50,11 +50,26 @@
                 <ul class="mgnt-form">
                     <li>
                         <label class="req">Language</label>
-                        <input type="text" name="language" id="language" placeholder="English" class="req txtfield">
+                        <select name="language" id="language" class="req txtfield">
+                            <option value="">Select Language</option>
+                            <option value="en">English</option>
+                            <option value="vn">Tiếng Việt</option>
+                            <option value="ch">简体中文</option>
+                            <option value="jp">日本語</option>
+                            <option value="id">Bahasa Indonesia</option>
+                            <option value="kr">한국어</option>
+                            <option value="th">ไท</option>
+                        </select>
                     </li>
                     <li>
                         <label class="req">Odds</label>
-                        <input type="text" name="odds" id="odds" placeholder="Decimal" class="req txtfield">
+                        <select name="odds" id="odds" class="req txtfield">
+                            <option value="en-odds">Decimal Odds</option>
+                            <option value="hk-odds">HongKong Odds</option>
+                            <option value="kl-odds">Malay Odds</option>
+                            <option value="id-odds">Indo Odds</option>
+                            <option value="jp-odds">日本語</option>
+                        </select>
                     </li>
                     <li>
                         <label class="req">Security Question</label>
