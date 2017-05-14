@@ -108,7 +108,7 @@
     <script src="../js/method/functions.js"></script>
     <script>
         $(function(){
-            $('#amount').keyup(function(){
+            $('#amount').keyup(function(event){
                 if (event.which >= 37 && event.which <= 40) return;
                 $(this).formatAmount();
             });

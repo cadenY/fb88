@@ -3,8 +3,8 @@ $(function(){
     $.fn.formatAmount = function(){
         $(this).val(function(index, value) {
            return value
-             .replace(/\D/g, "")
-             .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+             .replace(/\D/g,"")
+             .replace(/\B(?=(\d{3})+(?!\d))/g,",");
         });
     }
 
