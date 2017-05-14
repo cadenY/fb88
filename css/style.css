@@ -1727,8 +1727,6 @@ table.tnc tbody tr:first-child {
 	border-top: none;
 }
 
-
-
 /* footer */
 #footer {
 	background: #007028;
@@ -1736,6 +1734,42 @@ table.tnc tbody tr:first-child {
 	padding-bottom: 30px;
 	position: relative;
 	z-index: 1;
+}
+
+/* faq */
+body.faq {
+    background: #eee !important;
+}
+
+.faq-header {
+    background: #028843;
+    text-align: center;
+    overflow: hidden;
+}
+
+.faq-header img {
+    display: block;
+    max-width: 100%;
+    margin: 15px auto;
+}
+
+.faq-header p {
+    color: #028843;
+    background: #ffff01;
+    margin: 0;
+    padding: 4px 0;
+    font-size: 17px;
+}
+
+.faq-content {
+    background: #eee;
+    padding-top: 10px;
+}
+
+.faq-panel {
+    max-width: 960px;
+    margin: 0 auto;
+    background: #fff;
 }
 
 /* key frames animattion */
