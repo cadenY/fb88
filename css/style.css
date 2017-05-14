@@ -1291,7 +1291,7 @@ table.form .txtfield {
 }
 
 table.form select {
-    height: auto !important;
+    height: 20px !important;
     padding-top: 1px !important;
     padding-bottom: 1px !important;
     -webkit-appearance: none;

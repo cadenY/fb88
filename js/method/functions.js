@@ -18,7 +18,7 @@ $(function(){
        }
 
        for( var i = 0; i < maxTime; i++) {
-           $(this).append("<option value="+((i+1) <= 10 ? '0'+i : i)+" "+(i == fn ? 'selected=selected' : '')+">"+((i+1) < 10 ? '0'+(i+1) : (i+1))+"</option>");
+           $(this).append("<option value="+((i+1) <= 10 ? '0'+i : i)+" "+(i == fn ? 'selected=selected' : '')+">"+((i+1) <= 10 ? '0'+(i) : (i))+"</option>");
        }
     }
 
