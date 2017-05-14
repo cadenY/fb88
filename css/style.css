@@ -1987,6 +1987,24 @@ body.faq {
     padding-left: 5px;
 }
 
+.accdn-panel .accdn-content table {
+    border-color: separate;
+    margin: 0 auto;
+}
+
+.accdn-panel .accdn-content table th {
+    font-weight: 700;
+    border: thin solid #ccc;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.accdn-panel .accdn-content table td {
+    border: thin solid #ccc;
+    padding: 5px 10px;
+    text-align: center;
+}
+
 /* key frames animattion */
 @-webkit-keyframes hvr-icon-buzz-out {
   10% {
