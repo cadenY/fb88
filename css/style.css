@@ -1785,6 +1785,7 @@ body.faq {
     max-width: 960px;
     margin: 0 auto;
     background: #fff;
+    padding-bottom: 10px;
 }
 
 .faq-nav {
@@ -1836,7 +1837,8 @@ body.faq {
     z-index: 2;
 }
 
-.faq-nav li:hover .img-thumb span.default {
+.faq-nav li:hover .img-thumb span.default,
+.faq-nav li.active .img-thumb span.default {
     opacity: 0;
     visibility: hidden;
 }
@@ -1862,6 +1864,44 @@ body.faq {
 
 .faq-nav li.active a > span,
 .faq-nav li:hover a > span{
+    color: #028843;
+}
+
+.faq-subnav {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.faq-subnav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.faq-subnav ul li {
+    display: inline-block;
+    border-left: thin solid #777;
+    padding: 0 15px;
+}
+
+.faq-subnav ul li:first-child {
+    border-left: none;
+}
+
+.faq-subnav ul li a {
+    display: block;
+    color: #777;
+    line-height: 16px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    transition: 0.3s ease;
+}
+
+.faq-subnav ul li:hover a,
+.faq-subnav ul li a.active{
     color: #028843;
 }
 
@@ -1939,6 +1979,12 @@ body.faq {
 .accdn-panel .accdn-content a {
     display: inline;
     color :#028843;
+}
+
+.accdn-panel .accdn-content ul.custom {
+    list-style: none;
+    margin-left: 5px;
+    padding-left: 5px;
 }
 
 /* key frames animattion */
