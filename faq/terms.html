@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rules</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="no-bg faq">
+    <div class="faq-header">
+        <img src=../images/logo-fb88.png alt=Fb88"">
+        <p>Info Center</p>
+    </div>
+    <div class="faq-content">
+        <div class="faq-panel">
+            <nav class="faq-nav">
+                <ul>
+                    <li>
+                        <a href="about.html">
+                            <div class="img-thumb">
+                                <span class="default i-about"></span>
+                                <span class="hover i-about-h"></span>
+                            </div>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="faq.html">
+                            <div class="img-thumb">
+                                <span class="default i-faq"></span>
+                                <span class="hover i-faq-h"></span>
+                            </div>
+                            <span>Faq</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="javascript:;">
+                            <div class="img-thumb">
+                                <span class="default i-rule"></span>
+                                <span class="hover i-rule-h"></span>
+                            </div>
+                            <span>Rules</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="terms.html">
+                            <div class="img-thumb">
+                                <span class="default i-terms"></span>
+                                <span class="hover i-terms-h"></span>
+                            </div>
+                            <span>Terms of use</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="faq-accdn">
+                <!-- template start  -->
+                <div class="accdn-panel">
+                    <h2></h2>
+                    <div class="accdn-content">
+                    </div>
+                </div>
+                <!-- template end   -->
+            </div> <!--end faq-accdn -->
+        </div>
+    </div>
+    <script src="../js/bower_components/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('.accdn-panel h2').click(function(e){
+                e.preventDefault();
+
+                if(!$(this).hasClass('active')){
+                    $('.accdn-panel h2').removeClass('active').next().slideUp();
+                    $(this).addClass('active').next().slideDown();
+                } else {
+                    $(this).removeClass('active').next().slideUp();
+                }
+
+            });
+        });
+    </script>
+</body>
+</html>
