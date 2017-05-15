@@ -11,20 +11,22 @@ $(function(){
     setIframeSrc('account',0);
     setIframeSrc('deposit',1);
 
-    // show hide account setting panel
-    $('.acct-profile img').click(function(e){
+    $('.img-nav').click(function(e){
         e.preventDefault();
-        if(!$(this).parent().hasClass('active')){
-            $('.account-mngr').animate({
+        if(!$(this).hasClass('active')){
+            $('.img-nav').removeClass('active');
+            setActiveNav($(this).attr('data-ref'));
+            setIframeSrc($(this).attr('data-ref'),0);
+            $('.account-mngr').stop().animate({
                 height: 269
             },600);
-            $(this).parent().addClass('active');
+            $(this).addClass('active');
         }else {
             $('.account-mngr').css('overflow','hidden');
-            $('.account-mngr').animate({
+            $('.account-mngr').stop().animate({
                 height: 0
             },600);
-            $(this).parent().removeClass('active');
+            $(this).removeClass('active');
         }
     });
 
@@ -51,5 +53,11 @@ $(function(){
             default:
                 $('#depoFrame').attr('src',url+'.html');
         }
+    }
+
+    function setActiveNav(ref){
+        console.log(ref);
+        $('.acct-mngr-nav ul li').removeClass('active');
+        $('.acct-mngr-nav ul li a[data-href="'+ref+'"]').parent().addClass('active');
     }
 });
