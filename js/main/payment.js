@@ -60,7 +60,6 @@ $(function(){
     }
 
     function setActiveNav(ref){
-        console.log(ref);
         $('.acct-mngr-nav ul li').removeClass('active');
         $('.acct-mngr-nav ul li a[data-href="'+ref+'"]').parent().addClass('active');
     }
