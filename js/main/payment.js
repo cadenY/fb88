@@ -43,6 +43,10 @@ $(function(){
         $('.mgnt-deposit-nav ul li').removeClass('active');
         $(this).parent().addClass('active');
         setIframeSrc($(this).data('href'),1);
+
+        $('html,body').animate({
+                scrollTop: $("#depoFrame").offset().top
+        },1000);
     });
 
     function setIframeSrc(url,ref) {
