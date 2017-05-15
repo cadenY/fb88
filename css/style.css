@@ -1972,6 +1972,14 @@ body.faq {
     border-bottom: none;
 }
 
+.accdn-panel .accdn-content.noanimate {
+    display: block;
+}
+
+.accdn-panel:last-child .accdn-content {
+    border-bottom:  1px #dbdbdb solid;
+}
+
 .accdn-panel .accdn-content p {
     margin: 0px 0px 17px 0px;
 }
