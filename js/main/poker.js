@@ -11,6 +11,9 @@ $(function(){
          items:1,
          nav: true,
          mouseDrag: false,
+         autoplay:true,
+         autoplayTimeout:5000,
+         autoplayHoverPause:true
       });
    },300);
 
