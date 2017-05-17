@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E Wallet</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../js/bower_components/fancybox/dist/jquery.fancybox.css" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="no-bg">
+    <div class="depoFrame-wrap fast-deposit">
+        <div class="depoFrame-nav">
+            <ul>
+                <li><a href="withdraw.html">Bank Transfer</a></li>
+                <li class="active"><a href="javascript:;">E Wallet</a></li>
+            </ul>
+        </div>
+        <div class="depoFrame-content">
+            <div class="info-section">
+                <table class="info">
+                    <tbody>
+                        <tr>
+                            <td><strong>Option:</strong></td>
+                            <td>E Wallet</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mode:</strong></td>
+                            <td>Online</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Min/Max Limit:</strong></td>
+                            <td>100.00 / 10,000.00</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Daily Limit:</strong></td>
+                            <td>180,000.00</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total Allowed:</strong></td>
+                            <td>180,000.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="form-section">
+                <table class="form">
+                    <tbody>
+                        <tr>
+                            <td>Withdraw Amount</td>
+                            <td class="red">*</td>
+                            <td>
+                                <input type="text" name="amount" id="amount" class="txtfield">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td class="red">*</td>
+                            <td>
+                                <input type="text" name="email" id="" class="txtfield">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td><td></td>
+                            <td><button type="submit" class="btn-submit">Withdraw</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <script src="../js/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../js/bower_components/iframe-resizer/dist/iframeResizer.contentWindow.min.js"></script>
+    <script src="../js/method/functions.js"></script>
+    <script>
+        $(function(){
+            $('#amount').keyup(function(event){
+                if (event.which >= 37 && event.which <= 40) return;
+                $(this).formatAmount();
+            });
+
+            //submit
+            $('.btn-submit').click(function(e){
+                e.preventDefault();
+                // if sucess
+                fnDisplayMsg();
+            });
+        });
+    </script>
+</body>
+</html>
