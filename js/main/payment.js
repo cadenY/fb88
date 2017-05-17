@@ -30,8 +30,6 @@ $(function(){
 
                         setIframeSrc('deposit',1);
                     },300);
-
-
                     break;
                 case '1':
                     $('.mgnt-deposit-nav ul li').removeClass('active');

@@ -1,7 +1,7 @@
 var ja = jQuery.noConflict();
 ja(document).ready(function(){
 
-	
+
 
 	var intervals = setInterval(function() {
         var momentNow = new Date().toLocaleString();
@@ -17,11 +17,11 @@ ja(document).ready(function(){
 		if(ja(this).next(".notes:first").is(":hidden")) {
 			ja(this).next(".notes:first").slideToggle('fast');
 		}
-		else {					
-			ja(this).next(".notes:first").slideToggle('fast');	
-		}				
-	});	
-	    
+		else {
+			ja(this).next(".notes:first").slideToggle('fast');
+		}
+	});
+
 
 	//login dropdown at header
 	ja(".login").on('click',function(e) {
@@ -32,10 +32,11 @@ ja(document).ready(function(){
 		if(ja(this).next(".loginBody:first").is(":hidden")) {
 			ja(this).next(".loginBody:first").slideToggle('fast');
 		}
-		else {					
-			ja(this).next(".loginBody:first").slideToggle('fast');	
-		}				
-	});	
+		else {
+			ja(this).next(".loginBody:first").slideToggle('fast');
+		}
+	});
+
 // dismiss login popup form from any click
     ja(document).on('click',function(e){
      if(ja('.loginBody').is(':visible')) {
@@ -46,25 +47,24 @@ ja(document).ready(function(){
         }
     });
 
-
     ja('ul.tabs li').click(function(){
 	    var tab_id = ja(this).attr('data-tab');
 
-	    
+
 	    if(tab_id == '') {
-	      
+
 	    }else {
 	       ja('ul.tabs li').removeClass('current');
 		   ja('.tab-content').removeClass('current');
 		   ja(this).addClass('current');
-		   ja("#"+tab_id).addClass('current');     
+		   ja("#"+tab_id).addClass('current');
 	    }
-	    
+
 
 	 });
 
 	//alert(ja('#dob').val())
-	
+
 
 
 	// ja('#reload-slider').click(function(e){
@@ -143,7 +143,7 @@ ja(document).ready(function(){
 			ja(this).css("border-color", "#ec0000");
 			ja('.c.okcross').show();
 			ja('.c.okcheck').hide();
-			
+
 		}
 	});
 	ja('#email').keyup(function(){
@@ -156,7 +156,7 @@ ja(document).ready(function(){
 			ja(this).css("border-color", "#ec0000");
 			ja('.c.okcross').show();
 			ja('.c.okcheck').hide();
-			
+
 		}
 	});
 
@@ -182,7 +182,7 @@ ja(document).ready(function(){
 			ja('.d.okcheck').hide();
 		}
 	});
-	
+
 	ja('#cur').focusout(function() {
 		var cur = ja(this).val();
 		if(cur != '') {
@@ -238,22 +238,22 @@ ja(document).ready(function(){
 	ja('#pass').keyup(function()
 	{
 		ja('#result').html(checkStrength(ja('#pass').val()));
-	});	
-		
+	});
+
 	function checkStrength(password)
 	{
 		var strength = 0
-		
-		if (password.length < 6) { 
+
+		if (password.length < 6) {
 			ja('#result').removeClass()
 			ja('#result').addClass('short')
-			return 'Too short' 
+			return 'Too short'
 		}
 		if (password.length > 7) strength += 1
 		//If password contains both lower and uppercase characters, increase strength value.
 		if (password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/))  strength += 1
 		//If it has numbers and characters, increase strength value.
-		if (password.match(/([a-zA-Z])/) && password.match(/([0-9])/))  strength += 1 
+		if (password.match(/([a-zA-Z])/) && password.match(/([0-9])/))  strength += 1
 		//If it has one special character, increase strength value.
 		if (password.match(/([!,%,&,@,#,$,^,*,?,_,~])/))  strength += 1
 		//if it has two special characters, increase strength value.
@@ -264,12 +264,12 @@ ja(document).ready(function(){
 		if (strength < 2 ) {
 			ja('#result').removeClass()
 			ja('.txtpass').addClass('weak')
-			return 'Weak'			
+			return 'Weak'
 		}
 		else if (strength == 6) {
 			ja('#result').removeClass()
 			ja('#result').addClass('good')
-			return 'Good'		
+			return 'Good'
 		}
 		else {
 			ja('#result').removeClass()
@@ -297,10 +297,10 @@ ja(document).ready(function(){
 	});
 
 	ja('#cpass').keyup(function(){
-		
+
 		var passwordkey = ja("#pass").val();
 		var retype_passwordkey = ja("#cpass").val();
-		
+
 		if( retype_passwordkey !== passwordkey ) {
 			ja('.h.okcheck').show();
 			ja('.h.okcross').hide();
@@ -310,8 +310,8 @@ ja(document).ready(function(){
 			ja('.h.okcross').show();
 			ja('.h.okcheck').hide();
 		}
-		
-	
+
+
 	});
 
 
@@ -341,9 +341,9 @@ ja(document).ready(function(){
 	var error_aff = false;
 
 
-	
 
-	
+
+
 	function check_fullname() {
 		var fullname_length = ja("#fname").val().length;
 		if(fullname_length < 5 || fullname_length > 20) {
@@ -398,7 +398,7 @@ ja(document).ready(function(){
 			ja('#phone').css("border-color", "#ec0000");
 			ja('.d.okcross').show();
 			ja('.d.okcheck').hide();
-			
+
 		}
 	}
 	function check_cur() {
@@ -413,7 +413,7 @@ ja(document).ready(function(){
 			ja('#cur').css("border-color", "#ec0000");
 			ja('.e.okcross').show();
 			ja('.e.okcheck').hide();
-			
+
 		}
 	}
 	function check_username() {
@@ -459,10 +459,10 @@ ja(document).ready(function(){
 			ja('.h.okcheck').show();
 			ja('.h.okcross').hide();
 		}
-	
+
 	}
 	function check_affiliate() {
-		var aff = ja("#aff").val();		
+		var aff = ja("#aff").val();
 		if( aff === '' ) {
 			error_aff = true;
 			ja('#aff').css("border-color", "#ec0000");
@@ -475,7 +475,7 @@ ja(document).ready(function(){
 			ja('.i.okcross').hide();
 		}
 	}
-	ja('.submit').click(function() {						
+	ja('.submit').click(function() {
 		check_fullname();
 		check_dob();
 		check_email();
@@ -487,8 +487,8 @@ ja(document).ready(function(){
 		check_affiliate();
 		if(error_fullname === false && error_dob === false && error_email === false && error_cur === false && error_user === false && error_pass === false && error_cpass === false && error_aff === false) {
 			return true;
-		} else {	
-			return false;	
+		} else {
+			return false;
 		}
 	});
 
@@ -503,6 +503,5 @@ ja(document).ready(function(){
     });
 
 
-	
-});
 
+});
