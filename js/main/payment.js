@@ -55,8 +55,9 @@ $(function(){
             return false;
         }
 
+        console.log($("#depoFrame").offset().top);
         $('html,body').animate({
-                scrollTop: $("#depoFrame").offset().top
+                scrollTop: $("#depoFrame").offset().top + -250
         },1000);
     });
 
