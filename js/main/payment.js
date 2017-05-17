@@ -1,4 +1,5 @@
 $(function(){
+    var w = isMobile();
     // on page load
     $('#frame').iFrameResize({
         minHeight : 0
@@ -7,6 +8,8 @@ $(function(){
     $('#depoFrame').iFrameResize({
         minHeight : 250
     });
+
+    console.log(w);
 
     setIframeSrc('account',0);
     setIframeSrc('deposit',1);
@@ -18,10 +21,10 @@ $(function(){
             setActiveNav($(this).attr('data-ref'));
             setIframeSrc($(this).attr('data-ref'),0);
             $('.account-mngr').stop().animate({
-                height: 269
+                height: isMobile()
             },600);
             $(this).addClass('active');
-        }else {
+        } else {
             $('.account-mngr').css('overflow','hidden');
             $('.account-mngr').stop().animate({
                 height: 0
@@ -34,15 +37,23 @@ $(function(){
     $('.acct-mngr-nav ul li a').click(function(e) {
         $('.account-mngr').css('height','auto');
 
-        $('.acct-mngr-nav ul li').removeClass('active');
-        $(this).parent().addClass('active');
-        setIframeSrc($(this).data('href'),0);
+        if(!$(this).parent().hasClass('active')) {
+            $('.acct-mngr-nav ul li').removeClass('active');
+            $(this).parent().addClass('active');
+            setIframeSrc($(this).data('href'),0);
+        } else {
+            return false;
+        }
     });
 
     $('.mgnt-deposit-nav ul li a').click(function(e) {
-        $('.mgnt-deposit-nav ul li').removeClass('active');
-        $(this).parent().addClass('active');
-        setIframeSrc($(this).data('href'),1);
+        if(!$(this).parent().hasClass('active')){
+            $('.mgnt-deposit-nav ul li').removeClass('active');
+            $(this).parent().addClass('active');
+            setIframeSrc($(this).data('href'),1);
+        } else {
+            return false;
+        }
 
         $('html,body').animate({
                 scrollTop: $("#depoFrame").offset().top
@@ -62,5 +73,20 @@ $(function(){
     function setActiveNav(ref){
         $('.acct-mngr-nav ul li').removeClass('active');
         $('.acct-mngr-nav ul li a[data-href="'+ref+'"]').parent().addClass('active');
+    }
+
+    function isMobile() {
+        var width = $(window).width();
+        console.log(width);
+        if(width <= 568){
+            return 680;
+        } else if(width <= 640) {
+            return 510;
+        } else if(width <= 977) {
+            return 345;
+        } else  {
+            return 269;
+        }
+
     }
 });

@@ -542,11 +542,12 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 50%;
 }
 
-.page-notification p {
+.page-notification marquee {
     float: left;
     font: 11px Tahoma;
     color: #808080;
-    margin: 0 0 0 35px;;
+    width: 90%;
+    margin-left: 35px;
     line-height: 19px;
 }
 
@@ -1889,7 +1890,7 @@ table.tnc tbody tr:first-child {
 
 
 /*******************************
-  TOP FEATURED GAMES 
+  TOP FEATURED GAMES
 ********************************/
 #featuredGames {
   margin-bottom: 15px;
@@ -1912,7 +1913,7 @@ table.tnc tbody tr:first-child {
 
 
 /*******************************
-  TAB GAMES 
+  TAB GAMES
 ********************************/
 @-webkit-keyframes fadeEffect {
     from {opacity: 0;}
@@ -2121,7 +2122,7 @@ table.tnc tbody tr:first-child {
     position: absolute;
     top: 30px;
     width: 100%;
-    padding: 20px; 
+    padding: 20px;
     text-align: center;
 }
 .featuredTxtBox h2 {
@@ -2480,4 +2481,250 @@ body.faq {
 }
 .page-about .prod-gallery li span {
     display: block;
+}
+
+/* responsive*/
+
+@media only screen and (max-width : 997px) {
+    /* payment
+    ========================*/
+    .wrap {
+        width: 100%;
+        min-width: 480px;
+    }
+    .wrap-panel {
+        width: 100%;
+    }
+    .page-notification {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    h1.page-title {
+        text-indent: 0;
+    }
+    .manage-header {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+    .account-mngr {
+        width: 100%;
+    }
+    .acct-mngr-nav {
+        width: 100%;
+        float: none;
+    }
+    .acct-mngr-nav ul {
+        width: 100%;
+        overflow: hidden;
+    }
+    .acct-mngr-nav ul li {
+        border-top: none !important;
+        border-left: thin solid #fff;
+        float: left;
+        width: 16.66%;
+    }
+    .acct-mngr-nav ul li:first-child {
+        border-left: none;
+    }
+    .acct-mngr-content {
+        float: none;
+        width: 100%;
+        border-left: none;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .mgnt-wrap {
+        overflow: hidden;
+        min-height: 300px;
+    }
+    .mgnt-acct-info {
+        width: 45%;
+    }
+    .mgnt-account-form {
+        width: 50%;
+        margin-left: 5%;
+    }
+    .mgnt-deposit-wrap {
+        width: 100%;
+    }
+    .mgnt-deposit-nav {
+        float: none;
+        width: 100%;
+        overflow: hidden;
+    }
+    .mgnt-deposit-nav li {
+        float: left;
+        width: 16.66%;
+        border-top: none !important;
+        border-left: thin solid #ebebeb;
+    }
+    .mgnt-deposit-nav li:first-child {
+        border: none;
+    }
+    .central-wallet {
+        float: none;
+        width: 100%;
+        min-height: 0;
+    }
+    ul.wallet-list.main-wallet li {
+        height: 65px !important;
+        padding: 15px 0;
+    }
+    .mgnt-deposit-content {
+        width: 100%;
+    }
+    .depoFrame-nav {
+        width: 100%;
+        float: none;
+        overflow: hidden;
+    }
+    .depoFrame-nav li {
+        float: left;
+        border-top: none !important;
+        border-left: thin solid #fff;
+        padding: 0 2%;
+    }
+    .depoFrame-nav li:first-child {
+        border-left: thin solid #fff;
+    }
+    .depoFrame-content {
+        width: 100%;
+        float: none;
+        padding-top: 15px;
+    }
+    .fast-deposit .info-section {
+        width: 100%;
+        float: none;
+    }
+    .form-section {
+        border-left: none;
+        border-top: thin solid #ccc;
+        width: 100%;
+        float: none;
+        padding-left: 20px;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+    /**/
+    #footer{
+        display: none;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .mgnt-acct-info {
+        width: 30%;
+    }
+    .mgnt-account-form {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width : 736px) {
+    .acct-balance {
+        float: right;
+    }
+    .acct-balance ul li {
+        width: 130px;
+    }
+}
+
+@media only screen and (max-width : 720px) {
+    .mgnt-acct-info {
+        width: 210px;
+    }
+    .mgnt-acct-info table strong {
+        text-align: left;
+    }
+    .mgnt-acct-info table td:first-child {
+        width: 100px;
+    }
+    .mgnt-account-form {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width : 658px){
+    .acct-mngr-nav ul li a { font-size: 11px;}
+}
+
+@media only screen and (max-width : 640px){
+    .acct-balance::before {
+        clear: both;
+        content: '';
+        display: block;
+    }
+    .acct-balance {
+        display: block;
+        float: none;
+        margin: 0;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 15px;
+    }
+    .acct-balance ul li {
+        width: 50%;
+    }
+    .mgnt-acct-info {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width : 568px) {
+    .acct-mngr-nav ul li {
+        display: table;
+    }
+    .acct-mngr-nav ul li a {
+        display: table-cell;
+        height: 55px;
+        vertical-align: middle;
+    }
+    .mgnt-account-form {
+        margin-left: 0;
+    }
+    ul.mgnt-form li label {
+        float: none;
+        text-align: left;
+    }
+    ul.mgnt-form li label.req:after {
+        position: relative;
+        top: 0;
+    }
+    ul.mgnt-form li .txtfield {
+        float: none;
+        margin-left: 0;
+    }
+    ul.mgnt-form li .btn-submit{
+        margin-top: 18px;
+        margin-left: 0 !important;
+        left: 0 !important;
+    }
+
+    .mgnt-address-form,
+    .mgnt-cpw-form,
+    .mgnt-bank-detail-form {
+        width: 100% !important;
+        left: 0 !important;
+    }
+
+    .depoFrame-nav li a {
+        font-size: 11px;
+    }
+    table.form td {
+        line-height: 16px;
+    }
+}
+
+@media only screen and (max-width : 480px){
+    .depoFrame-nav li {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    table.form .txtfield {
+        width: 180px;
+    }
+    .form-section #fd-date {
+        width: 66px;
+    }
 }
