@@ -1,10 +1,10 @@
 ﻿/*-----------------------------------------------------------------------------------
 
 	Theme Name: fb88
-	Theme URI: 
-	Description: 
+	Theme URI:
+	Description:
 	Author: `Edited - Jerome`
-	Author URI: 
+	Author URI:
 	Version: 1.0
 
 -----------------------------------------------------------------------------------*/
@@ -56,7 +56,7 @@ dl, dt, dd, ol, ul, li {
 body {
 	line-height: 1.5;
 	font-family: Arial;
-	position: relative;	
+	position: relative;
 }
 body.blackBody {
 	background: #2d2d2d !important;
@@ -570,7 +570,7 @@ html[xmlns] .slider-wrap {display: block;}
 #logo {
 	position: relative;
 	float: left;
-	font-family: Arial;	
+	font-family: Arial;
 	font-size: 36px;
 	line-height: 100%;
 	margin-top: 15px;
@@ -950,7 +950,7 @@ body.stretched #header.full-header #primary-menu ul li.mega-menu .mega-menu-cont
 	width: 100%;
 	background-color: #028843;
 	box-shadow: 0 0 10px rgba(0,0,0,0.1);
-	border-top: 1px solid 
+	border-top: 1px solid
 }
 #header.sticky-header #header-wrap.reglog {
 	top: 0;
@@ -1080,11 +1080,11 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
 	background: #038842;
 	width: 114px;
 	margin: 0 auto;
-	height: 31px;	
+	height: 31px;
 	line-height: 31px;
 	display: inline-block;
 	text-align: center;
-	
+
 }
 /* ----------------------------------------------------------------
 	Tabs
@@ -1623,7 +1623,7 @@ body:not(.no-transition) #wrapper,
 	background: url(../images/casino/sprite-icons.png) no-repeat;
 	background-position:0 -55px;
 	width: 27px;
-	height: 49px; 
+	height: 49px;
 }
 .bannerCustom {
 	display: block;
@@ -1861,7 +1861,7 @@ body:not(.no-transition) #wrapper,
 	position: absolute;
 	bottom: -5px;
 	right: -5px;
-	z-index: 999;	
+	z-index: 999;
 }
 .time-date {
 	display: inline-block;
@@ -1907,7 +1907,7 @@ body:not(.no-transition) #wrapper,
 	text-align: center;
 	line-height: 1.9;
 }
-.clicks img { 
+.clicks img {
 	vertical-align:middle;
 	//width: 100%;
 	//height: auto;
@@ -1917,23 +1917,23 @@ body:not(.no-transition) #wrapper,
 	position:absolute;
 	left: 0px;
 	top:30px;
-	display:none; 
-	margin:0; 
+	display:none;
+	margin:0;
 	background:#007028;
 	font-family: Arial;
 	font-size:11px;
 	border:1px solid ýellow;
 	padding:5px 10px;
 }
-.notes .items { 
+.notes .items {
 	text-align:left;
 	border-bottom:1px solid #065121;
-	
+
 }
 .notes .items:last-child {
-	 border:none;	
-} 
-.notes .items img { 
+	 border:none;
+}
+.notes .items img {
 	margin-right:9px;
 	margin-left:10px;
 	vertical-align:middle;
@@ -1974,7 +1974,7 @@ body:not(.no-transition) #wrapper,
 	color: #fff;
 }
 .mega-menu-content.style-2 > ul li article {
-	padding:20px 0; 
+	padding:20px 0;
 }
 /***********************************
 	Change background COLOR part
@@ -2007,15 +2007,15 @@ body:not(.no-transition) #wrapper,
 	position:absolute;
 	right:0px;
 	top:25px;
-	display:none; 
-	margin:0; 
+	display:none;
+	margin:0;
 	background:#007028;
 	font-family: Arial;
 	font-size:11px;
 	border:1px solid ýellow;
 	width: 70px;
 	text-align: right;
-	
+
 }
 .colorItem {
 	padding:3px;
@@ -2025,11 +2025,11 @@ body:not(.no-transition) #wrapper,
 	color: #fff !important;
 }
 .circleBox {
-	
+
 	height: 20px;
 	width: 20px;
 	border-radius: 50px;
-	
+
 	display: inline-block;
 	vertical-align: middle;
 }
@@ -2055,9 +2055,9 @@ login part
 	height: 36px;
 	width: 135px;
 	border: 1px solid #8a8a8a;
-	
+
 }
-.login img { 
+.login img {
 	vertical-align:middle;
 	margin-left: 10px;
 }
@@ -2066,8 +2066,8 @@ login part
 	position:absolute;
 	right:-141px;
 	top:46px;
-	display:none; 
-	margin:0; 
+	display:none;
+	margin:0;
 	background: url(../images/casino/loginBg.png) repeat;
 	font-family: Arial;
 	font-size:11px;
@@ -2080,6 +2080,7 @@ login part
 }
 .loginBody input[type=text],.loginBody input[type=password]  {
 	width: 100%;
+    color: #000 !important;
 	border:none;
 	height: 25px;
 	line-height: 25px;
@@ -2152,7 +2153,7 @@ login part
 	width: 120px;
 	font-weight: bold;
 	border: 1px solid #8a8a8a;
-	
+
 }
 
 /***********************************
@@ -2307,7 +2308,7 @@ login part
 }
 
 
-/*** chat ***/ 
+/*** chat ***/
 #btn-Chat {
 	position: fixed;
 	width: 212px;
@@ -2432,7 +2433,7 @@ member-service
 }
 .login-banner-left {
 	padding: 10px;
-	
+
 }
 .blackBody .login-banner-left {
 	border:1px solid #fff;

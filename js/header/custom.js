@@ -47,6 +47,11 @@ ja(document).ready(function(){
         }
     });
 
+    ja('.loginBody').on('click', function(e){
+        if(ja(this).is(':visible'))
+            e.stopPropagation();
+    });
+
     ja('ul.tabs li').click(function(){
 	    var tab_id = ja(this).attr('data-tab');
 
@@ -278,10 +283,6 @@ ja(document).ready(function(){
 		}
 	}
 
-
-
-
-
 	ja('#cpass').focusout(function() {
 		var cpass = ja(this).val();
 		var pass = ja('#pass').val();
@@ -339,10 +340,6 @@ ja(document).ready(function(){
 	var error_pass = false;
 	var error_cpass = false;
 	var error_aff = false;
-
-
-
-
 
 	function check_fullname() {
 		var fullname_length = ja("#fname").val().length;
@@ -492,16 +489,9 @@ ja(document).ready(function(){
 		}
 	});
 
-
-
-
-
 	ja("#primary-menu ul li .mega-menu-content.style-2 li ul.listv li.listnav").hover(function() {
     	ja(this).addClass('active').siblings().removeClass('active');
     	ja(this).css('color','red');
     	//alert('sssssssssssss');
     });
-
-
-
 });
