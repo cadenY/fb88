@@ -1159,7 +1159,7 @@ ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a {
 	position: relative;
 	top: 0px;
 	background-color: #fee71b;
-	color: #fff;
+	color: #2b2700;
 	border:none;
 	border-right:1px solid #fff;
 }
@@ -1272,7 +1272,7 @@ ul.tab-nav li a i {
 
 .feature-box.media-box { padding: 0; }
 
-.feature-box.media-box .fbox-media { margin: 0 0 25px;border: 1px solid #ffbf00; }
+.feature-box.media-box .fbox-media { margin: 0 0 25px;border: 1px solid #fee71b; }
 
 .feature-box.media-box .fbox-media,
 .feature-box.media-box .fbox-media a,
@@ -1590,7 +1590,7 @@ body:not(.device-touch) #gotoTop {
 	-o-transition: background-color .2s linear;
 }
 .stretched #gotoTop { bottom: 30px; }
-#gotoTop:hover { background-color: #ffbf00; color: #fff; }
+#gotoTop:hover { background-color: #fee71b; color: #fff; }
 /* ----------------------------------------------------------------
 	37. Stretched Layout
 -----------------------------------------------------------------*/
@@ -1948,7 +1948,7 @@ body:not(.no-transition) #wrapper,
 }
 .notes .items a:hover{
 	background:#028843;
-	color:#ffbf00;
+	color:#fee71b;
 	font-weight: bold;
 }
 .notes .items:last-child {
@@ -2055,6 +2055,7 @@ login part
 	height: 36px;
 	width: 135px;
 	border: 1px solid #8a8a8a;
+	font-weight: bold;
 
 }
 .login img {
@@ -2094,8 +2095,8 @@ login part
 	vertical-align: middle;
 }
 .loginBody .submit {
-	background: #ffbf00;
-	color: #6d5202;
+	background: #fee71b;
+	color: #2b2700;
 	height: 30px;
 	line-height: 30px;
 	width: 100%;
@@ -2133,6 +2134,7 @@ login part
 	color: #2b2700;
 	display: block;
 	text-align: center;
+	font-weight: bold;
 }
 .mobVer {
 	font-family: Arial;
@@ -2507,7 +2509,7 @@ member-service
 	font-size:12px;
 }
 #cirlceFlags ul #childFlag li a:hover {
-	color: #ffbf00;
+	color: #fee71b;
 }
 #cirlceFlags ul #childFlag li a img {
 	margin-left: 5px;
@@ -2548,16 +2550,16 @@ member-service
 	font-size:12px;
 }
 #cirleColors ul #childColor li a:hover {
-	color: #ffbf00;
+	color: #fee71b;
 }
 
 /***********************************
 	AFTER LOGIN
 ***********************************/
 .deposit.afterLogin {
-	color: #fff;
-	background: #ffbf00;
-	border-color: #ffbf00;
+	color: #2b2700;
+	background: #fee71b;
+	border-color: #fee71b;
 }
 .logout.afterLogin {
 	background: #fff;
@@ -2610,7 +2612,7 @@ ul.top-link li a {
 
 ul.top-link li:hover a,
 ul.top-link li.active a {
-	color: #ffbf00;
+	color: #fee71b;
 }
 
 #header.sticky-header #header-wrap.header-wrap-afterLogin {
@@ -2635,7 +2637,7 @@ ul.top-link li.active a {
 	font-size: 12px;
 }
 .welcome span {
-	color: #ffbf00;
+	color: #fee71b;
 	font-weight: bold;
 }
 

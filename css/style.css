@@ -75,7 +75,7 @@ input[type=number]::-webkit-outer-spin-button {
 .text-red { color: red; }
 
 .btn-join {
-	background: #ffbf00;
+	background: #fee71b;
 	display: block;
 	color: #fff;
 	width: 130px;
@@ -123,8 +123,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .lottery-content .lottery-btn {
-	background: #ffbf00;
-	color: #fff;
+	background: #fee71b;
+	color: #2b2700;
 	font: 700 20px Arial;
 	max-width: 262px;
 	display: block;
@@ -135,10 +135,7 @@ input[type=number]::-webkit-outer-spin-button {
 	transition: 0.2s ease-out;
 }
 
-.lottery-content .lottery-btn:hover {
-	box-shadow: 4px 4px 0 rgba(255,191,0,0.3);
-	text-shadow: 1px 1px 0px #000;
-}
+
 
 #lotto { padding-top: 150px; }
 #lotto .lottery-content { float: right; }
@@ -404,7 +401,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .platform-content .detail a {
-    background: #ffcc00;
+    background: #fee71b;
     border-radius: 6px;
     font-family: 'Montserrat', sans-serif;
     display: block;
@@ -442,7 +439,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .cbd a {
-    background: #ffcc00;
+    background: #fee71b;
     border-radius: 6px;
     font-family: 'Montserrat', sans-serif;
     display: block;
@@ -1623,18 +1620,19 @@ input.p-nav-txtfield {
 }
 
 .grid-item .btn-wrap a {
-	background: #ffbf00;
+	background: #fee71b;
 	display: inline-block;
-	font: 700 12px Arial;
-	line-height: 36px;
-	color: #fff;
+	font: 12px Arial;
+	line-height: 40px;
+	color: #2b2700;
 	margin: 0 1px;
 	max-width: 128px;
 	width: 100%;
 	letter-spacing: 1px;
 	text-align: center;
 	text-decoration: none;
-	text-transform: uppercase;
+  font-weight: bold;
+
 }
 
 .grid-item .btn-wrap a.btn-more {
@@ -2083,14 +2081,15 @@ table.tnc tbody tr:first-child {
   height:65px;
   line-height: 65px;
   text-align: center;
-  background: #ffcc00;
+  background: #fee71b;
   width:276px;
   display: inline-block;
   font-size: 28px;
   text-decoration: none;
-  color: #fff;
+  color: #2b2700;
   border-radius: 5px;
   margin-top: 15px;
+  font-weight: bold;
 }
 .casSlideChildFour a:hover {
   color: #fff;
@@ -2170,13 +2169,14 @@ table.tnc tbody tr:first-child {
   padding-top: 30px;
 }
 .logCont .btnLogin {
-  background: #fee71b;
+  background: #fff;
   border: none;
   width: 120px;
   height: 40px;
-  color: #fff;
+  color: #2b2700;
   border-radius: 5px;
   margin-left: 15px;
+  font-weight: bold;
 }
 
 
