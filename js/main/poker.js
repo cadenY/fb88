@@ -1,4 +1,6 @@
-$(function(){
+var xx = jQuery.noConflict();
+
+xx(function(){
    AOS.init({
      easing: 'ease-out-back',
      duration: 1500,
@@ -6,7 +8,7 @@ $(function(){
    });
 
    setTimeout(function() {
-      $('.owl-carousel').owlCarousel({
+      xx('.owl-carousel').owlCarousel({
          loop:true,
          items:1,
          nav: true,

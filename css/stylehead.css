@@ -1673,7 +1673,7 @@ body:not(.no-transition) #wrapper,
 #btn-download {
 	width: 235px;
 	position: fixed;
-	left: -255px;
+	left: -235px;
 	top: 189px;
 	border:1px solid #fff;
 	border-left: none;
@@ -1682,9 +1682,9 @@ body:not(.no-transition) #wrapper,
 }
 #btn-download #btnCloseDownload {
 	position: absolute;
-	left: 255px;
+	left: 235px;
 	top: 100px;
-	    display: block;
+	display: block;
     height: 159px;
     width: 42px;
 }
