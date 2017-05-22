@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transfer</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../js/bower_components/fancybox/dist/jquery.fancybox.css" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="no-bg">
+    <div class="depoFrame-wrap">
+        <div class="depoFrame-nav">
+            <ul>
+                <li class="active"><a href="javascript:;">Transfer</a></li>
+            </ul>
+        </div>
+        <div class="depoFrame-content">
+            <table class="form">
+                <tbody>
+                    <tr>
+                        <td>Transfer from</td>
+                        <td>
+                            <select name="transferFrom" id="" class="txtfield">
+                                <option value="">-- Select  Wallet --</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Transfer to</td>
+                        <td>
+                            <select name="transferTo" name="" class="txtfield">
+                                <option value="">-- Select  Wallet --</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Transfer Amount</td>
+                        <td>
+                            <input type="text" name="amount" id="amount" class="txtfield">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="submit" class="btn-submit">Submit</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <script src="../js/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../js/bower_components/iframe-resizer/dist/iframeResizer.contentWindow.min.js"></script>
+    <script src="../js/method/functions.js"></script>
+    <script>
+        $(function(){
+            $('#amount').keyup(function(event){
+                if (event.which >= 37 && event.which <= 40) return;
+                $(this).formatAmount();
+            });
+        });
+    </script>
+</body>
+</html>
