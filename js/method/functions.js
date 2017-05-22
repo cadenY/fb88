@@ -1,7 +1,8 @@
-$(function(){
+var j = jQuery.noConflict();
+j(function(){
     // format ammount
-    $.fn.formatAmount = function(){
-        $(this).val(function(index, value) {
+    j.fn.formatAmount = function(){
+        j(this).val(function(index, value) {
            return value
              .replace(/\D/g,"")
              .replace(/\B(?=(\d{3})+(?!\d))/g,",");
@@ -10,7 +11,7 @@ $(function(){
 
     // generateTime
     //  hh = hour; mm = minute
-    $.fn.generateTime = function(param){
+    j.fn.generateTime = function(param){
        var maxTime = 0, d = new Date(), fn;
        switch (param) {
            case 'hh': maxTime = 24; fn = d.getHours(); break;
@@ -18,7 +19,7 @@ $(function(){
        }
 
        for( var i = 0; i < maxTime; i++) {
-           $(this).append("<option value="+((i+1) <= 10 ? '0'+i : i)+" "+(i == fn ? 'selected=selected' : '')+">"+((i+1) <= 10 ? '0'+(i) : (i))+"</option>");
+           j(this).append("<option value="+((i+1) <= 10 ? '0'+i : i)+" "+(i == fn ? 'selected=selected' : '')+">"+((i+1) <= 10 ? '0'+(i) : (i))+"</option>");
        }
     }
 

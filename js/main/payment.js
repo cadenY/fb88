@@ -1,11 +1,21 @@
-$(function(){
+var j = jQuery.noConflict();
+
+j(function(){
+    var jsArray =  ['../js/header/functions.js','../js/header/custom.js','../js/jscript.js'];
+    j('#header').load('../header-payment.html', function() {
+         for(var i = 0; i < jsArray.length; i ++){
+             j.getScript(jsArray[i]);
+         }
+    });
+    j('#copyrights').load('../footer.html');
+
     var w = isMobile();
     // on page load
-    $('#frame').iFrameResize({
+    j('#frame').iFrameResize({
         minHeight : 0
     });
 
-    $('#depoFrame').iFrameResize({
+    j('#depoFrame').iFrameResize({
         minHeight : 250
     });
 
@@ -20,20 +30,20 @@ $(function(){
             switch (id) {
                 case '0':
                     setIframeSrc(ref,0);
-                    $('.acct-mngr-nav ul li').removeClass('active');
-                    $('.acct-mngr-nav ul li a[data-href="'+ref+'"]').parent().addClass('active');
+                    j('.acct-mngr-nav ul li').removeClass('active');
+                    j('.acct-mngr-nav ul li a[data-href="'+ref+'"]').parent().addClass('active');
 
                     setTimeout(function(){
-                        $('.account-mngr').stop().animate({
-                            height: $('#frame').height()
+                        j('.account-mngr').stop().animate({
+                            height: j('#frame').height()
                         },600);
 
                         setIframeSrc('deposit',1);
                     },300);
                     break;
                 case '1':
-                    $('.mgnt-deposit-nav ul li').removeClass('active');
-                    $('.mgnt-deposit-nav ul li a[data-href="'+ref+'"]').parent().addClass('active');
+                    j('.mgnt-deposit-nav ul li').removeClass('active');
+                    j('.mgnt-deposit-nav ul li a[data-href="'+ref+'"]').parent().addClass('active');
                     setIframeSrc('account',0);
                     setIframeSrc(ref,1);
                     break;
@@ -44,70 +54,70 @@ $(function(){
         setIframeSrc('deposit',1);
     }
 
-    $('.img-nav').click(function(e){
+    j('.img-nav').click(function(e){
         e.preventDefault();
-        if(!$(this).hasClass('active')){
-            $('.img-nav').removeClass('active');
-            setActiveNav($(this).attr('data-ref'));
-            setIframeSrc($(this).attr('data-ref'),0);
-            $('.account-mngr').stop().animate({
+        if(!j(this).hasClass('active')){
+            j('.img-nav').removeClass('active');
+            setActiveNav(j(this).attr('data-ref'));
+            setIframeSrc(j(this).attr('data-ref'),0);
+            j('.account-mngr').stop().animate({
                 height: isMobile()
             },600);
-            $(this).addClass('active');
+            j(this).addClass('active');
         } else {
-            $('.account-mngr').css('overflow','hidden');
-            $('.account-mngr').stop().animate({
+            j('.account-mngr').css('overflow','hidden');
+            j('.account-mngr').stop().animate({
                 height: 0
             },600);
-            $(this).removeClass('active');
+            j(this).removeClass('active');
         }
     });
 
     // click event for manage account nav
-    $('.acct-mngr-nav ul li a').click(function(e) {
-        $('.account-mngr').css('height','auto');
+    j('.acct-mngr-nav ul li a').click(function(e) {
+        j('.account-mngr').css('height','auto');
 
-        if(!$(this).parent().hasClass('active')) {
-            $('.acct-mngr-nav ul li').removeClass('active');
-            $(this).parent().addClass('active');
-            setIframeSrc($(this).data('href'),0);
+        if(!j(this).parent().hasClass('active')) {
+            j('.acct-mngr-nav ul li').removeClass('active');
+            j(this).parent().addClass('active');
+            setIframeSrc(j(this).data('href'),0);
         } else {
             return false;
         }
     });
 
-    $('.mgnt-deposit-nav ul li a').click(function(e) {
-        if(!$(this).parent().hasClass('active')){
-            $('.mgnt-deposit-nav ul li').removeClass('active');
-            $(this).parent().addClass('active');
-            setIframeSrc($(this).data('href'),1);
+    j('.mgnt-deposit-nav ul li a').click(function(e) {
+        if(!j(this).parent().hasClass('active')){
+            j('.mgnt-deposit-nav ul li').removeClass('active');
+            j(this).parent().addClass('active');
+            setIframeSrc(j(this).data('href'),1);
         } else {
             return false;
         }
 
         // console.log($("#depoFrame").offset().top);
-        $('html,body').animate({
-                scrollTop: $("#depoFrame").offset().top + -250
+        j('html,body').animate({
+                scrollTop: j("#depoFrame").offset().top + -250
         },1000);
     });
 
     function setIframeSrc(url,ref) {
         switch(ref){
             case 0:
-                $('#frame').attr('src','../manage/'+url+'.html');
+                j('#frame').attr('src','../manage/'+url+'.html');
                 break;
             default:
-                $('#depoFrame').attr('src',url+'.html');
+                j('#depoFrame').attr('src',url+'.html');
         }
     }
 
     function setActiveNav(ref){
-        $('.acct-mngr-nav ul li').removeClass('active');
-        $('.acct-mngr-nav ul li a[data-href="'+ref+'"]').parent().addClass('active');
+        j('.acct-mngr-nav ul li').removeClass('active');
+        j('.acct-mngr-nav ul li a[data-href="'+ref+'"]').parent().addClass('active');
     }
 
     function isMobile() {
-        var width = $(window).width();
+        var width = j(window).width();
         // console.log(width);
         if(width <= 568){
             return 680;

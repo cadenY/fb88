@@ -1,6 +1,7 @@
 var xx = jQuery.noConflict();
 
 xx(function(){
+
    AOS.init({
      easing: 'ease-out-back',
      duration: 1500,
@@ -18,5 +19,5 @@ xx(function(){
          autoplayHoverPause:true
       });
    },300);
-
+   
 });

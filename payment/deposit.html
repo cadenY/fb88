@@ -190,14 +190,15 @@
     <script src="../js/jquery.datetimepicker.full.js"></script>
     <script src="../js/method/functions.js"></script>
     <script>
-        $(function(){
-            $('#amount').keyup(function(event){
+        var j = jQuery.noConflict();
+        j(function(){
+            j('#amount').keyup(function(event){
                 if (event.which >= 37 && event.which <= 40) return;
-                $(this).formatAmount();
+                j(this).formatAmount();
             });
 
             // datetime
-            $('#fd-date').datetimepicker({
+            j('#fd-date').datetimepicker({
                 value: {
                     format: 'd/m/Y'
                 },
@@ -207,19 +208,19 @@
                 defaultDate: new Date()
             });
 
-            $('#hr').generateTime('hh');
-            $('#min').generateTime('mm');
+            j('#hr').generateTime('hh');
+            j('#min').generateTime('mm');
 
-            $('#bank').change(function(){
-                if($(this).val() == 'other'){
-                    $('#bankNameRow').show();
+            j('#bank').change(function(){
+                if(j(this).val() == 'other'){
+                    j('#bankNameRow').show();
                 }else {
-                    $('#bankNameRow').hide();
+                    j('#bankNameRow').hide();
                 }
             });
 
             //submit
-            $('.btn-submit').click(function(e){
+            j('.btn-submit').click(function(e){
                 e.preventDefault();
                 // if sucess
                 fnDisplayMsg();

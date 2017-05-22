@@ -88,9 +88,10 @@
     <script src="../js/jquery.datetimepicker.full.js"></script>
     <script src="../js/method/functions.js"></script>
     <script>
-        $(function(){
+        var j = jQuery.noConflict();
+        j(function(){
             // datetime
-            $('.datepicker').datetimepicker({
+            j('.datepicker').datetimepicker({
                 value: {
                     format: 'd/m/Y'
                 },

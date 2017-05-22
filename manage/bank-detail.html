@@ -58,12 +58,13 @@
     <script src="../js/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../js/bower_components/iframe-resizer/dist/iframeResizer.contentWindow.min.js"></script>
     <script>
-        $(function(){
-            $('#bank').change(function(){
-                if($(this).val() == 'other'){
-                    $('#bankNameRow').show();
+        var j = jQuery.noConflict();
+        j(function(){
+            j('#bank').change(function(){
+                if(j(this).val() == 'other'){
+                    j('#bankNameRow').show();
                 }else {
-                    $('#bankNameRow').hide();
+                    j('#bankNameRow').hide();
                 }
             })
         });

@@ -141,9 +141,10 @@
     <script src="../js/bower_components/iframe-resizer/dist/iframeResizer.contentWindow.min.js"></script>
     <script src="../js/method/functions.js"></script>
     <script>
-        $(function(){
+        var j = jQuery.noConflict();
+        j(function(){
             //submit
-            $('.btn-submit').click(function(e){
+            j('.btn-submit').click(function(e){
                 e.preventDefault();
                 // if sucess
                 fnDisplayMsg();
