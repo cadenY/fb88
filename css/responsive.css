@@ -246,9 +246,22 @@
 	    font-size: 14px;
 	    font-weight: bold;
 	}
+
+/*LOTTERY */	
 		#lotto .lottery-content{
-		float: none; !important;
+		    float: none;
+		    text-align: center;
+		    width: 300px !important;
+		    margin-top: -100px
 	}
+
+	#keno .lottery-content {
+	  	margin-left: 0px;
+	    text-align: center;
+	    width: 300px !important;
+	    margin-top: -200px;
+	}
+
 		.lottery-content h2 {
 	    color: #fff;
 	    font-size: 49px;
@@ -258,6 +271,42 @@
 	    letter-spacing: 2px;
 	    text-transform: uppercase;
 	}
+	.lottery-content .lottery-btn {
+	    background: #fee71b;
+	    color: #2b2700;
+	    font: 700 20px Arial;
+	    max-width: 262px;
+	    display: block;
+	    text-align: center;
+	    text-decoration: none;
+	    line-height: 62px;
+	    box-shadow: none;
+	    transition: 0.2s ease-out;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+	.ilotto-result {
+	    float: left;
+	    font-size: 0;
+	    margin-left:0px;
+	    margin-top: -375px;
+	    text-align: center;
+	    width: 300px;
+	}
+	#ilotto .lottery-content {
+	    margin-left: 0px;
+	    text-align: center;
+	    width: 317px !important;
+	    margin-top: 50px;
+	}
+
+	.page-lottery {
+	    background: url(../images/bg-lottery.jpg) top center repeat-x;
+	    padding-bottom: 25px;
+	}
+/*LOTTERY END*/
+
 	.promo-dropdown {
 		display: block !important;
 	}
