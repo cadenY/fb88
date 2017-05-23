@@ -1672,29 +1672,53 @@ input.p-nav-txtfield {
 	background: #fff;
 }
 
-.promo-terms {
+.promo-termsLight {
 	margin-top: 25px;
 	padding-bottom: 50px;
 }
-
-.promo-terms strong {
-	font-size: 12px;
-	color:#333;
-	display: block;
-	margin-bottom: 27px;
+.promo-termsDark {
+  margin-top: 25px;
+  padding-bottom: 50px;
 }
 
-.promo-terms ol {
+.promo-termsLight strong {
+  font-size: 12px;
+  color:#333;
+  display: block;
+  margin-bottom: 27px;
+}
+
+.promo-termsDark strong {
+  font-size: 12px;
+  color:white;
+  display: block;
+  margin-bottom: 27px;
+}
+
+.promo-termsLight ol {
 	margin: 0;
 	padding-left: 14px;
 }
 
-.promo-terms li {
+.promo-termsLight li {
 	color: #333;
 	font: 12px Arial;
 	margin-bottom: 9px;
 	line-height: 20px;
 }
+
+.promo-termsDark ol {
+  margin: 0;
+  padding-left: 14px;
+}
+
+.promo-termsDark li {
+  color: white
+  font: 12px Arial;
+  margin-bottom: 9px;
+  line-height: 20px;
+}
+
 
 /* custom promo popup style */
 .custom-style {
