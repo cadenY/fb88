@@ -1631,6 +1631,10 @@ body.blackBody,
     background: url(../images/icon-refresh-light.png) center no-repeat;
 }
 
+.blackBody .page-notification i.icon-bell-gray {
+    background: url(../images/casino/bell-icon.png) top center no-repeat
+}
+
 
 .promo-wrap {
 	overflow: hidden;
