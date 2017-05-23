@@ -222,7 +222,7 @@
 	    margin: 0;
 	}
 	.pc-content{
-		margin-left: 30px !important;
+		margin-left: 60px !important;
 	}
 
 	.qr-container{
@@ -237,7 +237,8 @@
 	    font-family: Arial !important;
 	    font-size: 20px;
 	    font-weight: bold;
-	    color: #040202;
+	    /*color: #040202;*/
+	    color: white;
 	    margin-top: 10px;
 	}
 	.qr-txt p {
@@ -247,18 +248,25 @@
 	    font-weight: bold;
 	}
 
+	.pc-img img {
+	    display: block;
+	    margin: 0;
+	    margin-left: 18px;
+	    margin-top: 20px;
+	}
+
 /*LOTTERY */	
 		#lotto .lottery-content{
 		    float: none;
 		    text-align: center;
-		    width: 300px !important;
+		    width: 100% !important;
 		    margin-top: -100px
 	}
 
 	#keno .lottery-content {
 	  	margin-left: 0px;
 	    text-align: center;
-	    width: 300px !important;
+	    width: 100% !important;
 	    margin-top: -200px;
 	}
 
@@ -297,7 +305,7 @@
 	#ilotto .lottery-content {
 	    margin-left: 0px;
 	    text-align: center;
-	    width: 317px !important;
+	    width: 100% !important;
 	    margin-top: 50px;
 	}
 
