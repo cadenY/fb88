@@ -120,7 +120,7 @@
 	    overflow: hidden;
 	    bottom: 114px;
 	}
-	
+
 	.featuredTxtBox {
     	left: none !important;
     	margin-left: none !important;
@@ -150,14 +150,17 @@
 	   height: auto !important;
 	   background: #353535;
 	}
+
 	.pc-content img {
 		margin-left: -6px !important;
 	}
 
 	.pc-content {
-	    width: 272px;
-	    float: left;
-	    margin-top: -70px;
+	    width: 100%;
+	    float: none;
+	    margin-top:0;
+        text-align: center;
+        margin-left: 0;
 	}
 	.pc-content h2 {
 	    font-family: 'Oswald', sans-serif;
@@ -172,6 +175,21 @@
 	    margin: 0 0 27px;
 	    text-align: justify;
 	}
+
+    .pc-img {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .pc-img img {
+        margin: 0 auto;
+    }
+
+    .poker-deck img.chip {
+        display: none;
+    }
+
 	.cleanTop{
 		margin-top: 0px !important;
 	}
@@ -221,10 +239,6 @@
 	    color: #fff;
 	    margin: 0;
 	}
-	.pc-content{
-		margin-left: 30px !important;
-	}
-
 	.qr-container{
 	  text-align: center;
 	  width: 194px;
@@ -247,7 +261,7 @@
 	    font-weight: bold;
 	}
 
-/*LOTTERY */	
+/*LOTTERY */
 		#lotto .lottery-content{
 		    float: none;
 		    text-align: center;
@@ -2198,4 +2212,3 @@ only screen and (                min-resolution: 2dppx) and (max-width: 991px) {
 	#logo a.standard-logo {  }
 	#logo a.retina-logo { display: inline-block; }
 }
-
