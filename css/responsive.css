@@ -155,9 +155,22 @@
 	}
 
 	.pc-content {
-	    width: 320px;
+	    width: 272px;
 	    float: left;
-	    margin-top: -89px
+	    margin-top: -70px;
+	}
+	.pc-content h2 {
+	    font-family: 'Oswald', sans-serif;
+	    margin: 0 0 13px;
+	    font-size: 30px;
+	    font-weight: 400;
+	    line-height: normal;
+	}
+	.pc-content p {
+	    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	    font-size: 15px;
+	    margin: 0 0 27px;
+	    text-align: justify;
 	}
 	.cleanTop{
 		margin-top: 0px !important;
@@ -180,21 +193,7 @@
 	    padding: 20px;
 	    position: relative;
 	}
-	.pc-content h2 {
-	    font-family: 'Oswald', sans-serif;
-	    color: #353535;
-	    margin: 0 0 13px;
-	    font-size: 24px;
-	    font-weight: 400;
-	    line-height: normal;
-	}
-	.pc-content p {
-	    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	    font-size: 12px;
-	    color: #353535;
-	    margin: 0 0 17px;
-	    text-align: justify;
-	}
+
 	.poker-deck img.chip-gray {
 		width: 14% !important;
 		left: -1px;
@@ -217,13 +216,13 @@
 	}
 	.poker-deck .pd-content p {
 	    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	    font-size: 12px;
+	    font-size: 14px;
 	    text-align: justify;
 	    color: #fff;
 	    margin: 0;
 	}
 	.pc-content{
-		margin-left: 52px !important;
+		margin-left: 30px !important;
 	}
 
 	.qr-container{
