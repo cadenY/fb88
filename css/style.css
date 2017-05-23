@@ -1594,18 +1594,37 @@ input.p-nav-txtfield {
 }
 
 /* payment dark */
-.blackBody .page-manage {
+body.blackBody,
+.blackBody .page-manage,
+.blackBody .mgnt-deposit-content {
     background: #2d2d2d;
 }
 
 .blackBody .page-notification marquee,
 .blackBody  .acct-notification p,
-.blackBody  .acct-balance ul li label {
+.blackBody  .acct-balance ul li label,
+.blackBody .info-section table.info td,
+.blackBody .info-section h5,
+.blackBody .info-section li,
+.blackBody .form-section h3,
+.blackBody .form-section ul.guide li,
+.blackBody .form-section .note,
+.blackBody table.form td {
     color: #fff;
 }
 
-.blackBody  .acct-balance ul li span {
+.blackBody  .acct-balance ul li span,
+.blackBody .depoFrame-wrap strong{
     color: #fee71b;
+}
+
+.blackBody table.form .btn-submit {
+    background:  #fee71b;
+    color: #2b2700;
+}
+
+.blackBody table.form .red {
+    color: red;
 }
 
 
