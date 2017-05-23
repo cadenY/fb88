@@ -239,13 +239,11 @@
 	    color: #fff;
 	    margin: 0;
 	}
-<<<<<<< HEAD
+
 	.pc-content{
 		margin-left: 60px !important;
 	}
 
-=======
->>>>>>> 37ea7f897d058bca907be767f4fdbc3dbfdf01b8
 	.qr-container{
 	  text-align: center;
 	  width: 194px;
@@ -269,7 +267,7 @@
 	    font-weight: bold;
 	}
 
-<<<<<<< HEAD
+
 	.pc-img img {
 	    display: block;
 	    margin: 0;
@@ -278,9 +276,9 @@
 	}
 
 /*LOTTERY */	
-=======
+
 /*LOTTERY */
->>>>>>> 37ea7f897d058bca907be767f4fdbc3dbfdf01b8
+
 		#lotto .lottery-content{
 		    float: none;
 		    text-align: center;
