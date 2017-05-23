@@ -482,7 +482,6 @@
     <script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
     <script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
     <script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
-    <script type="text/javascript" src="js/jquery.datetimepicker.full.js"></script>
     <script type="text/javascript">
         var tpj = jQuery;
         tpj.noConflict();
@@ -586,16 +585,6 @@
                 hideCaptionAtLimit: 0,
                 hideAllCaptionAtLilmit: 0,
                 startWithSlide: 0,
-            });
-        });
-        var kj = jQuery.noConflict();
-        kj(document).ready(function() {
-            kj('#dob').datetimepicker({
-                yearOffset: 0,
-                lang: 'en',
-                timepicker: false,
-                format: 'd/m/Y',
-                formatDate: 'Y/m/d',
             });
         });
     </script>
