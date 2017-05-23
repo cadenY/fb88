@@ -14,8 +14,21 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
     <link rel="stylesheet" href="css/responsive.css" type="text/css" />
     <link rel="stylesheet" href="css/stylehead.css">
+    <style type="text/css">
+        body {
+            color: white !important;
+        }
+        .pc-content h2 {
+            font-family: 'Oswald', sans-serif;
+            color: white !important;
+            margin: 0 0 13px;
+            font-size: 45px;
+            font-weight: 400;
+            line-height: normal;
+        }
+    </style>
 </head>
-<body style="background: #2d2d2d">
+<body  class="stretched blackBody">
 
 <!-- download -->
 <div id="btn-download">
@@ -133,6 +146,18 @@
                 </ul>
                 <input type="text" name="search" class="p-nav-txtfield" placeholder="SEARCH">
                 <div class="clear"></div>
+            </div>
+            <div class="promo-dropdown" style="display: none;">
+                <select id="m-tab">
+                    <option value=".new" class="active">All Promo</option>
+                    <option value=".special">New Member</option>
+                    <option value=".sports">Special</option>
+                    <option value=".casino">Casino</option>
+                    <option value=".slot">Slots</option>
+                    <option value=".lottery">Lottery</option>
+                    <option value=".lottery">VIP</option>
+                </select>
+                <input type="text" name="search" class="p-nav-txtfield" placeholder="SEARCH">
             </div>
         </div>
         <div class="promo-wrap wrap-panel">
@@ -557,50 +582,55 @@
     <script src="js/header/plugins.js"></script>
     <script src="js/bower_components/fancybox/dist/jquery.fancybox.min.js"></script>
     <script src="js/bower_components/isotope/dist/isotope.pkgd.min.js"></script>
-    <script type="text/javascript">
+<script type="text/javascript">
 
-        var js = jQuery.noConflict();
+    var js = jQuery.noConflict();
 
-        js(document).ready(function(){
+    js(document).ready(function(){
 
-            var jsArray =  ['js/header/functions.js','js/header/custom.js','js/jscript.js'];
-            js('#header').load('header.html', function() {
-                for(var i = 0; i < jsArray.length; i ++){
-                    js.getScript(jsArray[i]);
-                }
-            });
+        var jsArray =  ['js/header/functions.js','js/header/custom.js','js/jscript.js'];
+        js('#header').load('header.html', function() {
+            for(var i = 0; i < jsArray.length; i ++){
+                js.getScript(jsArray[i]);
+            }
+        });
 
-            js('#copyrights').load('footer.html');
+        js('#copyrights').load('footer.html');
 
-            var grid = js('.promo-grid').isotope({
-                itemSelector: '.grid-item',
-                layoutMode: 'fitRows'
-            });
+        var grid = js('.promo-grid').isotope({
+            itemSelector: '.grid-item',
+            layoutMode: 'fitRows'
+        });
 
-            js('ul.p-nav li a').click(function(e) {
+        js('ul.p-nav li a').click(function(e) {
             js('ul.p-nav li').removeClass('active');
             js(this).parent().addClass('active');
             var filterValue = js(this).attr('data-filter');
                 grid.isotope({ filter: filterValue });
-            });
+        });
 
-            // fancybox
-            js("[data-promo-fancybox]").fancybox({
-            margin: [0,0,0,0],
-            infobar : false,
-            buttons : false,
-            smallBtn: false,
-            onComplete: function(instance, slide){
-              js('.fancybox-container').click(function(e){
-                if( js(e.target).hasClass('fancybox-slide--current') ){
-                  js.fancybox.close();
-                }
-              })
+        js('#m-tab').change(function(){
+            var filterValue = js(this).val()
+                grid.isotope({ filter: filterValue });
+        });
+
+        // fancybox
+        js("[data-promo-fancybox]").fancybox({
+        margin: [0,0,0,0],
+        infobar : false,
+        buttons : false,
+        smallBtn: false,
+        onComplete: function(instance, slide){
+          js('.fancybox-container').click(function(e){
+            if( js(e.target).hasClass('fancybox-slide--current') ){
+              js.fancybox.close();
             }
-            });
-        })
+          })
+        }
+        });
+    })
 
-    </script>
+</script>
     <!--  -->
 </body>
 </html>
