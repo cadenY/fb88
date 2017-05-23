@@ -263,28 +263,29 @@
 	}
 	.promo-dropdown #m-tab {
 		background: #2b9650;
-    	color: #fff;
-    	height: 30px;
-	    width: 164px;
+	    color: #fff;
+	    height: 30px;
+	    width: 100%;
 	    border: none !important;
-	    font: 12px Arial;
+	    font: 15px Arial;
 	    line-height: 46px;
 	    text-decoration: none;
 	    text-transform: uppercase;
-	    transition: 0.3s linear
-	    padding: 4px 8px;
 	}
 
+
 	input.p-nav-txtfield {
-	    float: right;
-	    width: 150px;
+	    float: left;
+	    width: 100%;
 	    font-size: 13px;
 	    font-family: Tahoma;
 	    color: #333;
 	    outline: 0 !important;
 	    padding: 4px 8px;
-	    margin: -1px -5px 0 0;
+	    border: none;
+	    margin: -50px 0px 0px 0;
 	}
+
 
 	.promo-nav {
 		display: none;
