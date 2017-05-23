@@ -120,7 +120,7 @@
 	    overflow: hidden;
 	    bottom: 114px;
 	}
-	
+
 	.featuredTxtBox {
     	left: none !important;
     	margin-left: none !important;
@@ -334,8 +334,6 @@
 	    border: none;
 	    margin: -50px 0px 0px 0;
 	}
-
-
 	.promo-nav {
 		display: none;
 	}
@@ -2198,4 +2196,3 @@ only screen and (                min-resolution: 2dppx) and (max-width: 991px) {
 	#logo a.standard-logo {  }
 	#logo a.retina-logo { display: inline-block; }
 }
-
