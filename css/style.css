@@ -1627,6 +1627,10 @@ body.blackBody,
     color: red;
 }
 
+.blackBody  .acct-balance ul li i  {
+    background: url(../images/icon-refresh-light.png) center no-repeat;
+}
+
 
 .promo-wrap {
 	overflow: hidden;
