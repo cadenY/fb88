@@ -239,6 +239,13 @@
 	    color: #fff;
 	    margin: 0;
 	}
+<<<<<<< HEAD
+
+	.pc-content{
+		margin-left: 60px !important;
+	}
+=======
+>>>>>>> ea378ef2e50e604a313e5dee02617a0b18d4cd65
 
 	.qr-container{
 	  text-align: center;
@@ -263,6 +270,10 @@
 	    font-weight: bold;
 	}
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> ea378ef2e50e604a313e5dee02617a0b18d4cd65
 	.pc-img img {
 	    display: block;
 	    margin: 0;
@@ -270,7 +281,15 @@
 	    margin-top: 20px;
 	}
 
+<<<<<<< HEAD
+/*LOTTERY */	
+
+/*LOTTERY */
+
+		#lotto .lottery-content{
+=======
 	#lotto .lottery-content{
+>>>>>>> ea378ef2e50e604a313e5dee02617a0b18d4cd65
 		    float: none;
 		    text-align: center;
 		    width: 100% !important;
