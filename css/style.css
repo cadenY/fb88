@@ -211,7 +211,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .poker-challenge {
    padding: 114px 0 91px;
-   background: #efeae7;
+   background: #2d2d2d;
 }
 
 .pc-content {
@@ -248,7 +248,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .poker-deck {
    position: relative;
-   background: #004251;
+   background: #028843;
    text-align: center;
    padding: 65px 0 92px;
 }
@@ -1499,7 +1499,6 @@ table.form #imgCaptcha {
 
 /* promotion */
 .page-promo {
-    background: #fff;
     padding-top: 65px;
 }
 
