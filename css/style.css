@@ -210,19 +210,59 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .poker-challenge {
-   padding: 114px 0 91px;
+  padding: 70px 0 91px
+}
+
+.poker-challenge .dark {
    background: #2d2d2d;
 }
 
+.poker-challenge .light{
+  background: white;
+}
+
+.pc-content .light h2 {
+   font-family: 'Oswald', sans-serif;
+   color: #353535;
+   margin:0 0 13px;
+   font-size: 45px;
+   font-weight: 400;
+   line-height: normal;
+}
+
+.pc-content .light p {
+   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+   font-size: 22px;
+   color: #353535;
+   margin: 0 0 27px;
+   text-align: justify;
+}
+
+.pc-content .dark h2 {
+   font-family: 'Oswald', sans-serif;
+   color: white;
+   margin:0 0 13px;
+   font-size: 45px;
+   font-weight: 400;
+   line-height: normal;
+}
+
+.pc-content .dark p {
+   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+   font-size: 22px;
+   color: white;
+   margin: 0 0 27px;
+   text-align: justify;
+}
+
 .pc-content {
-   /*width: 390px;*/
-   float: left;
-   margin-top: 89px;
+    width: 550px;
+    float: left;
+    margin-top: 60px;
 }
 
 .pc-content h2 {
    font-family: 'Oswald', sans-serif;
-   color: #353535;
    margin:0 0 13px;
    font-size: 45px;
    font-weight: 400;
@@ -232,7 +272,6 @@ input[type=number]::-webkit-outer-spin-button {
 .pc-content p {
    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
    font-size: 22px;
-   color: #353535;
    margin: 0 0 27px;
    text-align: justify;
 }
