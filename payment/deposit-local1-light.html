@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Local E Wallet Line 1</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../js/bower_components/fancybox/dist/jquery.fancybox.css" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="no-bg">
+    <div class="depoFrame-wrap fast-deposit">
+        <div class="depoFrame-nav">
+            <ul>
+                <li><a href="deposit.html">Fast Deposit</a></li>
+                <li class="active"><a href="javscript:;">Local E Wallet - Line 1</a></li>
+                <li><a href="deposit-local2.html">Local E Wallet - Line 2</a></li>
+                <li><a href="deposit-fb88.html">FB88 Pay</a></li>
+                <li><a href="deposit-scratch-card.html">Scratch Card</a></li>
+            </ul>
+        </div>
+        <div class="depoFrame-content">
+            <div class="info-section">
+                <table class="info">
+                    <tbody>
+                        <tr>
+                            <td><strong>Option:</strong></td>
+                            <td>eWallet - Line 1</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mode:</strong></td>
+                            <td>Online</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Min/Max Limit:</strong></td>
+                            <td>2,4000.00/100,000.00</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Daily Limit:</strong></td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total Allowed:</strong></td>
+                            <td> Unlimited</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="form-section">
+                <table class="form">
+                    <tbody>
+                        <tr>
+                            <td>Deposit Amount</td>
+                            <td class="red">*</td>
+                            <td>
+                                <input type="text" name="amount" id="amount" class="txtfield">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td><td></td>
+                            <td><button type="submit" class="btn-submit">Deposit</button></td>
+                        </tr>
+                        <tr>
+                            <td></td><td></td>
+                            <td><p style="color: red; font-size: 12px;">1 unit of Vietnamese Dong (VND) will represent VND 1,000.</p></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <script src="../js/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../js/bower_components/iframe-resizer/dist/iframeResizer.contentWindow.min.js"></script>
+    <script src="../js/method/functions.js"></script>
+    <script>
+        var j = jQuery.noConflict();
+        j(function(){
+            j('#amount').keyup(function(event){
+                if (event.which >= 37 && event.which <= 40) return;
+                j(this).formatAmount();
+            });
+
+            //submit
+            j('.btn-submit').click(function(e){
+                e.preventDefault();
+                // if sucess
+                fnDisplayMsg();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>History Adjustment</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../js/bower_components/fancybox/dist/jquery.fancybox.css" />
+    <link rel="stylesheet" href="../css/jquery.datetimepicker.css"/>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="no-bg">
+    <div class="depoFrame-wrap">
+        <div class="depoFrame-nav">
+            <ul>
+                <li><a href="history.html">Deposit/Withdrawal</a></li>
+                <li class="active"><a href="javascript:;">Adjustment</a></li>
+                <li><a href="history-fund-transfer.html">Fund Transfer</a></li>
+                <li><a href="history-promotion-claim.html">Promotion Claim</a></li>
+            </ul>
+        </div>
+        <div class="depoFrame-content">
+            <table class="form" cellspacing="0" cellpadding="0">
+    			<colgroup>
+    				<col style="width:65px;">
+    				<col style="width:5px;">
+    				<col style="width:170px;">
+    				<col style="width:65px;">
+    				<col style="width:65px;">
+    				<col style="width:5px; ">
+    				<col style="width:170px;">
+    				<col style="width:65px;">
+    			</colgroup>
+    			<tbody>
+                    <tr>
+        				<td>Start Date</td>
+        				<td>:</td>
+        				<td>
+        					<input id="startDate" type="text" class="datepicker txtfield">
+                        </td>
+        				<td></td>
+        				<td>End Date</td>
+        				<td>:</td>
+        				<td>
+        					<input id="endDate" type="text" class="datepicker txtfield">
+                        </td>
+        				<td></td>
+    			    </tr>
+    			    <tr>
+        				<td>Type</td>
+        				<td>:</td>
+        				<td>
+        					<select id="type" class="selectbox txtfield">
+        						<option value="0">All</option>
+        						<option value="1">Credit</option>
+        						<option value="2">Debit</option>
+        					</select>
+        				<td></td>
+        				<td>Status</td>
+        				<td>:</td>
+        				<td>
+        					<select id="status" class="selectbox txtfield">
+        						<option value="All">All</option>
+                                <option value="Pending">Pending</option>
+        						<option value="Successful">Successful</option>
+        					</select>
+        				</td>
+        				<td></td>
+        			</tr>
+        			<tr>
+        				<td></td>
+        				<td></td>
+        				<td><button type="submit" class="btn-submit">Submit</button></td>
+        				<td></td>
+        				<td></td>
+        				<td></td>
+        				<td></td>
+        				<td></td>
+        			</tr>
+        		</tbody>
+            </table>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <script src="../js/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../js/bower_components/iframe-resizer/dist/iframeResizer.contentWindow.min.js"></script>
+    <script src="../js/jquery.datetimepicker.full.js"></script>
+    <script src="../js/method/functions.js"></script>
+    <script>
+        var j = jQuery.noConflict();
+        j(function(){
+            // datetime
+            j('.datepicker').datetimepicker({
+                value: {
+                    format: 'd/m/Y'
+                },
+                timepicker:false,
+                format:'d/m/Y',
+                maxDate: new Date(),
+                defaultDate: new Date()
+            });
+        });
+    </script>
+</body>
+</html>

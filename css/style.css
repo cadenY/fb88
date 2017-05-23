@@ -1593,6 +1593,22 @@ input.p-nav-txtfield {
     margin: 10px 13px 0 0;
 }
 
+/* payment dark */
+.blackBody .page-manage {
+    background: #2d2d2d;
+}
+
+.blackBody .page-notification marquee,
+.blackBody  .acct-notification p,
+.blackBody  .acct-balance ul li label {
+    color: #fff;
+}
+
+.blackBody  .acct-balance ul li span {
+    color: #fee71b;
+}
+
+
 .promo-wrap {
 	overflow: hidden;
 }
