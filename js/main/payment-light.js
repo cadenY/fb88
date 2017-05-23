@@ -107,7 +107,7 @@ j(function(){
                 j('#frame').attr('src','../manage/'+url+'.html');
                 break;
             default:
-                j('#depoFrame').attr('src',url+'.html');
+                j('#depoFrame').attr('src',url+'-light.html');
         }
     }
 
