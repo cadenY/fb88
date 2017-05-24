@@ -2973,3 +2973,8 @@ ul.top-link li.active a {
 	height: 36px;
 	vertical-align: middle;
 }
+
+.customClear,
+.flagClear {
+    display: none;
+}
