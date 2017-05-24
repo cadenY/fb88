@@ -294,55 +294,6 @@
     <!-- you script -->
     <script src="../js/method/functions.js"></script>
     <script src="../js/main/payment-light.js"></script>
-
-    <script type="text/javascript">
-
-    var js = jQuery.noConflict();
-
-    js(document).ready(function(){
-
-        var jsArray =  ['js/header/functions.js','js/header/custom.js','js/jscript.js'];
-        js('#header').load('header-light.html', function() {
-            for(var i = 0; i < jsArray.length; i ++){
-                js.getScript(jsArray[i]);
-            }
-        });
-
-        js('#copyrights').load('footer.html');
-
-        var grid = js('.promo-grid').isotope({
-            itemSelector: '.grid-item',
-            layoutMode: 'fitRows'
-        });
-
-        js('ul.p-nav li a').click(function(e) {
-            js('ul.p-nav li').removeClass('active');
-            js(this).parent().addClass('active');
-            var filterValue = js(this).attr('data-filter');
-                grid.isotope({ filter: filterValue });
-        });
-
-        js('#m-tab').change(function(){
-            var filterValue = js(this).val()
-                grid.isotope({ filter: filterValue });
-        });
-
-        // fancybox
-        js("[data-promo-fancybox]").fancybox({
-        margin: [0,0,0,0],
-        infobar : false,
-        buttons : false,
-        smallBtn: false,
-        onComplete: function(instance, slide){
-          js('.fancybox-container').click(function(e){
-            if( js(e.target).hasClass('fancybox-slide--current') ){
-              js.fancybox.close();
-            }
-          })
-        }
-        });
-    })
-
 </script>
 </body>
 </html>
