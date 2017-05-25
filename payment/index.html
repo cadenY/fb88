@@ -294,24 +294,5 @@
     <!-- you script -->
     <script src="../js/method/functions.js"></script>
     <script src="../js/main/payment.js"></script>
-
-    <script type="text/javascript">
-
-    var js = jQuery.noConflict();
-
-    js(document).ready(function(){
-
-        var jsArray =  ['../js/header/functions.js','../js/header/custom.js','../js/jscript.js'];
-        js('#header').load('../header-payment.html', function() {
-            for(var i = 0; i < jsArray.length; i ++){
-                js.getScript(jsArray[i]);
-            }
-        });
-
-        js('#copyrights').load('../footer.html');
-    })
-
-</script>
-
 </body>
 </html>
