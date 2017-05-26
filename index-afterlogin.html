@@ -32,7 +32,7 @@
          font-size: 64px;
          font-weight: 700;
          letter-spacing: -1px;
-         font-family: 'Raleway', sans-serif;
+         font-family: Arial;
          padding: 15px 20px;
          border-top: 2px solid #FFF;
          border-bottom: 2px solid #FFF;
@@ -48,7 +48,7 @@
          font-size: 16px;
          font-weight: 400;
          letter-spacing: 3px;
-         font-family: 'Raleway', sans-serif;
+         font-family: Arial;
          }
          .tp-video-play-button { display: none !important; }
          .tp-caption { white-space: nowrap; }
@@ -60,6 +60,9 @@
          height: 100%;
          z-index: 9999;
          background: url(Preloader_2.gif) center no-repeat #fff;
+         }
+         .tp-thumbs {
+            top: 109% !important;
          }
       </style>
    </head>
@@ -171,7 +174,7 @@
       <header id="header"> </header>
       <!-- #header end -->   
       <div id="wrapper" class="clearfix">
-         <section id="slider" class="slider-parallax revslider-wrap full-screen clearfix">
+         <section id="slider" style="max-height: 300px;" class="slider-parallax revslider-wrap full-screen clearfix">
             <div class="tp-banner-container" >
                <div class="tp-banner">
                   <ul>
@@ -208,8 +211,8 @@
                            Fair Games To Play - Trust Place To Bet
                         </div>
                         <div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text tleft"
-                           data-x="700"
-                           data-y="180"
+                           data-x="500"
+                           data-y="160"
                            data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
                            data-speed="800"
                            data-start="1400"
@@ -221,8 +224,8 @@
                            data-endspeed="1000"
                            data-endeasing="Power4.easeIn" style="z-index: 3; color: #fff; font-size: 40px; font-family: Arial; text-transform: none; text-align: center !important; max-width: auto; width: auto; font-weight: bold; line-height: 35px;"> Register & Claim Your <br> Free Bet Now!</div>
                         <div class="tp-caption customin ltl tp-resizeme"
-                           data-x="740"
-                           data-y="260"
+                           data-x="540"
+                           data-y="240"
                            data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
                            data-speed="800"
                            data-start="1550"
@@ -234,8 +237,8 @@
                            data-endspeed="1000"
                            data-endeasing="Power4.easeIn" style="z-index: 3;"><a href="registration.html" class="button button-large  nomargin" style="color: #1d1900; font-family: arial; font-weight: bold; font-size: 16px; height: 50px; line-height: 50px; border-radius: 0;text-align: center;padding: 0 30px !important; letter-spacing: 0; background: #fee71b;">REGISTER NOW</a></div>
                         <div class="tp-caption customin ltl tp-resizeme"
-                           data-x="940"
-                           data-y="260"
+                           data-x="740"
+                           data-y="240"
                            data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
                            data-speed="800"
                            data-start="1550"
@@ -731,8 +734,8 @@
          		dottedOverlay:"none",
          		delay:16000,
          		startwidth:1140,
-         		startheight:300,
-         		height: 400,
+         		startheight:100,
+         		height: 100,
          		hideThumbs:200,
 
          		thumbWidth:100,
