@@ -1484,7 +1484,9 @@
 
 
 @media (max-width: 767px) {
-
+	#slider {
+        min-height: 200px;
+     }
 	body { padding: 0 !important; }
 
 	#wrapper { width: 100% !important; }
@@ -1856,7 +1858,7 @@
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-
+	
 	.container,
 	#header.full-header .container,
 	.container-fullwidth { width: 470px !important; }
