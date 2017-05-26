@@ -1584,7 +1584,7 @@ ul.tab-nav li a i {
 }
 
 #copyrights {
-	padding: 30px 0;
+	padding: 12px 0;
 	background-color: #028843;
 	font-size: 11px;
 	line-height: 1.8;
@@ -1623,7 +1623,10 @@ ul.tab-nav li a i {
 }
 
 
-#copyrights .col_half { margin-bottom: 0 !important; }
+#copyrights .col_half {
+    margin-bottom: 0 !important;
+    margin-top: 10px !important;
+}
 
 
 
@@ -2757,10 +2760,11 @@ ul.top-link li.active a {
 .bordots {
     border-bottom: 1px dotted #fff;
     padding-bottom: 15px;
-    margin-bottom: 15px;
+    /*margin-bottom: 15px;*/
 }
 .bordots:nth-child(2) {
 	border-bottom:none;
+    padding-bottom: 5px;
 }
 .bordots:last-child {
 	border:none;
