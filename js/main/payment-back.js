@@ -11,9 +11,9 @@ j(function(){
 
     var w = isMobile();
     // on page load
-    // j('#frame').iFrameResize({
-    //     minHeight : 0
-    // });
+    j('#frame').iFrameResize({
+        minHeight : 0
+    });
 
     j('#depoFrame').iFrameResize({
         minHeight : 250
@@ -104,8 +104,7 @@ j(function(){
     function setIframeSrc(url,ref) {
         switch(ref){
             case 0:
-                // j('#frame').attr('src','../manage/'+url+'.html');
-                j('#frame').load('../manage/'+url+'.html');
+                j('#frame').attr('src','../manage/'+url+'.html');
                 break;
             default:
                 j('#depoFrame').attr('src',url+'.html');

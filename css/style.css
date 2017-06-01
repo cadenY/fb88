@@ -23,7 +23,8 @@ body {
   padding:0 10px;
   position: relative;
 }
-body.no-bg {
+body.no-bg,
+div.no-bg {
     background: transparent;
 }
 
