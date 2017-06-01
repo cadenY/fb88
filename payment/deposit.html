@@ -1,24 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fast Deposit</title>
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../js/bower_components/fancybox/dist/jquery.fancybox.css" />
-    <link rel="stylesheet" href="../css/jquery.datetimepicker.css"/>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body class="blackBody">
+<div class="blackBody">
     <div class="depoFrame-wrap fast-deposit">
         <div class="depoFrame-nav">
             <ul>
-                <li class="active"><a href="javascript:;">Fast Deposit</a></li>
-                <li><a href="deposit-local1.html">Local E Wallet - Line 1</a></li>
-                <li><a href="deposit-local2.html">Local E Wallet - Line 2</a></li>
-                <li><a href="deposit-fb88.html">FB88 Pay</a></li>
-                <li><a href="deposit-scratch-card.html">Scratch Card</a></li>
+                <li class="active"><a href="javascript:;" data-href="deposit">Fast Deposit</a></li>
+                <li><a href="javascript:;" data-href="deposit-local1">Local E Wallet - Line 1</a></li>
+                <li><a href="javascript:;" data-href="deposit-local2">Local E Wallet - Line 2</a></li>
+                <li><a href="javascript:;" data-href="deposit-fb88">FB88 Pay</a></li>
+                <li><a href="javascript:;" data-href="deposit-scratch-card">Scratch Card</a></li>
             </ul>
         </div>
         <div class="depoFrame-content">
@@ -185,47 +173,4 @@
         </div>
         <div class="clear"></div>
     </div>
-    <script src="../js/bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="../js/bower_components/iframe-resizer/dist/iframeResizer.contentWindow.min.js"></script>
-    <script src="../js/jquery.datetimepicker.full.js"></script>
-    <script src="../js/method/functions.js"></script>
-    <script>
-        var j = jQuery.noConflict();
-        j(function(){
-            j('#amount').keyup(function(event){
-                if (event.which >= 37 && event.which <= 40) return;
-                j(this).formatAmount();
-            });
-
-            // datetime
-            j('#fd-date').datetimepicker({
-                value: {
-                    format: 'd/m/Y'
-                },
-                timepicker:false,
-                format:'d/m/Y',
-                maxDate: new Date(),
-                defaultDate: new Date()
-            });
-
-            j('#hr').generateTime('hh');
-            j('#min').generateTime('mm');
-
-            j('#bank').change(function(){
-                if(j(this).val() == 'other'){
-                    j('#bankNameRow').show();
-                }else {
-                    j('#bankNameRow').hide();
-                }
-            });
-
-            //submit
-            j('.btn-submit').click(function(e){
-                e.preventDefault();
-                // if sucess
-                fnDisplayMsg();
-            });
-        });
-    </script>
-</body>
-</html>
+</div>

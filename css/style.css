@@ -1596,6 +1596,7 @@ input.p-nav-txtfield {
 
 /* payment dark */
 body.blackBody,
+div.blackBody,
 .blackBody .page-manage,
 .blackBody .mgnt-deposit-content {
     background: #2d2d2d;
