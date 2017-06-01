@@ -2387,16 +2387,17 @@ body.faq {
 .faq-subnav ul li {
     display: inline-block;
     border-left: thin solid #777;
-    padding: 0 15px;
+    padding: 0 12px;
 }
 .faq-subnav ul li:first-child {
     border-left: none;
 }
 .faq-subnav ul li a {
     display: block;
-    color: #777;
+    color: #028843;
     line-height: 16px;
     font-size: 15px;
+    font-weight: 700;
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: capitalize;
