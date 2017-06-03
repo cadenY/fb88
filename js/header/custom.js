@@ -495,6 +495,7 @@ ja(document).ready(function(){
     	//alert('sssssssssssss');
     });
 
+    // flag
     var imgPath = ja('#cirlceFlags > ul > li > a > img').attr('src');
     // set active flag on page load
     ja('ul#childFlag > li img').each(function(i,e){
@@ -509,6 +510,28 @@ ja(document).ready(function(){
             ja('#childFlag li').removeClass('active');
             ja(this).parent().addClass('active');
             ja('#cirlceFlags > ul > li > a > img').attr('src',ja(this).find('img').attr('src'));
+        } else {
+            return false;
+        }
+    });
+
+    // theme color
+    var currentTheme = ja('#cirleColors > ul > li > span').attr('class').split(' ')[1];
+    // set active theme on page load
+    ja('ul#childColor li a span').each(function(i,e){
+        if(ja(this).hasClass(currentTheme)){
+            ja(this).parents('li').addClass('active');
+        }
+    });
+
+    ja(document).on('click','#childColor li a',function(e){
+        if(!ja(this).hasClass('active')){
+            e.preventDefault();
+            var color = ja(this).find('span').attr('class').split(' ')[1];
+            ja('#childColor li').removeClass('active');
+            ja(this).parent().addClass('active');
+            ja('#cirleColors > ul > li > span').removeClass('black white');
+            ja('#cirleColors > ul > li > span').addClass(color);
         } else {
             return false;
         }

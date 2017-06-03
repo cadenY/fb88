@@ -2623,7 +2623,8 @@ member-service
 	color: #fff;
 	font-size:12px;
 }
-#cirleColors ul #childColor li a:hover {
+#cirleColors ul #childColor li.active a,
+#cirleColors ul #childColor li:hover a {
 	color: #fee71b;
 }
 
