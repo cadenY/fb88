@@ -1,23 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fb88 Pay</title>
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../js/bower_components/fancybox/dist/jquery.fancybox.css" />
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body class="no-bg">
+<div class="no-bg">
     <div class="depoFrame-wrap fast-deposit">
         <div class="depoFrame-nav">
             <ul>
-                <li><a href="deposit-light.html">Fast Deposit</a></li>
-                <li><a href="deposit-local1-light.html">Local E Wallet - Line 1</a></li>
-                <li><a href="deposit-local2-light.html">Local E Wallet - Line 2</a></li>
-                <li><a href="deposit-fb88-light.html">FB88 Pay</a></li>
-                <li class="active"><a href="javascript:;">Scratch Card</a></li>
+                <li><a href="javascript:;" data-href="deposit">Fast Deposit</a></li>
+                <li><a href="javascript:;" data-href="deposit-local1">Local E Wallet - Line 1</a></li>
+                <li><a href="javascript:;" data-href="deposit-local2">Local E Wallet - Line 2</a></li>
+                <li><a href="javascript:;" data-href="deposit-fb88">FB88 Pay</a></li>
+                <li class="active"><a href="javascript:;" data-href="deposit-scratch-card">Scratch Card</a></li>
             </ul>
         </div>
         <div class="depoFrame-content">
@@ -137,19 +126,4 @@
         </div>
         <div class="clear"></div>
     </div>
-    <script src="../js/bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="../js/bower_components/iframe-resizer/dist/iframeResizer.contentWindow.min.js"></script>
-    <script src="../js/method/functions.js"></script>
-    <script>
-        var j = jQuery.noConflict();
-        j(function(){
-            //submit
-            j('.btn-submit').click(function(e){
-                e.preventDefault();
-                // if sucess
-                fnDisplayMsg();
-            });
-        });
-    </script>
-</body>
-</html>
+</div>

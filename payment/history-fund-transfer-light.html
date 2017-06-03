@@ -1,23 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>History Fund Transfer</title>
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../js/bower_components/fancybox/dist/jquery.fancybox.css" />
-    <link rel="stylesheet" href="../css/jquery.datetimepicker.css"/>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body class="no-bg">
+<div class="no-bg">
     <div class="depoFrame-wrap">
         <div class="depoFrame-nav">
             <ul>
-                <li><a href="history-light.html">Deposit/Withdrawal</a></li>
-                <li><a href="history-adjustment-light.html">Adjustment</a></li>
-                <li class="active"><a href="javascript:;">Fund Transfer</a></li>
-                <li><a href="history-promotion-claim-light.html">Promotion Claim</a></li>
+                <li><a href="javascript:;" data-href="history">Deposit/Withdrawal</a></li>
+                <li><a href="javascript:;" data-href="history-adjustment">Adjustment</a></li>
+                <li class="active"><a href="javascript:;" data-href="history-fund-transfer">Fund Transfer</a></li>
+                <li><a href="javascript:;" data-href="history-promotion-claim">Promotion Claim</a></li>
             </ul>
         </div>
         <div class="depoFrame-content">
@@ -85,24 +73,4 @@
         </div>
         <div class="clear"></div>
     </div>
-    <script src="../js/bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="../js/bower_components/iframe-resizer/dist/iframeResizer.contentWindow.min.js"></script>
-    <script src="../js/jquery.datetimepicker.full.js"></script>
-    <script src="../js/method/functions.js"></script>
-    <script>
-        var j = jQuery.noConflict();
-        j(function(){
-            // datetime
-            j('.datepicker').datetimepicker({
-                value: {
-                    format: 'd/m/Y'
-                },
-                timepicker:false,
-                format:'d/m/Y',
-                maxDate: new Date(),
-                defaultDate: new Date()
-            });
-        });
-    </script>
-</body>
-</html>
+</div>

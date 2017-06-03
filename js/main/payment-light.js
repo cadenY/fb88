@@ -1,6 +1,8 @@
 var j = jQuery.noConflict();
 
 j(function(){
+    j.getScript("../js/jquery.datetimepicker.full.js");
+    j.getScript("../js/method/functions.js");
     var jsArray =  ['../js/header/functions.js','../js/header/custom.js','../js/jscript.js'];
     j('#header').load('../header-payment.html', function() {
          for(var i = 0; i < jsArray.length; i ++){
@@ -10,15 +12,6 @@ j(function(){
     j('#copyrights').load('../footer.html');
 
     var w = isMobile();
-    // on page load
-    j('#frame').iFrameResize({
-        minHeight : 0
-    });
-
-    j('#depoFrame').iFrameResize({
-        minHeight : 250
-    });
-
     var url = window.location.href;
 
     if(url.indexOf('?') != -1 ) {
@@ -95,19 +88,171 @@ j(function(){
             return false;
         }
 
-        // console.log($("#depoFrame").offset().top);
         j('html,body').animate({
                 scrollTop: j("#depoFrame").offset().top + -250
         },1000);
     });
 
+    j(document).on('click','.depoFrame-nav li a', function(){
+        if(!j(this).parent().hasClass('active')){
+            setIframeSrc(j(this).data('href'),1);
+        } else {
+            return false;
+        }
+    });
+
     function setIframeSrc(url,ref) {
         switch(ref){
             case 0:
-                j('#frame').attr('src','../manage/'+url+'.html');
+                // j('#frame').attr('src','../manage/'+url+'.html');
+                j('#frame').load('../manage/'+url+'.html');
+
                 break;
             default:
-                j('#depoFrame').attr('src',url+'-light.html');
+                // j('#depoFrame').attr('src',url+'-light.html');
+
+                j('#depoFrame').load(url+'-light.html', function(){
+                    setTimeout(function(){
+                        initEvt(url);
+                    },0);
+                });
+        }
+    }
+
+    function initEvt(url){
+        switch (url) {
+            case 'deposit':
+                j('#amount').keyup(function(event){
+                    if (event.which >= 37 && event.which <= 40) return;
+                    j(this).formatAmount();
+                });
+
+                // datetime
+                j('#fd-date').datetimepicker({
+                    value: {
+                        format: 'd/m/Y'
+                    },
+                    timepicker:false,
+                    format:'d/m/Y',
+                    maxDate: new Date(),
+                    defaultDate: new Date()
+                });
+
+                j('#hr').generateTime('hh');
+                j('#min').generateTime('mm');
+
+                j('#bank').change(function(){
+                    if(j(this).val() == 'other'){
+                        j('#bankNameRow').show();
+                    }else {
+                        j('#bankNameRow').hide();
+                    }
+                });
+
+                //submit
+                j('.btn-submit').click(function(e){
+                    e.preventDefault();
+                    // if sucess
+                    fnDisplayMsg();
+                });
+                break;
+            case 'deposit-local1':
+            case 'deposit-local2':
+                j('#amount').keyup(function(event){
+                    if (event.which >= 37 && event.which <= 40) return;
+                    j(this).formatAmount();
+                });
+
+                //submit
+                j('.btn-submit').click(function(e){
+                    e.preventDefault();
+                    // if sucess
+                    fnDisplayMsg();
+                });
+                break;
+            case 'deposit-fb88':
+                j('#amount').keyup(function(event){
+                    if (event.which >= 37 && event.which <= 40) return;
+                    j(this).formatAmount();
+                });
+
+                j('#bank').change(function(){
+                    if(j(this).val() == 'other'){
+                        j('#bankNameRow').show();
+                    }else {
+                        j('#bankNameRow').hide();
+                    }
+                });
+
+                //submit
+                j('.btn-submit').click(function(e){
+                    e.preventDefault();
+                    // if sucess
+                    fnDisplayMsg();
+                });
+                break;
+            case 'deposit-scratch-card':
+                j('.btn-submit').click(function(e){
+                    e.preventDefault();
+                    // if sucess
+                    fnDisplayMsg();
+                });
+                break;
+            case 'transfer':
+                j('#amount').keyup(function(event){
+                    if (event.which >= 37 && event.which <= 40) return;
+                    j(this).formatAmount();
+                });
+                break;
+            case 'withdraw':
+                j('#amount').keyup(function(event){
+                    if (event.which >= 37 && event.which <= 40) return;
+                    j(this).formatAmount();
+                });
+
+                j('#bank').change(function(){
+                    if(j(this).val() == 'other'){
+                        j('#bankNameRow').show();
+                    }else {
+                        j('#bankNameRow').hide();
+                    }
+                });
+
+                //submit
+                j('.btn-submit').click(function(e){
+                    e.preventDefault();
+                    // if sucess
+                    fnDisplayMsg();
+                });
+                break;
+            case 'withdraw-ewallet':
+                j('#amount').keyup(function(event){
+                    if (event.which >= 37 && event.which <= 40) return;
+                    j(this).formatAmount();
+                });
+
+                //submit
+                j('.btn-submit').click(function(e){
+                    e.preventDefault();
+                    // if sucess
+                    fnDisplayMsg();
+                });
+            // case 'freebet':
+            case 'history':
+            case 'history-adjustment':
+            case 'history-fund-transfer':
+            case 'history-promotion-claim':
+                j('.datepicker').datetimepicker({
+                    value: {
+                        format: 'd/m/Y'
+                    },
+                    timepicker:false,
+                    format:'d/m/Y',
+                    maxDate: new Date(),
+                    defaultDate: new Date()
+                });
+                break;
+            // case 'upload'
         }
     }
 
