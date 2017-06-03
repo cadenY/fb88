@@ -494,4 +494,23 @@ ja(document).ready(function(){
     	ja(this).css('color','red');
     	//alert('sssssssssssss');
     });
+
+    var imgPath = ja('#cirlceFlags > ul > li > a > img').attr('src');
+    // set active flag on page load
+    ja('ul#childFlag > li img').each(function(i,e){
+        if(ja(this).attr('src') === imgPath) {
+            ja(this).parents('li').addClass('active');
+        }
+    });
+
+    ja(document).on('click','#childFlag li a',function(e){
+        if(!ja(this).hasClass('active')){
+            e.preventDefault();
+            ja('#childFlag li').removeClass('active');
+            ja(this).parent().addClass('active');
+            ja('#cirlceFlags > ul > li > a > img').attr('src',ja(this).find('img').attr('src'));
+        } else {
+            return false;
+        }
+    });
 });

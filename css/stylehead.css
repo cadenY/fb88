@@ -2581,7 +2581,8 @@ member-service
 	color: #fff;
 	font-size:12px;
 }
-#cirlceFlags ul #childFlag li a:hover {
+#cirlceFlags ul #childFlag li.active a,
+#cirlceFlags ul #childFlag li:hover a {
 	color: #fee71b;
 }
 #cirlceFlags ul #childFlag li a img {
