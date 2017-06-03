@@ -278,18 +278,15 @@
 	}
 
 
-/*LOTTERY */	
+/*LOTTERY */
 
 /*LOTTERY */
 
-		#lotto .lottery-content{
-
 	#lotto .lottery-content{
-
-		    float: none;
-		    text-align: center;
-		    width: 100% !important;
-		    margin-top: -100px
+	    float: none;
+	    text-align: center;
+	    width: 100% !important;
+	    margin-top: -100px
 	}
 
 	#keno .lottery-content {
@@ -372,11 +369,23 @@
 	    border: none;
 	    margin: -50px 0px 0px 0;
 	}
-
-
 	.promo-nav {
 		display: none;
 	}
+
+    #primary-menu > ul > li:last-child .mega-menu-content.style-2 li ul.listv li.active ul.listvchild {
+        display: none !important;
+    }
+    #primary-menu > ul > li:last-child .mega-menu-content.style-2 ul.mega-menu-column {
+        padding-left: 0;
+    }
+    #primary-menu > ul > li:last-child .mega-menu-content.style-2 ul.mega-menu-column .col_one_fifth{
+        margin-top: 0 !important;
+    }
+    #primary-menu > ul > li:last-child .mega-menu-content ul:not(.megamenu-dropdown) {
+        border-top: none;
+        padding-left: 0;
+    }
 }
 
 .cleanTop{
@@ -1858,7 +1867,7 @@
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-	
+
 	.container,
 	#header.full-header .container,
 	.container-fullwidth { width: 470px !important; }
