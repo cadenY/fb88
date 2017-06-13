@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Registration</title>
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+      <link rel="stylesheet" href="css/stylehead.css" type="text/css" />
+      <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css"/>
+   </head>
+   <body class="blackBody">
+      <div class="se-pre-con"></div>
+    <header id="header"> </header>
+    <div class="clear"></div>
+   <section id="content">
+      <div>
+         <div class="reglogCont" style="overflow:hidden; margin-bottom: 15px;">
+            <div class="col_two_fifth login-banner-left nobottommargin custwidth topmargin-sm ">
+               <img src="images/casino/loginBanner.jpg" alt="Login Banner" />
+               <h5 class="nomargin modLoginBannerTxt">Member Benefits</h5>
+               <p class="modLeftP tjustify">
+                  Earn freebets by simply validating your Account Safety with accurate information<br><br>
+                  Speedy deposit and withdrawal with multiple depositing options<br><br>
+                  Enjoy first deposit bonus of up to USD 200
+                  Speedy deposit and withdrawal with multiple depositing options<br><br>
+                  Enjoy first deposit bonus of up to USD 200
+                  ** Terms & Conditions applies
+               </p>
+            </div>
+            <div class="col_three_fifth col_last nobottommargin topmargin-sm ">
+               <form action="" method="post" class="fomrreg">
+                  <div class="tablesform">
+                     <span class="modTxt">Fullname<span class="important colorRed">*</span></span>
+                     <span class="modInput">
+                        <input type="text" name="name" class="input" id="fname">
+                        <div class="tooltips">
+                           <p>
+                              Please enter your full name. <br />Card transactions, cheques and bank wires can only processed if the name matches that of the account holder.
+                           </p>
+                        </div>
+                     </span>
+                     <span class="a okcheck"><img src="images/casino/check.png"></span>
+                     <span class="a okcross"><img src="images/casino/cross.png"></span>
+                  </div>
+                  <div class="tablesform">
+                     <span class="modTxt">Date of Birth<span class="important colorRed">*</span></span>
+                     <span class="modInput">
+                        <input type="text" name="dob" id="dob" class="input">
+                        <div class="tooltips">
+                           <p>
+                              Please enter your Date of Birth.
+                           </p>
+                        </div>
+                     </span>
+                     <span class="b okcheck"><img src="images/casino/check.png"></span><span class="b okcross"><img src="images/casino/cross.png"></span>
+                  </div>
+                  <div class="tablesform">
+                     <span class="modTxt">Email<span class="important colorRed">*</span></span>
+                     <span class="modInput">
+                        <input type="text" name="email" class="input" id="email">
+                        <div class="tooltips">
+                           <p>
+                              Please enter your Email Address.
+                           </p>
+                        </div>
+                     </span>
+                     <span class="c okcheck"><img src="images/casino/check.png"></span><span class="c okcross"><img src="images/casino/cross.png"></span>
+                  </div>
+                  <div class="tablesform">
+                     <span class="modTxt">Phone<span class="important colorRed">*</span></span>
+                     <span class="modInput input">
+                        +
+                        <select  class="input">
+                           <option value=""></option>
+                           <option value="">63</option>
+                        </select>
+                        &nbsp;
+                        <input type="text" name="phone" class="custInput input" id="phone">
+                        <div class="tooltips">
+                           <p>
+                              Please enter your Contact Number.
+                           </p>
+                        </div>
+                     </span>
+                     <span class="d okcheck"><img src="images/casino/check.png"></span><span class="d okcross"><img src="images/casino/cross.png"></span>
+                  </div>
+                  <div class="tablesform">
+                     <span class="modTxt">Currency<span class="important colorRed">*</span></span>
+                     <span class="modInput longselect">
+                        <select name="currency"  class="input" id="cur">
+                           <option value=""></option>
+                           <option value="USD">USD</option>
+                           <option value="VND">VND</option>
+                           <option value="RNB">RNB</option>
+                        </select>
+                        <div class="tooltips">
+                           <p>
+                              Please select your preferred currency.<br ></a>Currency chosen is not changeable.
+                           </p>
+                        </div>
+                     </span>
+                     <span class="e okcheck"><img src="images/casino/check.png"></span><span class="e okcross"><img src="images/casino/cross.png"></span>
+                  </div>
+                  <div class="tablesform">
+                     <span class="modTxt">Username<span class="important colorRed">*</span></span>
+                     <span class="modInput">
+                        <input type="text" name="user" id="user" class="input">
+                        <div class="tooltips">
+                           <p>
+                              Please enter your Username. Username must be atleast 8 characters.
+                           </p>
+                        </div>
+                     </span>
+                     <span class="f okcheck"><img src="images/casino/check.png"></span><span class="f okcross"><img src="images/casino/cross.png"></span>
+                  </div>
+                  <div class="tablesform">
+                     <span class="modTxt">Password<span class="important colorRed">*</span></span>
+                     <span class="modInput">
+                        <input type="password" name="pass" id="pass"  class="input">
+                        <div class="tooltips">
+                           <p> Enter your password.
+                              <span class="txtpass" id="result"></span>
+                              Please remember your password.
+                           </p>
+                        </div>
+                     </span>
+                     <span class="g okcheck"><img src="images/casino/check.png"></span><span class="g okcross"><img src="images/casino/cross.png"></span>
+                  </div>
+                  <div class="tablesform">
+                     <span class="modTxt">Confirm Password<span class="important colorRed">*</span></span>
+                     <span class="modInput">
+                        <input type="password" name="cpass" id="cpass" class="input">
+                        <div class="tooltips">
+                           <p>
+                              Please Confirm your Password.
+                           </p>
+                        </div>
+                     </span>
+                     <span class="h okcheck"><img src="images/casino/check.png"></span><span class="h okcross"><img src="images/casino/cross.png"></span>
+                  </div>
+                  <div class="tablesform">
+                     <span class="modTxt">Affiliate ID</span>
+                     <span class="modInput">
+                        <input type="text" name="affId" id="aff" class="input" >
+                        <div class="tooltips">
+                           <p>
+                              Please enter your Affiliate ID.
+                           </p>
+                        </div>
+                     </span>
+                     <span class="i okcheck"><img src="images/casino/check.png"></span>
+                     <span class="i okcross"><img src="images/casino/cross.png"></span>
+                  </div>
+                  <div class="tablesform">
+                     <p class="nomargin smalltxt">
+                        By clicking the JOIN NOW button, I hereby acknowledge that I am above 18 years old and have read and accepted your terms & conditions. <br>
+                        <a href="faq\about.html" class="green" target="_blank">See the Terms & Conditions here.</a>
+                     </p>
+                     <input type="button" name="submit" value="JOIN NOW" class="btnJoinNow submit" style="background: #fee71b; color:#2b2700;">
+                  </div>
+               </form>
+            </div>
+         </div>
+         </div>
+   </section>
+   <div class="clear"></div>
+    <div id="footer" class="cleanTop">
+        <div id="copyrights"></div>
+    </div>
+      <script type="text/javascript" src="js/header/jquery.js"></script>
+      <script type="text/javascript" src="js/header/plugins.js"></script>
+      <script type="text/javascript" src="js/jquery.datetimepicker.full.js"></script>
+      <script>
+         var jq = jQuery.noConflict();
+
+         jq(document).ready(function(e){
+        var jsArray =  ['js/header/functions.js','js/header/custom.js','js/jscript.js'];
+        jq('#header').load('header.html', function() {
+             for(var i = 0; i < jsArray.length; i ++){
+                 jq.getScript(jsArray[i]);
+             }
+        });
+
+        jq('#copyrights').load('footer.html');
+
+        jq('#dob').datetimepicker({
+            yearOffset:0,
+            lang:'en',
+            timepicker:false,
+            format:'d/m/Y',
+            formatDate:'Y/m/d',
+        });
+
+         });
+      </script>
+   </body>
+</html>

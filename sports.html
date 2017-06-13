@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sports and Live Stream</title>
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+   <link rel="stylesheet" href="css/stylehead.css" type="text/css" />
+   <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+</head>
+<body class="stretched blackBody">
+   <div class="se-pre-con"></div>
+      <div id="btn-download">
+         <div class="slidingDiv">
+            <div class="slideIconTop"><img src="images/casino/leftpush/top.png"></div>
+            <h3><b>DOWNLOADS</b></h3>
+            <span>PC Version</span>
+            <div class="cbp-spmenu cbp-spmenu-vertical" >
+               <a href="#">
+                  <table width="100%" border="0" class="nomargin">
+                     <tr>
+                        <td rowspan="2" width="40%" align="center">
+                           <div class="bg-pc"></div>
+                        </td>
+                        <td align="left" valign="bottom">PC Version</td>
+                     </tr>
+                     <tr>
+                        <td valign="top" align="left">
+                           <div>v1.0.01</div>
+                        </td>
+                     </tr>
+                  </table>
+               </a>
+               <a href="#">
+                  <table width="100%" border="0" class="nomargin">
+                     <tr>
+                        <td rowspan="2" width="40%" align="center">
+                           <div class="bg-mac"></div>
+                        </td>
+                        <td align="left" valign="bottom">PC Version</td>
+                     </tr>
+                     <tr>
+                        <td valign="top" align="left">
+                           <div>v1.0.01</div>
+                        </td>
+                     </tr>
+                  </table>
+               </a>
+               <div class="tcenter mobVer">
+                  Mobile Version
+               </div>
+               <a href="#">
+                  <table width="100%" border="0" class="nomargin">
+                     <tr>
+                        <td rowspan="2" width="40%" align="center">
+                           <div class="qr-andriod"></div>
+                        </td>
+                        <td align="left" valign="bottom">Android</td>
+                     </tr>
+                     <tr>
+                        <td valign="top" align="left">
+                           <div>v1.0.01</div>
+                        </td>
+                     </tr>
+                  </table>
+               </a>
+               <a href="#">
+                  <table width="100%" border="0" class="nomargin">
+                     <tr>
+                        <td rowspan="2" width="40%" align="center">
+                           <div class="qr-ios"></div>
+                        </td>
+                        <td align="left" valign="bottom">IOS</td>
+                     </tr>
+                     <tr>
+                        <td valign="top" align="left">
+                           <div>v1.0.01</div>
+                        </td>
+                     </tr>
+                  </table>
+               </a>
+            </div>
+         </div>
+         <div id="btnCloseDownload">
+            <img src="images/casino/leftpush/close-button.png" alt="">
+         </div>
+      </div>
+      <!-- end of left download part -->
+      <!-- right chat part -->
+      <div id="btn-Chat">
+         <div class="imgCustomerServ"><img src="images/casino/girl-chat.png"></div>
+         <div class="tcenter bottommargin-sm"><img src="images/casino/24-7.png"></div>
+         <div class="waysto clearfix">
+            <div class="col_half nomargin tcenter">
+               <img src="images/casino/deposit-icon.png" /><br>
+               <div class="">How to<br> Deposit</div>
+            </div>
+            <div class="col_half col_last nomargin tcenter">
+               <img src="images/casino/withdraw-icon.png" /><br>
+               <div class="">How to<br> Withdraw</div>
+            </div>
+         </div>
+         <div class="custService tcenter">
+            <a href="#"><span class="custIcon mail-icon"></span> help@fabet.com</a>
+            <a href="#"><span class="custIcon phone-icon"></span> +852 8888 7168 <br> <span class="secondtext">International Call Charges May Apply</span></a>
+            <a href="#"><span class="custIcon phone2-icon"></span> +852 8888 7168</a>
+            <a href="#"><span class="custIcon line-icon"></span> +852 8888 7168</a>
+            <a href="#"><span class="custIcon zolo-icon"></span> +852 8888 7168</a>
+         </div>
+         <p id="btnCloseChat"><img src="images/casino/leftpush/help-center.png" alt=""></p>
+      </div>
+
+      <header id="header">  </header>
+      <!-- #header end -->
+
+    <div><img src="images\sports.jpg" style="margin: 0 auto; display:block; max-width: 100%;"></div>
+
+    <footer id="footer" class="dark" style="margin-top: 0px !important;">
+      <div id="copyrights" class="clearfix">
+
+      </div><!-- #copyrights end -->
+    </footer><!-- #footer end -->
+
+    <script src="js/header/jquery.js"></script>
+    <script src="js/header/plugins.js"></script>
+    <script type="text/javascript">
+        var jq = jQuery.noConflict();
+        jq(document).ready(function(){
+            var jsArray =  ['js/header/functions.js','js/header/custom.js','js/jscript.js'];
+            jq('#header').load('header.html', function() {
+                 for(var i = 0; i < jsArray.length; i ++){
+                     jq.getScript(jsArray[i]);
+                 }
+            });
+            jq('#copyrights').load('footer.html');
+        });
+    </script>
+</body>
+</html>

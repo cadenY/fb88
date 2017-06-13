@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Login</title>
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+   <link rel="stylesheet" href="css/stylehead.css" type="text/css" />
+   <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+   <link rel="stylesheet" href="css/style.css" type="text/css" />
+  </head>
+<body class="blackBody">
+    <div class="se-pre-con"></div>
+    <header id="header"> </header>
+    <div class="clear"></div>
+      <div class="reglogCont">
+          <div class="logCont">
+              <table width="100%">
+                  <tr>
+                    <td>
+                      <span class="txtLog">Email Address</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="text" name="Username" class="inputBox">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="right" class="forpads">
+                      <input type="button" name="login" class="btnLogin" value="Submit">
+                    </td>
+                  </tr>
+              </table>
+          </div>
+      </div>
+   </div>
+<div class="modal fade joinNowModal" id="forgotpass" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-body">
+                  <div class="modal-content">
+                    <div class="modal-body clearfix">
+                      <div class="modalLogo"><img src="images/logo-fb88.png" width="30%"></div>
+                      <div>
+                        <form action="" method="">
+
+                          <div class="widcenter">
+                            <span class="modTxt">Email<span class="important colorRed">*</span></span>
+                            <span class="modalInput">
+                              <input type="text" name="forgotEmail">
+                                      </span>
+                          </div>
+                          <div class="tablesform tcenter widfull">
+                            <input type="button" name="submit" value="Submit" class="btnJoinNowForgot">
+                          </div>
+
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- joinNowModal forgotpassword-->
+
+		<footer id="footer" class="dark">
+			<div id="copyrights" class="clearfix"> </div><!-- #copyrights end -->
+		</footer><!-- #footer end -->
+
+   <script type="text/javascript" src="js/header/jquery.js"></script>
+   <script type="text/javascript" src="js/header/plugins.js"></script>
+    <script>
+      var jq = jQuery.noConflict();
+      jq(document).ready(function(e){
+    
+         var jsArray =  ['js/header/functions.js','js/header/custom.js','js/jscript.js'];
+         jq('#header').load('header.html', function() {
+             for(var i = 0; i < jsArray.length; i ++){
+                 jq.getScript(jsArray[i]);
+             }
+         });
+
+         // footer
+         jq('#copyrights').load('footer.html');
+      });
+	</script>
+</body>
+</html>

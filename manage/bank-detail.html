@@ -1,0 +1,59 @@
+<div class="no-bg">
+    <div class="mgnt-wrap">
+        <div class="mgnt-bank-detail-form">
+            <form action="none">
+                <ul class="mgnt-form">
+                    <li>
+                        <label class="req">Bank</label>
+                        <select name="bank" class="txtfield req" id="bank">
+                            <option value="">-- Select --</option>
+                            <option value="vcb">VCB</option>
+                            <option value="acb">ACB</option>
+                            <option value="dongA">Đông Á</option>
+                            <option value="sacombank">Sacombank</option>
+                            <option value="agribank">Agribank</option>
+                            <option value="bidv">BIDV</option>
+                            <option value="techcombank">Techcombank</option>
+                            <option value="vietnibank">Vietinbank</option>
+                            <option value="eximbank">Eximbank</option>
+                            <option value="vib">VIB</option>
+                            <option value="maritimebank">Maritimebank</option>
+                            <option value="other" class="other">Other</option>
+                        </select>
+                    </li>
+                    <li id="bankNameRow" class="otherBank">
+                        <label class="req">Bank Name</label>
+                        <input type="text" name="bankName" id="" class="txtfield req">
+                    </li>
+                    <li>
+                        <label class="req">Account Name</label>
+                        <input type="text" name="acctName" value="" class="txtfield req">
+                    </li>
+                    <li>
+                        <label class="req">Account Number</label>
+                        <input type="text" name="acctName" value="" class="txtfield req">
+                    </li>
+                    <li>
+                        <label class="req">Enter FB88 Password</label>
+                        <input type="text" name="acctNumber" value="" class="txtfield req">
+                    </li>
+                    <li>
+                        <button type="submit" class="btn-submit">Submit</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    var j = jQuery.noConflict();
+    j(function(){
+        j('#bank').change(function(){
+            if(j(this).val() == 'other'){
+                j('#bankNameRow').show();
+            }else {
+                j('#bankNameRow').hide();
+            }
+        })
+    });
+</script>
