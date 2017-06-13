@@ -17,7 +17,7 @@
     <header id="header"> </header>
     <div class="clear"></div>
       <div class="reglogCont">
-          <div class="logCont">
+          <div class="logCont" style="margin-bottom: 35px;">
               <table width="100%">
                   <tr>
                     <td>
@@ -38,7 +38,7 @@
           </div>
       </div>
    </div>
-<div class="modal fade joinNowModal" id="forgotpass" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+   <div class="modal fade joinNowModal" id="forgotpass" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-body">
                   <div class="modal-content">
@@ -74,7 +74,7 @@
     <script>
       var jq = jQuery.noConflict();
       jq(document).ready(function(e){
-    
+
          var jsArray =  ['js/header/functions.js','js/header/custom.js','js/jscript.js'];
          jq('#header').load('header.html', function() {
              for(var i = 0; i < jsArray.length; i ++){
