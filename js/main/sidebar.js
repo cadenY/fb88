@@ -46,7 +46,7 @@ jq(document).ready(function() {
                            +'<td align="left" valign="bottom">Android</td>'
                        +'</tr>'
                        +'<tr>'
-                           +'td valign="top" align="left">'
+                           +'<td valign="top" align="left">'
                               +'<div>v1.0.01</div>'
                            +'</td>'
                        +'</tr>'
