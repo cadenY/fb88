@@ -12,7 +12,7 @@
       <link rel="stylesheet" href="css/responsive.css" type="text/css" />
    </head>
    <body class="blackBody">
-       <div class="se-pre-con"></div>
+      <div class="se-pre-con"></div>
       <header id="header"> </header>
       <div class="clear"></div>
       <div class="reglogCont">
@@ -74,10 +74,11 @@
       </div>
       <script type="text/javascript" src="js/header/jquery.js"></script>
       <script type="text/javascript" src="js/header/plugins.js"></script>
+      <script src="js/main/sidebar.js"></script>
       <script>
         var jq = jQuery.noConflict();
          jq(document).ready(function(e){
-    
+
             var jsArray =  ['js/header/functions.js','js/header/custom.js','js/jscript.js'];
             jq('#header').load('header.html', function() {
                 for(var i = 0; i < jsArray.length; i ++){
