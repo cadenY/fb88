@@ -187,12 +187,26 @@
 
         jq('#copyrights').load('footer.html');
 
+            var d = new Date();
+
+            var month = d.getMonth()+1;
+            var day = d.getDate();
+
+            var output = 
+            ((''+day).length<2 ? '0' : '') + day + '/' +
+            ((''+month).length<2 ? '0' : '') + month + '/' +
+            d.getFullYear() 
+            ;
+            //alert(d.getFullYear());
+
         jq('#dob').datetimepicker({
             yearOffset:0,
             lang:'en',
             timepicker:false,
             format:'d/m/Y',
             formatDate:'Y/m/d',
+            defaultDate: new Date((d.getFullYear()-18),0-0,0),
+            yearEnd: (d.getFullYear()-18)
         });
 
          });
