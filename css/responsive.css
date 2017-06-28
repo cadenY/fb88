@@ -13,7 +13,7 @@
        width: 40%;
     }
     .marquee-afterLogin {
-        display: none!important
+     //   display: none!important
     }
     .deposit,
     .logout {
