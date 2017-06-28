@@ -1,14 +1,16 @@
-@media (max-width:1200px;
-) {
+@media (max-width:1200px) {
     canvas {
         max-width: 100%;
         height: auto!important
     }
     .nomargin {
-        max-width: 940px!important
+        //max-width: 940px!important
+    }
+    .container {
+        width: 100%;
     }
     .marquee {
-        display: none!important
+       width: 40%;
     }
     .marquee-afterLogin {
         display: none!important
@@ -28,6 +30,7 @@
         font-weight: 700;
         border: 1px solid #8a8a8a
     }
+
 }
 
 @media (max-width:991px) {
@@ -380,7 +383,7 @@
 
 @media (min-width:992px) and (max-width:1199px) {
     #wrapper {
-        width: 1000px
+        //width: 1000px
     }
     #header.transparent-header.floating-header .container {
         width: 1030px;
