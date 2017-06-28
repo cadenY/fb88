@@ -3531,15 +3531,17 @@ ul.top-link li:hover a {
 /*ERROR MODAL*/
 #errorModal, #errorModal .modal-content {
 	z-index: 999999999999;
+    width: 70%;
+    margin: 0 auto;
 }
 #errorModal .modal-content {
-	background: #028843 !important;
+	background: url(../images/x-bg.jpg) no-repeat top right #028843;
 }
 #errorModal .modal-body {
 	padding: 0;
 }
 #errorModal h2 {
-	font: bold 40px Verdana ;
+	font: bold 25px Verdana ;
 	padding: 20px;
 	border-bottom: 1px solid #b4ffd9;
 	position: relative;
