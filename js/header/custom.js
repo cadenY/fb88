@@ -3,9 +3,14 @@ ja(document).ready(function() {
 
 	ja('.submit').on('click',function(e){
 		e.preventDefault();
-		ja('#errorModal').modal('show');
+        if(ja( "#user" ).val() === '') {
+            ja('#errorModal').modal('show');
+        }
+        else {
+            ja('#successModal').modal('show');
+        }
 	});
-	ja('#errorModal h2 span, .btnErrorClose').on('click',function(e){
+	ja('#errorModal h2 span, .btnErrorClose, #successModal h2 span ').on('click',function(e){
 		e.preventDefault();
 		ja('#errorModal').modal('hide');
 	});

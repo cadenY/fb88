@@ -3529,25 +3529,28 @@ ul.top-link li:hover a {
 
 
 /*ERROR MODAL*/
-#errorModal, #errorModal .modal-content {
+#errorModal, #errorModal .modal-content, #successModal, #successModal .modal-content {
 	z-index: 999999999999;
     width: 70%;
     margin: 0 auto;
 }
-#errorModal .modal-content {
+#errorModal .modal-content{
 	background: url(../images/x-bg.jpg) no-repeat top right #028843;
 }
-#errorModal .modal-body {
+#successModal .modal-content {
+    background: url(../images/o-bg.jpg) no-repeat top right #028843;
+}
+#errorModal .modal-body, #successModal .modal-body {
 	padding: 0;
 }
-#errorModal h2 {
+#errorModal h2, #successModal h2 {
 	font: bold 25px Verdana ;
 	padding: 20px;
 	border-bottom: 1px solid #b4ffd9;
 	position: relative;
 	margin: 0;
 }
-#errorModal h2 span {
+#errorModal h2 span, #successModal h2 span  {
 	position: absolute;
 	right: 20px;
 	top: 10px;
@@ -3555,15 +3558,15 @@ ul.top-link li:hover a {
 	display: inline-block;
 	cursor: pointer;
 }
-#errorModal .errorBody {
+#errorModal .errorBody, #successModal .successBody {
 	padding: 40px 20px;
 	font: bold 15px Verdana ;
 }
-#errorModal .errorClose {
+#errorModal .errorClose, #successModal .errorClose {
 	text-align: center;
 	background: #fff;
 }
-#errorModal .errorClose a {
+#errorModal .errorClose a, #successModal .errorClose a {
 	display: inline-block;
 	width: 140px;
 	height: 38px;
